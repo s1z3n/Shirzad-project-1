@@ -1,14 +1,13 @@
 body
   margin: 0
   overflow-x: hidden
-  background-color: lime
+  background-color: $bg-color
   direction: rtl
   font-family: 'yekan', 'yn'
 //	Typography
 
 
 h1, h2, h3, h4, h5, h6
-  color: $headline-color
   font-family: 'yekan', 'yn'
   // font-weight: bold
 
@@ -18,7 +17,7 @@ h1, h2, h3, h4, h5, h6
   letter-spacing: -2px
 
 h1
-  font-size: 28px
+  font-size: 28pt
   //line-height: 1.05
   // letter-spacing: -1px
   margin: 0px
@@ -26,7 +25,7 @@ h1
 
 
 h2
-  font-size: 18px
+  font-size: 16pt
   line-height: 1.14
 
 h3
@@ -70,7 +69,6 @@ hr
 // Links
 
 a
-  color: $link-color
   text-decoration: none
   outline: 0
 
@@ -81,20 +79,6 @@ a
 
 // Selection colors (easy to forget)
 
-::selection
-  background: $selection-color
-
-::-moz-selection
-  background: $selection-color
-
-img::selection
-  background: transparent
-
-img::-moz-selection
-  background: transparent
-
-body
-  -webkit-tap-highlight-color: $selection-color
 
 
 
@@ -107,16 +91,9 @@ body
   font-weight: 300
   // line-height: 1.8
   font-family: 'Roboto', sans-serif
-  color: $text-color
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
 
-
-//side titles
-
-aside
-  font-size: 14px
-  color: $link-color
 
 
 
