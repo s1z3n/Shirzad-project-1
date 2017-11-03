@@ -35,11 +35,20 @@ section.hero
   background-size: cover
   margin-top: 50px
   display: flex
+  width: 100%
   justify-content: center
   align-items: center
+  background-repeat: no-repeat
+
+.tourism
+  background: url(../images/tourism.jpg) center center
+
 
 section.about-semega
   background: url(../images/about-banner.jpg) center center
+  background-repeat: no-repeat
+
+
 .page-title
   color: #fff
   background-color: #555
@@ -50,7 +59,15 @@ section.about-semega
 
 
 
-@media (max-width: 1310px)
+@media (max-width: 1320px)
+  .nav-main
+    .nav-item
+      padding: 12px
+      font-weight: normal
+      font-size: 13pt
+
+
+@media (max-width: 1200px)
   .header
     display: flex
     flex-direction: column
@@ -93,7 +110,7 @@ section.about-semega
       span:after
         content: ""
         display: block
-        height: 2px
+        height: 3px
         background: #fff
         position: relative
         transition: all 0.3s ease-in-out
