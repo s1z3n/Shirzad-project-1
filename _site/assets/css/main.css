@@ -2,11 +2,10 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: #ede2da;
-  direction: rtl;
-  font-family: "yekan", "yn"; }
+  direction: rtl; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "yekan", "yn"; }
+  margin: 0px; }
 
 .gigantic {
   font-size: 110px;
@@ -14,8 +13,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -2px; }
 
 h1 {
-  font-size: 28pt;
-  margin: 0px; }
+  font-size: 28pt; }
 
 h2 {
   font-size: 16pt;
@@ -24,10 +22,6 @@ h2 {
 h3 {
   font-size: 14px;
   font-weight: 500; }
-
-h4 .big {
-  font-size: 22px;
-  line-height: 1.38; }
 
 .small, small {
   font-size: 10px;
@@ -337,24 +331,70 @@ section.about-semega {
 
   .center-dots, .left-line {
     display: none; } }
-/* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
+.accordionWrapper {
+  background-color: black;
+  height: 500px;
+  display: flex;
+  margin-top: 50px; }
+
+.accordionItem {
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.accordionItemHeading {
+  background-color: #4FADDA;
+  height: 500px;
+  width: 40px;
+  display: flex;
+  align-items: center; }
+
+.accordion-1 {
+  background: url(../images/accordion1.png) center center;
+  background-repeat: no-repeat;
+  background-color: #4FADDA; }
+
+.accordionItemContent {
+  background-color: honeydew;
+  color: #fff; }
+
+.content-1 {
+  background-color: rgba(0, 0, 0, 0.4);
+  background: url(../images/takht-jamshid.jpg) center center;
+  height: 500px;
+  background-size: cover;
+  display: flex;
   width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s; }
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat; }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-  background-color: #ccc; }
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
 
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-  padding: 0 18px;
-  background-color: white;
+.accordion-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  justify-content: center; }
+
+.accordionContentHeadding {
+  font-size: 24pt; }
+
+.accordionContentHeadding + p {
+  font-size: 15pt;
+  font-weight: bold;
+  margin-top: 24px; }
+
+.close .accordionItemContent {
   display: none; }
+
+.open .accordionItemContent {
+  display: block; }
+
+.open .accordionItemHeading {
+  background-color: #D1B645;
+  width: 40px; }
