@@ -262,80 +262,64 @@ section.about-semega {
 .about-menu, .secondary-menu {
   height: 62px;
   display: flex;
-  background-color: #555;
-  margin-bottom: 40px; }
+  background-color: #555; }
 
-.separator {
-  display: grid;
-  grid-template-columns: 1fr 70px 1fr;
-  align-items: center; }
-  .separator .right-line {
-    display: grid;
-    grid-template-columns: 1fr auto 2fr;
-    align-items: center; }
-    .separator .right-line .line-1 {
-      height: 2px;
-      background: #4FADDA;
-      display: block; }
-    .separator .right-line h2 {
-      padding: 0px 24px; }
+.world-view-wrapper {
+  background-color: #F2EFEA;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 40px; }
 
-.center-dots {
-  height: 20px;
+.world-view-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .center-dots .circle {
+  width: 100%;
+  justify-content: center; }
+  .world-view-container .news-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    height: 320px;
+    border-right: 6px dotted #aaa;
     align-items: center;
-    width: 12px;
-    height: 12px;
-    background-color: #D1B645;
-    border-radius: 20px;
-    border: 2px solid #4FADDA; }
+    padding-top: 0px;
+    padding: 0px 20px; }
 
-.left-line {
-  display: grid;
-  grid-template-columns: 1fr;
+.news {
+  background: url(../images/news-frame.png) center center;
+  background-repeat: no-repeat;
+  min-width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
   align-items: center; }
-  .left-line .line-1 {
-    height: 2px;
-    background: #4FADDA;
-    display: block; }
 
-.container {
-  background-color: white;
-  height: 100%;
-  direction: ltr; }
-  .container .surround-container {
-    height: 500px;
-    overflow: auto;
-    white-space: nowrap; }
-  .container .h-page {
-    height: 100%;
-    width: 400px;
-    background-color: honeydew;
-    display: inline-block; }
+.news-1 p {
+  width: 180px;
+  margin-top: 20px;
+  font-size: 15px; }
 
-.empty-space {
-  height: 600px; }
+.news-below {
+  width: 210px;
+  height: 80px;
+  overflow: hidden;
+  justify-content: center;
+  font-size: 14px; }
 
-@media (max-width: 900px) {
-  .separator {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center; }
-    .separator .right-line {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center; }
+.read-more {
+  border-top: 1px solid #4FADDA;
+  border-bottom: 1px solid #4FADDA;
+  width: 210px;
+  height: 32px;
+  margin-top: 8px;
+  padding-bottom: 4px; }
+  .read-more a {
+    font-size: 14px; }
 
-  .center-dots, .left-line {
-    display: none; } }
 .accordionWrapper {
-  background-color: black;
+  background-color: #4FADDA;
   height: 500px;
   display: flex;
-  margin-top: 50px; }
+  padding-right: 40px; }
 
 .accordionItem {
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
@@ -398,3 +382,78 @@ section.about-semega {
 .open .accordionItemHeading {
   background-color: #D1B645;
   width: 40px; }
+
+.image-place-holder {
+  margin-top: 16px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 160px;
+  background-color: grey; }
+
+.separator {
+  display: grid;
+  grid-template-columns: 1fr 70px 1fr;
+  align-items: center;
+  padding: 62px 0px; }
+  .separator .right-line {
+    display: grid;
+    grid-template-columns: 1fr auto 2fr;
+    align-items: center; }
+    .separator .right-line .line-1 {
+      height: 2px;
+      background: #4FADDA;
+      display: block; }
+    .separator .right-line h2 {
+      padding: 0px 24px; }
+
+.center-dots {
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .center-dots .circle {
+    align-items: center;
+    width: 12px;
+    height: 12px;
+    background-color: #D1B645;
+    border-radius: 20px;
+    border: 2px solid #4FADDA; }
+
+.left-line {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center; }
+  .left-line .line-1 {
+    height: 2px;
+    background: #4FADDA;
+    display: block; }
+
+.container {
+  background-color: white;
+  height: 100%;
+  direction: ltr; }
+  .container .surround-container {
+    height: 500px;
+    overflow: auto;
+    white-space: nowrap; }
+  .container .h-page {
+    height: 100%;
+    width: 400px;
+    background-color: honeydew;
+    display: inline-block; }
+
+.empty-space {
+  height: 600px; }
+
+@media (max-width: 900px) {
+  .separator {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center; }
+    .separator .right-line {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center; }
+
+  .center-dots, .left-line {
+    display: none; } }
