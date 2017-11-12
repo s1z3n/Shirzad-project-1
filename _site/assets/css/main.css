@@ -29,7 +29,7 @@ h3 {
 
 p {
   margin: 0 0 25px 0;
-  font-size: 16px;
+  font-size: 17px;
   text-align: justify; }
 
 em {
@@ -398,7 +398,7 @@ div {
   background-repeat: no-repeat; }
 
 .section-2 {
-  background-color: #fff;
+  background-color: #F2EFEA;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -442,8 +442,8 @@ div {
     display: flex;
     justify-content: flex-end; }
     .section-3 .col-1 .row-1 {
-      width: 550px;
-      height: 400px;
+      width: 580px;
+      height: 440px;
       background-color: skyblue;
       background: url(../images/blue-frame-2.png) center center;
       background-size: contain;
@@ -451,7 +451,7 @@ div {
       padding: 50px;
       font-size: 18px; }
       .section-3 .col-1 .row-1 p {
-        width: 440px;
+        width: 480px;
         margin-top: 10px; }
     .section-3 .col-1 .row-2 {
       width: 60%;
@@ -475,7 +475,7 @@ div {
     background-repeat: no-repeat; }
 
 .section-4 {
-  background-color: #fff; }
+  background-color: #F2EFEA; }
 
 .s4-container {
   max-width: 800px;
@@ -505,6 +505,19 @@ div {
     height: 400px;
     margin: 40px auto;
     border-right: 10px solid #333; }
+  .s4-container .quotation {
+    background: url(../images/quotation.png) center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 110px;
+    padding: 24px 80px;
+    margin-bottom: 30px;
+    border-right: 10px solid #333; }
+  .s4-container .points li {
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: normal; }
 
 .accordionWrapper {
   background-color: #4FADDA;
