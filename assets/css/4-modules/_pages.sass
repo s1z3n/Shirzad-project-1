@@ -54,6 +54,232 @@
   a
     font-size: 14px
 
+
+
+
+
+
+
+.wrapper
+  margin: 40px 0px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  align-items: center
+
+.frame
+  height: 540px
+  border: 4px solid $accent-color-yellow
+  grid-row: 1
+  margin-left: -40px
+  margin-right: 80px
+  display: flex
+  align-items: center
+  p
+    padding: 80px
+    font-size: 18px
+    justify-content: center
+    align-self: center
+    text-align: justify
+
+
+
+.img-semega
+  background: url(../images/semega.jpg) center right
+  height: 480px
+  width: stretch
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: center
+  grid-row: 1
+  z-index: -1
+
+@media (max-width: 1370px)
+  .frame
+    margin-right: 40px
+    p
+      padding: 80px
+
+
+@media (max-width: 1275px)
+  .frame
+    height: auto
+    margin-right: 40px
+    p
+      padding: 40px 40px 40px 80px
+
+  .img-semega
+    height: 440px
+
+@media (max-width: 1020px)
+  .wrapper
+    grid-template-columns: 1fr
+
+  .frame
+    margin: 40px
+    margin-top: -40px
+    grid-row: 2
+    p
+      padding: 40px
+      padding-top: 80px
+
+@media (max-width: 400px)
+  .frame
+    height: auto
+    grid-row: 2
+    margin-top: 0px
+    border: 0px
+    margin: 0px
+    p
+      padding: 20px
+
+
+// horizantal scroll
+
+
+$finalHeight: 500px
+$finalWidth: 7 * $finalHeight
+$scrollBarHeight: 1px
+
+::-webkit-scrollbar
+  width: $scrollBarHeight
+  height: $scrollBarHeight
+
+
+::-webkit-scrollbar-button
+  width: $scrollBarHeight
+  height: $scrollBarHeight
+
+
+
+.h-container
+  position: relative
+
+div
+  box-sizing: border-box
+
+
+.horizontal-scroll-wrapper
+  position: absolute
+  display: block
+  top: 100px
+  left: 0
+  width: calc(# $finalHeight     + # $scrollBarHeight    )
+  max-height: $finalWidth
+  margin: 0
+  max-width: 500px
+  padding-top: $scrollBarHeight
+  background: #abc
+  overflow-y: auto
+  overflow-x: hidden
+  transform: rotate(-90deg) translateY(-$finalHeight)
+  transform-origin: right top
+  & > div
+    display: block
+    padding: 5px
+    background: #cab
+    transform: rotate(90deg)
+    transform-origin: right top
+
+
+
+.squares
+  padding: $finalHeight 0 0 0
+  & > div
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background: url(../images/tourism.jpg) center center
+    background-size: cover
+
+
+// end of horizantal scroll
+
+
+.statistic
+  display: flex
+  justify-content: center
+
+.text-p
+  display: flex
+  justify-content: center
+  background: url(../images/asset-frame-2.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  padding: 50px
+  width: 95%
+  max-width: 1400px
+  justify-content: space-around
+  align-items: center
+  p
+    width: 700px
+
 .image-p
-  width: 35%
+  width: 600px
+  height: 400px
   background: url(../images/chart-sanat-2.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+
+
+.section-2
+  background-color: #fff
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+  height: 650px
+
+.statistic-2
+  display: flex
+  width: 100%
+  justify-content: center
+  justify-content: space-between
+  align-items: center
+.chart-2
+  width: 600px
+  height: 400px
+  background: url(../images/chart-sanat-3.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  margin-left: 60px
+  margin-right: auto
+.text-p-2
+  width: 50%
+
+  background-color: $bg-color
+
+  p
+    width: 500px
+    padding: 80px
+
+
+
+.section-3
+  background-color: pink
+  width: 100%
+  height: 1000px
+  justify-content: flex-end
+  margin-top: 100px
+  flex-direction: column
+  .col-1
+    background-color: lime
+    width: 100%
+    height: 500px
+    display: flex
+    justify-content: flex-end
+
+    .row-1
+      width: 500px
+      height: 500px
+      background-color: skyblue
+    .row-2
+      width: 60%
+      height: 500px
+      background-color: honeydew
+      margin-top: 100px
+      margin-right: -100px
+  .col-2
+    background-color: green
+    width: 800px
+    height: 500px

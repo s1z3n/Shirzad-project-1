@@ -69,6 +69,197 @@ ul, li {
   padding: 0px;
   list-style-type: none; }
 
+.header {
+  background-color: #555;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1; }
+
+.header-transition {
+  position: relative;
+  top: 485px; }
+
+.nav-main {
+  max-width: 1450px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 8px;
+  align-items: center; }
+  .nav-main .nav-item {
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14pt; }
+
+.logo {
+  height: 50px;
+  width: 250px;
+  background: url(/assets/images/semega-logo.svg);
+  margin: 8px 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-content: center; }
+
+section.hero {
+  height: 500px;
+  background-size: cover;
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat; }
+
+.tourism {
+  background: url(../images/tourism.jpg) center center; }
+
+section.about-semega {
+  background: url(../images/about-banner.jpg) center center;
+  background-repeat: no-repeat; }
+
+.page-title {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px 32px;
+  font-size: 24pt;
+  margin-top: -100px; }
+
+@media (max-width: 1320px) {
+  .nav-main .nav-item {
+    padding: 12px;
+    font-weight: normal;
+    font-size: 13pt; } }
+@media (max-width: 1200px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .nav-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    display: none;
+    margin: 24px 0px; }
+
+  section.hero {
+    height: 450px; }
+
+  .logo {
+    width: 300px;
+    height: 50px;
+    margin: 4px; }
+
+  .nav-label .mobile-nav-toggle {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    margin: 8px 25px;
+    width: 36px;
+    height: 42px;
+    cursor: pointer; }
+    .nav-label .mobile-nav-toggle span,
+    .nav-label .mobile-nav-toggle span:before,
+    .nav-label .mobile-nav-toggle span:after {
+      content: "";
+      display: block;
+      height: 3px;
+      background: #fff;
+      position: relative;
+      transition: all 0.3s ease-in-out; }
+    .nav-label .mobile-nav-toggle span:before {
+      top: 12px; }
+    .nav-label .mobile-nav-toggle span {
+      top: 20px; }
+    .nav-label .mobile-nav-toggle span:after {
+      top: -14px; } }
+.nav-check:checked ~ .nav-label span {
+  background: transparent; }
+.nav-check:checked ~ .nav-label span:before, .nav-check:checked ~ .nav-label span:after {
+  transform-origin: center;
+  transform: rotate(45deg);
+  top: 0px; }
+.nav-check:checked ~ .nav-label span:after {
+  transform: rotate(-45deg);
+  top: -2px; }
+
+.nav-check:checked ~ .nav-main {
+  display: flex; }
+
+.nav-check {
+  position: absolute;
+  visibility: hidden; }
+
+.about-menu, .secondary-menu {
+  height: 62px;
+  display: flex;
+  background-color: pink;
+  width: 100%; }
+
+.secondary-fixed {
+  position: fixed;
+  background-color: #555;
+  top: 66px;
+  right: 0;
+  transform: translate(0px, -66px); }
+
+.world-view-wrapper {
+  background-color: #F2EFEA;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 40px; }
+
+.world-view-container {
+  display: flex;
+  width: 100%;
+  justify-content: center; }
+  .world-view-container .news-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    height: 320px;
+    border-right: 6px dotted #aaa;
+    align-items: center;
+    padding-top: 0px;
+    padding: 0px 20px; }
+
+.news {
+  background: url(../images/news-frame.png) center center;
+  background-repeat: no-repeat;
+  min-width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.news-1 p {
+  width: 180px;
+  margin-top: 20px;
+  font-size: 15px; }
+
+.news-below {
+  width: 210px;
+  height: 80px;
+  overflow: hidden;
+  justify-content: center;
+  font-size: 14px; }
+
+.read-more {
+  border-top: 1px solid #4FADDA;
+  border-bottom: 1px solid #4FADDA;
+  width: 210px;
+  height: 32px;
+  margin-top: 8px;
+  padding-bottom: 4px; }
+  .read-more a {
+    font-size: 14px; }
+
 .wrapper {
   margin: 40px 0px;
   display: grid;
@@ -180,201 +371,89 @@ div {
     background: url(../images/tourism.jpg) center center;
     background-size: cover; }
 
-.header {
-  background-color: #555;
+.statistic {
   display: flex;
-  width: 100%;
+  justify-content: center; }
+
+.text-p {
+  display: flex;
   justify-content: center;
-  position: fixed;
-  top: 0;
-  z-index: 1; }
-
-.header-transition {
-  position: relative;
-  top: 485px; }
-
-.nav-main {
-  max-width: 1450px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  margin-left: 8px;
-  align-items: center; }
-  .nav-main .nav-item {
-    padding: 16px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 14pt; }
-
-.logo {
-  height: 50px;
-  width: 250px;
-  background: url(/assets/images/semega-logo.svg);
-  margin: 8px 24px;
+  background: url(../images/asset-frame-2.png) center center;
   background-size: contain;
   background-repeat: no-repeat;
-  justify-content: center; }
-
-section.hero {
-  height: 500px;
-  background-size: cover;
-  margin-top: 50px;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat; }
-
-.tourism {
-  background: url(../images/tourism.jpg) center center; }
-
-section.about-semega {
-  background: url(../images/about-banner.jpg) center center;
-  background-repeat: no-repeat; }
-
-.page-title {
-  color: #fff;
-  background-color: #555;
-  opacity: 0.8;
-  padding: 16px 32px;
-  font-size: 24pt;
-  margin-top: -100px; }
-
-@media (max-width: 1320px) {
-  .nav-main .nav-item {
-    padding: 12px;
-    font-weight: normal;
-    font-size: 13pt; } }
-@media (max-width: 1200px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-
-  .nav-main {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-    display: none;
-    margin: 24px 0px; }
-
-  section.hero {
-    height: 450px; }
-
-  .logo {
-    width: 300px;
-    height: 50px;
-    margin: 4px; }
-
-  .nav-label .mobile-nav-toggle {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    margin: 8px 25px;
-    width: 36px;
-    height: 42px;
-    cursor: pointer; }
-    .nav-label .mobile-nav-toggle span,
-    .nav-label .mobile-nav-toggle span:before,
-    .nav-label .mobile-nav-toggle span:after {
-      content: "";
-      display: block;
-      height: 3px;
-      background: #fff;
-      position: relative;
-      transition: all 0.3s ease-in-out; }
-    .nav-label .mobile-nav-toggle span:before {
-      top: 12px; }
-    .nav-label .mobile-nav-toggle span {
-      top: 20px; }
-    .nav-label .mobile-nav-toggle span:after {
-      top: -14px; } }
-.nav-check:checked ~ .nav-label span {
-  background: transparent; }
-.nav-check:checked ~ .nav-label span:before, .nav-check:checked ~ .nav-label span:after {
-  transform-origin: center;
-  transform: rotate(45deg);
-  top: 0px; }
-.nav-check:checked ~ .nav-label span:after {
-  transform: rotate(-45deg);
-  top: -2px; }
-
-.nav-check:checked ~ .nav-main {
-  display: flex; }
-
-.nav-check {
-  position: absolute;
-  visibility: hidden; }
-
-.about-menu, .secondary-menu {
-  height: 62px;
-  display: flex;
-  background-color: pink;
-  width: 100%; }
-
-.secondary-fixed {
-  position: fixed;
-  background-color: pink;
-  top: 66px;
-  right: 0;
-  transform: translate(0px, -66px); }
-
-.world-view-wrapper {
-  background-color: #F2EFEA;
-  width: 100%;
-  box-sizing: border-box;
-  padding-bottom: 40px; }
-
-.world-view-container {
-  display: flex;
-  width: 100%;
-  justify-content: center; }
-  .world-view-container .news-item {
-    display: flex;
-    flex-direction: column;
-    min-width: 250px;
-    height: 320px;
-    border-right: 6px dotted #aaa;
-    align-items: center;
-    padding-top: 0px;
-    padding: 0px 20px; }
-
-.news {
-  background: url(../images/news-frame.png) center center;
-  background-repeat: no-repeat;
-  min-width: 240px;
-  height: 240px;
-  display: flex;
-  justify-content: center;
+  padding: 50px;
+  width: 95%;
+  max-width: 1400px;
+  justify-content: space-around;
   align-items: center; }
-
-.news-1 p {
-  width: 180px;
-  margin-top: 20px;
-  font-size: 15px; }
-
-.news-below {
-  width: 210px;
-  height: 80px;
-  overflow: hidden;
-  justify-content: center;
-  font-size: 14px; }
-
-.read-more {
-  border-top: 1px solid #4FADDA;
-  border-bottom: 1px solid #4FADDA;
-  width: 210px;
-  height: 32px;
-  margin-top: 8px;
-  padding-bottom: 4px; }
-  .read-more a {
-    font-size: 14px; }
+  .text-p p {
+    width: 700px; }
 
 .image-p {
-  width: 35%;
-  background: url(../images/chart-sanat-2.png) center center; }
+  width: 600px;
+  height: 400px;
+  background: url(../images/chart-sanat-2.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.section-2 {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 650px; }
+
+.statistic-2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center; }
+
+.chart-2 {
+  width: 600px;
+  height: 400px;
+  background: url(../images/chart-sanat-3.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 60px;
+  margin-right: auto; }
+
+.text-p-2 {
+  width: 50%;
+  background-color: #ede2da; }
+  .text-p-2 p {
+    width: 500px;
+    padding: 80px; }
+
+.section-3 {
+  background-color: pink;
+  width: 100%;
+  height: 1000px;
+  justify-content: flex-end;
+  margin-top: 100px;
+  flex-direction: column; }
+  .section-3 .col-1 {
+    background-color: lime;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end; }
+    .section-3 .col-1 .row-1 {
+      width: 500px;
+      height: 500px;
+      background-color: skyblue; }
+    .section-3 .col-1 .row-2 {
+      width: 60%;
+      height: 500px;
+      background-color: honeydew;
+      margin-top: 100px;
+      margin-right: -100px; }
+  .section-3 .col-2 {
+    background-color: green;
+    width: 800px;
+    height: 500px; }
 
 .accordionWrapper {
   background-color: #4FADDA;
