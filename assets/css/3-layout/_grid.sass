@@ -70,3 +70,62 @@
     margin: 0px
     p
       padding: 20px
+
+
+// horizantal scroll
+ SCSS  JS  Result
+
+$finalHeight: 500px
+$finalWidth: 7 * $finalHeight
+$scrollBarHeight: 1px
+
+::-webkit-scrollbar
+  width: $scrollBarHeight
+  height: $scrollBarHeight
+
+
+::-webkit-scrollbar-button
+  width: $scrollBarHeight
+  height: $scrollBarHeight
+
+
+
+.h-container
+  position: relative
+
+div
+  box-sizing: border-box
+
+
+.horizontal-scroll-wrapper
+  position: absolute
+  display: block
+  top: 100px
+  left: 0
+  width: calc(# $finalHeight     + # $scrollBarHeight    )
+  max-height: $finalWidth
+  margin: 0
+  max-width: 500px
+  padding-top: $scrollBarHeight
+  background: #abc
+  overflow-y: auto
+  overflow-x: hidden
+  transform: rotate(-90deg) translateY(-$finalHeight)
+  transform-origin: right top
+  & > div
+    display: block
+    padding: 5px
+    background: #cab
+    transform: rotate(90deg)
+    transform-origin: right top
+
+
+
+.squares
+  padding: $finalHeight 0 0 0
+  & > div
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background: url(../images/tourism.jpg) center center
+    background-size: cover

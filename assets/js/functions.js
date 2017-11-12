@@ -15,4 +15,28 @@ $(document).ready(function() {
             this.parentNode.className = 'accordionItem open';
         }
     }
+
+    $(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
+        // Do something
+        // console.log(scroll)
+      var header = $('.header');
+      var secondary = $('.secondary-menu');
+      var hitpoint = 485;
+      var mainnav_top = 0;
+      var secondarynav_top = 62;
+        if(scroll >= hitpoint) {
+
+          // $(header).css('display', 'none');
+          $(secondary).addClass('secondary-fixed');
+          $(header).addClass('header-transition');
+        } else {
+
+          $(header).removeClass('header-transition');
+          $(secondary).removeClass('secondary-fixed');
+        }
+    });
+
+
+
 });

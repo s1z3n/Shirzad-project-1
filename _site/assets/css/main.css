@@ -135,6 +135,51 @@ ul, li {
     margin: 0px; }
     .frame p {
       padding: 20px; } }
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px; }
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px; }
+
+.h-container {
+  position: relative; }
+
+div {
+  box-sizing: border-box; }
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 100px;
+  left: 0;
+  width: calc(# $finalHeight     + # $scrollBarHeight    );
+  max-height: 3500px;
+  margin: 0;
+  max-width: 500px;
+  padding-top: 1px;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-500px);
+  transform-origin: right top; }
+  .horizontal-scroll-wrapper > div {
+    display: block;
+    padding: 5px;
+    background: #cab;
+    transform: rotate(90deg);
+    transform-origin: right top; }
+
+.squares {
+  padding: 500px 0 0 0; }
+  .squares > div {
+    width: 500px;
+    height: 500px;
+    margin: 0px 0;
+    background: url(../images/tourism.jpg) center center;
+    background-size: cover; }
+
 .header {
   background-color: #555;
   display: flex;
@@ -143,6 +188,10 @@ ul, li {
   position: fixed;
   top: 0;
   z-index: 1; }
+
+.header-transition {
+  position: relative;
+  top: 485px; }
 
 .nav-main {
   max-width: 1450px;
@@ -262,7 +311,15 @@ section.about-semega {
 .about-menu, .secondary-menu {
   height: 62px;
   display: flex;
-  background-color: #555; }
+  background-color: pink;
+  width: 100%; }
+
+.secondary-fixed {
+  position: fixed;
+  background-color: pink;
+  top: 66px;
+  right: 0;
+  transform: translate(0px, -66px); }
 
 .world-view-wrapper {
   background-color: #F2EFEA;
@@ -314,6 +371,10 @@ section.about-semega {
   padding-bottom: 4px; }
   .read-more a {
     font-size: 14px; }
+
+.image-p {
+  width: 35%;
+  background: url(../images/chart-sanat-2.png) center center; }
 
 .accordionWrapper {
   background-color: #4FADDA;
