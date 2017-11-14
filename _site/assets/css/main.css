@@ -624,10 +624,6 @@ div {
     padding: 0px 40px; }
   .s4-container h4, .strategy-s1-container h4, .strategy-s2-container h4 {
     margin-bottom: 30px; }
-  .s4-container ol > li, .strategy-s1-container ol > li, .strategy-s2-container ol > li {
-    font-size: 16px;
-    line-height: 28px;
-    text-align: justify; }
   .s4-container .strategy-table1, .strategy-s1-container .strategy-table1, .strategy-s2-container .strategy-table1 {
     background: url(../images/strategy-table1.jpg) center center;
     margin: 40px 0px;
@@ -660,9 +656,11 @@ div {
     height: 160px;
     padding-top: 40px; }
   .s4-container .points li, .strategy-s1-container .points li, .strategy-s2-container .points li {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 32px;
-    font-weight: normal; }
+    font-weight: normal;
+    text-align: justify;
+    padding: 0px 40px; }
 
 .strategy-s2 {
   background-color: #F2EFEA; }
