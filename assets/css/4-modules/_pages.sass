@@ -74,13 +74,22 @@
   margin-right: 80px
   display: flex
   align-items: center
+  transform: translate3d(0,0,0)
+  transition: transform 1000ms ease
   p
     padding: 80px
     font-size: 18px
     justify-content: center
     align-self: center
     text-align: justify
+    transform: translate3d(0,0,0)
+    transition: transform 1000ms ease
 
+.frame.active  
+  transform: translate3d(5%,5%,0)
+
+.frame.inactive  
+  transform: translate3d(0,0,0)
 
 
 .img-semega
@@ -93,6 +102,15 @@
   align-items: center
   grid-row: 1
   z-index: -1
+  transform: translate3d(0,0,0)
+  transition: transform 1000ms ease
+
+.img-semega.active  
+  position: relative        
+  transform: translate3d(0,5%,0)
+
+.img-semega.inactive  
+  transform: translate3d(0,0,0)
 
 @media (max-width: 1370px)
   .frame
