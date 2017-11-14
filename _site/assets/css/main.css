@@ -640,6 +640,129 @@ div {
 
 .home-s1 {
   background-color: #F2EFEA; }
+  .home-s1 .home-about-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 500px; }
+    .home-s1 .home-about-container .frame-text {
+      background: url(../images/blue-frame3.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 700px;
+      margin-left: -200px;
+      margin-right: 80px;
+      margin-bottom: -100px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .home-s1 .home-about-container .frame-text p {
+        width: 320px;
+        margin-right: -200px; }
+    .home-s1 .home-about-container .frame-image {
+      background: url(../images/semega.jpg) center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 60%;
+      z-index: 1; }
+
+.home-s2 {
+  background-color: #F2EFEA; }
+  .home-s2 .section2-container {
+    display: flex;
+    width: 90%;
+    height: 600px;
+    margin-right: auto; }
+    .home-s2 .section2-container .col-1 {
+      width: 40%;
+      height: 90%;
+      background: url(../images/home-s2-img1.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 20px;
+      padding-bottom: 80px; }
+    .home-s2 .section2-container .col-2 {
+      width: 45%;
+      height: 90%;
+      background: url(../images/home-s2-img2.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 20px; }
+
+.home-s3 .section3-container {
+  display: flex;
+  width: 90%;
+  height: 600px;
+  justify-content: flex-start; }
+  .home-s3 .section3-container .img {
+    background: url(../images/home-s3-img.png) center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .home-s3 .section3-container .img .text-container {
+      width: 30%;
+      margin-left: 3%;
+      padding: 40px; }
+
+.media {
+  background: url(../images/home-media-img.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.home-s5 .section5-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .home-s5 .section5-container .arrow {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: url(../images/arrow2.png) center center;
+    background-size: contain;
+    background-color: rgba(0, 0, 0, 0.15);
+    opacity: 0.9; }
+  .home-s5 .section5-container .arrow-right {
+    right: 0;
+    transform: rotate(180deg);
+    transform-origin: center; }
+  .home-s5 .section5-container .arrow-left {
+    left: 0; }
+  .home-s5 .section5-container .logo-wrapper {
+    width: 100%;
+    padding: 0px 100px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    overflow: scroll; }
+    .home-s5 .section5-container .logo-wrapper .c-logo {
+      min-width: 160px;
+      height: 80px;
+      margin: 20px;
+      opacity: 0.7; }
+    .home-s5 .section5-container .logo-wrapper .logo-1, .home-s5 .section5-container .logo-wrapper .logo-4, .home-s5 .section5-container .logo-wrapper .logo-7 {
+      background: url(../images/c-logo3.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .home-s5 .section5-container .logo-wrapper .logo-2, .home-s5 .section5-container .logo-wrapper .logo-5, .home-s5 .section5-container .logo-wrapper .logo-8 {
+      background: url(../images/c-logo2.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .home-s5 .section5-container .logo-wrapper .logo-3, .home-s5 .section5-container .logo-wrapper .logo-6, .home-s5 .section5-container .logo-wrapper .logo-9 {
+      background: url(../images/c-logo1.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
 
 .accordionWrapper {
   background-color: #4FADDA;
