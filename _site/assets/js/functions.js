@@ -18,7 +18,6 @@ $(document).ready(function() {
 
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
-        // Do something
         // console.log(scroll)
       var header = $('.header');
       var secondary = $('.secondary-menu');
@@ -27,7 +26,7 @@ $(document).ready(function() {
       var secondarynav_top = 62;
         if(scroll >= hitpoint) {
 
-          // $(header).css('display', 'none');
+        
           $(secondary).addClass('secondary-fixed');
           $(header).addClass('header-transition');
         } else {
@@ -35,6 +34,27 @@ $(document).ready(function() {
           $(header).removeClass('header-transition');
           $(secondary).removeClass('secondary-fixed');
         }
+
+
+// pollen london
+
+
+        var active = function(){
+             $('.frame').removeClass('inactive').addClass('active');
+             $('.img-semega').removeClass('inactive').addClass('active');
+         };
+
+         var inactive = function(){
+             $('.frame').removeClass('active').addClass('inactive');
+             $('.img-semega').removeClass('active').addClass('inactive');
+         };
+
+         $('.frame').mouseenter(active)
+         $('.frame').mouseleave(inactive)
+
+         $('.img-semega').mouseenter(active)
+         $('.img-semega').mouseleave(inactive)
+
     });
 
 
