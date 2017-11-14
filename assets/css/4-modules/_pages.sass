@@ -137,8 +137,8 @@
 // horizantal scroll
 
 
-$finalHeight: 500px
-$finalWidth: 7 * $finalHeight
+$finalHeight: 400px
+$finalWidth: 5 * $finalHeight
 $scrollBarHeight: 1px
 
 ::-webkit-scrollbar
@@ -154,6 +154,8 @@ $scrollBarHeight: 1px
 
 .h-container
   position: relative
+  background-color: #f4f2ed
+  z-index: 0
 
 div
   box-sizing: border-box
@@ -162,7 +164,7 @@ div
 .horizontal-scroll-wrapper
   position: absolute
   display: block
-  top: 100px
+  top: 140px
   left: 0
   width: calc(# $finalHeight     + # $scrollBarHeight    )
   max-height: $finalWidth
@@ -189,11 +191,103 @@ div
     width: $finalHeight
     height: $finalHeight
     margin: 0px 0
-    background: url(../images/tourism.jpg) center center
-    background-size: cover
+  .item-null
+    background: url(../images/timeline-null.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-2
+    background: url(../images/timeline-1389.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-3
+    background: url(../images/timeline-1388.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-last
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-color: #f4f2ed
 
 
 // end of horizantal scroll
+
+
+
+
+// ceo section
+.light-bg
+  background-color: $bg-color-light
+
+.ceo
+  background-color: $bg-color-light
+  // display: flex
+  .ceo-img
+    background: url(../images/ceo.png) center right
+    background-size: contain
+    background-repeat: no-repeat
+    width: 95%
+    height: 600px
+    display: flex
+    .text-ceo
+      width: 650px
+      height: 410px
+      background-color: rgba(237, 226, 218, 0.8)
+      margin-left: 100px
+      margin-right: auto
+      margin-top: 150px
+      padding: 40px
+
+// subsidaries section
+
+.subsidaries
+  display: flex
+  width: 100%
+  height: 700px
+  background-color: $bg-color-light
+  justify-content: center
+  align-items: center
+  .subsidaries-p
+    width: 550px
+    margin-top: -100px
+    margin-right: -135px
+    // padding-left: 50px
+    // background-color: pink
+    h4
+      margin-bottom: 10px
+  .subsidaries-img
+    background: url(../images/subsidiaries-2.png) center right
+    background-size: contain
+    background-repeat: no-repeat
+    width: 600px
+    height: 700px
+    margin-right: -140px
+    // background-color: lime
+
+// organizational chart
+
+.organizational-chart
+  background-color: $bg-color-light
+  width: 100%
+
+.org-chart
+  background: url(../images/org-chart.jpg) center right
+  background-size: contain
+  background-repeat: no-repeat
+  max-width: 1200px
+  height: 600px
+  margin: 0px auto
+
+
 
 
 .statistic
@@ -359,3 +453,16 @@ div
       font-size: 17px
       line-height: 32px
       font-weight: normal
+
+
+
+
+
+// home page sections
+  // section 1
+
+.home-s1
+  background-color: $bg-color-light
+
+  .home-about-container
+    

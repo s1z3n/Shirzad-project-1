@@ -122,6 +122,45 @@ section.about-semega {
   background: url(../images/about-banner.jpg) center center;
   background-repeat: no-repeat; }
 
+section.home-page {
+  background: url(../images/home-hero-img.jpg) center center;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-size: cover;
+  display: flex; }
+  section.home-page .home-hero-container {
+    background: url(../images/home-frame-hero.png) center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 700px;
+    background-size: contain;
+    margin-left: 100px;
+    margin-right: auto; }
+    section.home-page .home-hero-container .hero-text {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 450px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+      padding: 70px;
+      margin-top: 150px;
+      margin-right: -350px; }
+      section.home-page .home-hero-container .hero-text h1 {
+        color: #fff;
+        text-align: left;
+        font-size: 38px; }
+      section.home-page .home-hero-container .hero-text a {
+        width: 120px;
+        background-color: #4fadda;
+        color: #fff;
+        border: 1px solid #ede2da;
+        border-radius: 5px;
+        text-align: center;
+        padding: 4px;
+        padding-bottom: 6px; }
+
 .page-title {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
@@ -336,7 +375,9 @@ section.about-semega {
   height: 1px; }
 
 .h-container {
-  position: relative; }
+  position: relative;
+  background-color: #f4f2ed;
+  z-index: 0; }
 
 div {
   box-sizing: border-box; }
@@ -344,17 +385,17 @@ div {
 .horizontal-scroll-wrapper {
   position: absolute;
   display: block;
-  top: 100px;
+  top: 140px;
   left: 0;
   width: calc(# $finalHeight     + # $scrollBarHeight    );
-  max-height: 3500px;
+  max-height: 2000px;
   margin: 0;
   max-width: 500px;
   padding-top: 1px;
   background: #abc;
   overflow-y: auto;
   overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-500px);
+  transform: rotate(-90deg) translateY(-400px);
   transform-origin: right top; }
   .horizontal-scroll-wrapper > div {
     display: block;
@@ -364,13 +405,91 @@ div {
     transform-origin: right top; }
 
 .squares {
-  padding: 500px 0 0 0; }
+  padding: 400px 0 0 0; }
   .squares > div {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0; }
+  .squares .item-null {
+    background: url(../images/timeline-null.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
     margin: 0px 0;
-    background: url(../images/tourism.jpg) center center;
-    background-size: cover; }
+    background-repeat: no-repeat; }
+  .squares .item-2 {
+    background: url(../images/timeline-1389.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-3 {
+    background: url(../images/timeline-1388.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-last {
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-color: #f4f2ed; }
+
+.light-bg {
+  background-color: #F2EFEA; }
+
+.ceo {
+  background-color: #F2EFEA; }
+  .ceo .ceo-img {
+    background: url(../images/ceo.png) center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 600px;
+    display: flex; }
+    .ceo .ceo-img .text-ceo {
+      width: 650px;
+      height: 410px;
+      background-color: rgba(237, 226, 218, 0.8);
+      margin-left: 100px;
+      margin-right: auto;
+      margin-top: 150px;
+      padding: 40px; }
+
+.subsidaries {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-color: #F2EFEA;
+  justify-content: center;
+  align-items: center; }
+  .subsidaries .subsidaries-p {
+    width: 550px;
+    margin-top: -100px;
+    margin-right: -135px; }
+    .subsidaries .subsidaries-p h4 {
+      margin-bottom: 10px; }
+  .subsidaries .subsidaries-img {
+    background: url(../images/subsidiaries-2.png) center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 700px;
+    margin-right: -140px; }
+
+.organizational-chart {
+  background-color: #F2EFEA;
+  width: 100%; }
+
+.org-chart {
+  background: url(../images/org-chart.jpg) center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  height: 600px;
+  margin: 0px auto; }
 
 .statistic {
   display: flex;
@@ -519,6 +638,9 @@ div {
     line-height: 32px;
     font-weight: normal; }
 
+.home-s1 {
+  background-color: #F2EFEA; }
+
 .accordionWrapper {
   background-color: #4FADDA;
   height: 500px;
@@ -648,6 +770,15 @@ div {
 
 .empty-space {
   height: 600px; }
+
+.empty-space-medium {
+  height: 380px; }
+
+.empty-space-small {
+  height: 150px; }
+
+.empty-space-80 {
+  height: 80px; }
 
 @media (max-width: 900px) {
   .separator {
