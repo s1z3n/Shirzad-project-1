@@ -37,6 +37,21 @@ $(document).ready(function() {
         }
     });
 
+    // JS with jQuery
+    var active = function(){
+        $('.frame').removeClass('inactive').addClass('active');
+        $('.img-semega').removeClass('inactive').addClass('active');
+    };
+    
+    var inactive = function(){
+        $('.frame').removeClass('active').addClass('inactive');
+        $('.img-semega').removeClass('active').addClass('inactive');
+    };
 
+    $('.frame').mouseenter(active)
+    $('.frame').mouseleave(inactive)
+
+    $('.img-semega').mouseenter(active)
+    $('.img-semega').mouseleave(inactive)
 
 });
