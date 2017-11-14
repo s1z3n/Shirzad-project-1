@@ -660,7 +660,7 @@ div {
     line-height: 32px;
     font-weight: normal;
     text-align: justify;
-    padding: 0px 40px; }
+    padding-left: 40px; }
 
 .strategy-s2 {
   background-color: #F2EFEA; }
