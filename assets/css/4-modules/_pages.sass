@@ -829,18 +829,179 @@ div
   background-color: $bg-color
 
 
+// investment page
+// section 1
+
+.investment-1
+.invetment-hero2
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  height: 500px
+  background: url(../images/media-2nd-hero.jpg) center center
+  background-size: cover
+
+  .side-heading
+    width: 550px
+    height: 500px
+    background-color: rgba(91, 177, 220, .9)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding: 40px 65px 20px
+    color: #fff
+    // background-color: lime
+    .row-1
+      width: 100%
+      display: flex
+      align-items: center
+      border-right: 1px solid #fff
+
+      h2
+        padding-right: 20px
+        margin-top: 20px
+        font-size: 30px
+        border-right: 5px solid #fff
+        line-height: 45px
+
+    .row-2
+      width: 100%
+      height: 60%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      border-right: 1px solid #fff
+      p
+        margin-top: 20px
+        padding-right: 20px
+        font-size: 18px
+    .row-3
+      display: flex
+      width: 100%
+      height: 10%
+      justify-content: center
+      padding-right: 14px
+
+      .line-right, .line-left
+        background: url(../images/line.png) center center
+        background-size: contain
+        background-repeat: no-repeat
+        width: 80px
+        height: 20px
+        margin: 2px 9px
+      .line-left
+        transform: rotate(180deg)
+
+    .row-4
+      width: 100%
+      height: 10%
+      display: flex
+      justify-content: center
+      align-items: center
+
+      .container
+        position: relative
+        padding-left: 30px
+        cursor: pointer
+        font-size: 22px
+        height: 20px
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        background-color: rgba(0, 0, 0, 0)
+
+      .container input
+        position: absolute
+        opacity: 0
+
+      .checkmark
+        position: absolute
+        top: 0
+        left: 0
+        height: 8px
+        width: 8px
+        border: 5px solid $accent-color-yellow
+        opacity: .6
+        border-radius: 50%
+
+      .container:hover input ~ .checkmark
+        opacity: .8
+
+      .container input:checked ~ .checkmark
+        border: 5px solid $accent-color-yellow
+        opacity: 1
+
+// section 2
+
+.s-wrapper
+  width: 100%
+  max-width: 1400px
+  margin: auto
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
 
 
+  .link-wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    // border: 1px solid $accent-color-yellow
+    width: 100%
 
+    .round-img
+      width: 160px
+      height: 160px
+      background-color: pink
+      border-radius: 100px
+      margin: 20px
+      background: url(../images/img10.jpg) center center
+      background-size: cover
+    .p-title
+      font-size: 20px
+      font-weight: bold
+      margin-top: 4px
+    p
+      margin-bottom: 15px
+      margin-top: 4px
+    a
+      margin: 8px
+      padding: 5px 20px
+      padding-left: 10px
+      background-color: $accent-color-blue
+      font-size: 16px
+      display: flex
+      color: #fff
+      .material-icons
+        margin-right: 4px
 
+  .project-box1, .project-box2, .project-box4, .project-box5, .project-box7, .project-box8
+    border-left: 1px solid $accent-color-yellow
 
+  .project-box1, .project-box2, .project-box3, .project-box4, .project-box5, .project-box6
+    border-bottom: 1px solid $accent-color-yellow
 
-
-
-
-
-
-
+  .project-box1, .project-box2, .project-box4, .project-box5,
+    .flower-img
+      background: url(../images/flower-logo-yellowbg.jpg) center center
+      background-size: contain
+      background-repeat: no-repeat
+      width: 30px
+      height: 30px
+      position: relative
+      // background-color: skyblue
+      top: 0px
+      left: 0px
+      z-index: 20
+      align-self: flex-end
+      margin-left: -36px
+      margin-right: auto
+      margin-bottom: -36px
+      margin-top: auto
+      z-index: 4
 
 // Ali shirzad's code
 
