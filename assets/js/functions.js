@@ -23,7 +23,7 @@ $(document).ready(function() {
         // console.log(scroll)
       var header = $('.header');
       var secondary = $('.secondary-menu');
-      var hitpoint = 485;
+      var hitpoint = 435;
       var fixpoint = 80;
       var mainnav_top = 0;
       var secondarynav_top = 62;
