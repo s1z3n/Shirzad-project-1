@@ -1,21 +1,25 @@
 
-.header
+.header, .header-home
   // background-color: rgba(0, 0, 0, 0.6)
-  // background-color: #555
+
   display: flex
   width: 100%
-  justify-content: center
+  justify-content: flex-start
   position: fixed
   top: 0
-  z-index: 1
-
+  z-index: 100
 
   // gradient default
   background-image: linear-gradient(to top, rgba(148,148,148, .0) 0%, rgba(54,54,54, .5) 50%, rgba(0,0,0, .9) 100%)
   background-image:  -webkit-linear-gradient(to top, rgba(148,148,148, .0) 0%, rgba(54,54,54, .5) 50%, rgba(0,0,0, .9) 100%)
   padding-bottom: 100px
 
-
+.header-fixed
+  background-color: #555
+  height: 60px
+  position: fixed
+  padding-bottom: 0px
+  background-image: none
 
 
 .header-transition
@@ -23,18 +27,29 @@
   top: 485px
 
 .nav-main
-  max-width: 1450px
+  max-width: 1250px
   display: flex
   width: 100%
-  justify-content: space-between
+  justify-content: center
   margin-left: 8px
   align-items: center
   .nav-item
-    padding: 16px
+    padding: 20px
     color: #fff
     font-weight: bold
     font-size: 14pt
     &:hover
+
+#lang
+  color: #fff
+  font-size: 10pt
+  font-weight: normal
+  padding: 2px 4px
+  margin: 16px 30px
+  top: 0
+  left: 0
+  position: absolute
+  border: 1px solid #fff
 
 .logo
   +size(250px 50px)
@@ -77,7 +92,7 @@ section.about-semega
 section.home-page
   background: url(../images/home-hero-img.jpg) center center
   background-repeat: no-repeat
-  height: 600px
+  height: 500px
   background-size: cover
   display: flex
   .home-hero-container
@@ -128,16 +143,16 @@ section.home-page
 
 
 
-@media (max-width: 1320px)
+@media (max-width: 1360px)
   .nav-main
     .nav-item
       padding: 12px
-      font-weight: normal
-      font-size: 13pt
+      // font-weight: normal
+      // font-size: 13pt
 
 
-@media (max-width: 1200px)
-  .header
+@media (max-width: 1240px)
+  .header, .header-home
     display: flex
     flex-direction: column
     justify-content: center
