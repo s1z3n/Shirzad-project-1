@@ -2,12 +2,24 @@
 layout: default
 title: درباره سمگا
 ---
-
+{% include header.html %}
 <section class="hero about-semega">
   <h1 class="page-title">درباره سمگا</h1>
 </section>
 
+<!-- secondary menu -->
+
 <section class="secondary-menu about-menu">
+  <div class="link-wrapper">
+    <a href="#about-s">معرفی سمگا</a>
+    <a href="#history">تاریخچه</a>
+    <a href="#ceo-words">سخن مدیرعامل</a>
+    <a href="#org-chart">جایگاه سازمانی سمگا</a>
+    <a href="#about-s">معرفی سمگا</a>
+    <a href="#history">تاریخچه</a>
+    <a href="#ceo-words">سخن مدیرعامل</a>
+    <a href="#org-chart">جایگاه سازمانی سمگا</a>
+  </div>
 
 </section>
 
@@ -16,7 +28,7 @@ title: درباره سمگا
 <div class="separator">
   <span class="right-line">
     <span class="line-1"></span>
-    <h2>معرفی سمگا</h2>
+    <h2 id="about-s">معرفی سمگا</h2>
     <span class="line-1"></span>
   </span>
   <span class="center-dots">
@@ -52,11 +64,10 @@ title: درباره سمگا
 <section class="h-container">
 
   <!-- seperator line for each section -->
-
   <div class="separator">
     <span class="right-line">
       <span class="line-1"></span>
-      <h2>تاریخچه</h2>
+      <h2 id="history">تاریخچه</h2>
       <span class="line-1"></span>
     </span>
     <span class="center-dots">
@@ -86,11 +97,10 @@ title: درباره سمگا
 
 
   <!-- seperator line for each section -->
-
   <div class="separator light-bg">
     <span class="right-line">
       <span class="line-1"></span>
-      <h2>سخن مدیرعامل</h2>
+      <h2 id="ceo-words">سخن مدیرعامل</h2>
       <span class="line-1"></span>
     </span>
     <span class="center-dots">
@@ -120,7 +130,7 @@ title: درباره سمگا
 <div class="separator light-bg">
   <span class="right-line">
     <span class="line-1"></span>
-    <h2>جایگاه سازمانی سمگا</h2>
+    <h2 id="org-chart">جایگاه سازمانی سمگا</h2>
     <span class="line-1"></span>
   </span>
   <span class="center-dots">
@@ -143,24 +153,271 @@ title: درباره سمگا
       </p>
   </div>
   <div class="subsidaries-img">
-
   </div>
+  <br>
 </section>
 
 <section class="organizational-chart">
+  <div class="sub-heading">
+    <div class="line-right"></div>
+    <div class="text">
+      <p>شرکت های زیرمجموعه سمگا </p>
+    </div>
+    <div class="line-left"></div>
+  </div>
   <div class="org-chart"></div>
 </section>
 
 
+<!-- subsidaies section -->
 
-<section>
-  <div class="empty-space">
+<section class="subsidaries-s">
 
+  <div class="sub-heading">
+    <div class="line-right"></div>
+    <div class="text">
+      <p>شرکت های زیرمجموعه سمگا </p>
+    </div>
+    <div class="line-left"></div>
   </div>
+<br>
+
+<section class="s-wrapper" id="subsidaries-co">
+  <div class="link-wrapper subsidaries-box1">
+    <div class="round-logo sub-logo1"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری مرمت ، احیا و بهر</p>
+    <a class="sub-btn1">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+  <div class="link-wrapper subsidaries-box2">
+    <div class="round-logo sub-logo2"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn2">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box3">
+    <div class="round-logo sub-logo3"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn3">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box4">
+    <div class="round-logo sub-logo4"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn4">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box5">
+    <div class="round-logo sub-logo5"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn5">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+    {% include subsidiaries/subsidiary1.html %}
+
+
+
+  <div class="link-wrapper subsidaries-box6">
+    <div class="round-logo sub-logo6"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn6">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box7">
+    <div class="round-logo sub-logo7"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn7">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box8">
+    <div class="round-logo sub-logo8"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn8">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box9">
+    <div class="round-logo sub-logo9"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn9">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box10">
+    <div class="round-logo sub-logo10"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn10">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box11">
+    <div class="round-logo sub-logo11"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn11">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+  <div class="link-wrapper subsidaries-box12">
+    <div class="round-logo sub-logo12"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn12">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box13">
+    <div class="round-logo sub-logo13"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn13">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box14">
+    <div class="round-logo sub-logo14"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn14">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+
+  <div class="link-wrapper subsidaries-box15">
+    <div class="round-logo sub-logo15"></div>
+    <p class="co-name">مرمت ، احیا و بهره برداری</p>
+    <a class="sub-btn15">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+    <div class="flower-img"></div>
+  </div>
+<br><br>
+  </section>
 </section>
 
-<section>
-  <div class="empty-space">
+<br>
 
+<!-- end of subsidaies section -->
+
+
+<!-- board members section -->
+
+  <!-- seperator line for each section -->
+
+  <div class="separator">
+    <span class="right-line">
+      <span class="line-1"></span>
+      <h2>اعضای هیئت مدیره</h2>
+      <span class="line-1"></span>
+    </span>
+    <span class="center-dots">
+      <span class="circle"></span>
+      <span class="circle"></span>
+      <span class="circle"></span>
+    </span>
+    <span class="left-line">
+      <span class="line-1"></span>
+    </span>
   </div>
-</section>
+
+  <!-- End of seperator line for each section -->
+
+
+  <section class="s-wrapper board-members">
+    <div class="link-wrapper board-box1">
+      <div class="round-img board-img-1"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+    <div class="link-wrapper board-box2">
+      <div class="round-img board-img-2"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+    <div class="link-wrapper board-box3">
+      <div class="round-img board-img-3"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+
+    {% include board/members-detail1.html %}
+    {% include board/members-detail2.html %}
+    {% include board/members-detail3.html %}
+
+
+
+    <div class="link-wrapper board-box4">
+      <div class="round-img board-img-4"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+    <div class="link-wrapper board-box5">
+      <div class="round-img board-img-5"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+    <div class="link-wrapper board-box6">
+      <div class="round-img board-img-6"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+
+    <!-- {% include board/members-detail1.html %} -->
+    <!-- {% include board/members-detail2.html %} -->
+    <!-- {% include board/members-detail3.html %} -->
+
+    <div class="link-wrapper board-box7">
+      <div class="round-img board-img-7"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+    <div class="link-wrapper board-box8">
+      <div class="round-img board-img-8"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+    <div class="link-wrapper board-box9">
+      <div class="round-img board-img-9"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+
+    <!-- {% include board/members-detail1.html %} -->
+    <!-- {% include board/members-detail2.html %} -->
+    <!-- {% include board/members-detail3.html %} -->
+
+    <div class="link-wrapper board-box10">
+      <div class="round-img board-img-10"></div>
+      <h3 class="p-title">علی سنگینیان</h3>
+      <p>مدیرعامل و عضو هیئت مدیره</p>
+      <a href="#">معرفی بیشتر <i class="material-icons">keyboard_arrow_down</i> </a>
+      <div class="flower-img"></div>
+    </div>
+
+    <!-- {% include board/members-detail1.html %} -->
+
+
+  </section>
+
+  <br>
+  <br>
+  <br>
+
+
+<!-- end of board members section -->

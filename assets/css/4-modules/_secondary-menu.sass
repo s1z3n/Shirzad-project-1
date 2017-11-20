@@ -1,10 +1,41 @@
-.about-menu, .secondary-menu
-  height: 62px
+.secondary-menu
+  height: 54px
   display: flex
   background-color: #555
   width: 100%
-  z-index: 10
+  z-index: 200
+  align-items: center
+  .link-wrapper
+    overflow: scroll
+    display: flex
+    width: 100%
+    margin-right: 40px
+    align-items: center
+    a
+      color: #fff
+      min-width: 200px
+      // background-color: pink
+      // border: 1px solid black
+      text-align: center
+      font-size: 20px
+      padding: 16px
+      &:hover
+        background: url(../images/lable.png) center center
+        background-size: contain
+        background-repeat: no-repeat
 
+
+
+
+
+
+@keyframes moving
+  0%
+    transform: translate(0, 0)
+
+
+  100%
+    transform: translate(0px, -66px)
 
 
 .secondary-fixed
@@ -13,4 +44,5 @@
   top: 66px
   right: 0
   transform: translate(0px, -66px)
-  z-index: 10
+  animation: moving 300ms ease-in-out
+  z-index: 200

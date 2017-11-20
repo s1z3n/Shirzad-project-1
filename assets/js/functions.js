@@ -16,17 +16,29 @@ $(document).ready(function() {
         }
     }
 
+
+
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
         // console.log(scroll)
       var header = $('.header');
       var secondary = $('.secondary-menu');
-      var hitpoint = 485;
+      var hitpoint = 435;
+      var fixpoint = 80;
       var mainnav_top = 0;
       var secondarynav_top = 62;
+      if(scroll >= fixpoint) {
+            $(header).addClass('header-fixed');
+            $('.header-home').addClass('header-fixed');
+          } else {
+
+            $(header).removeClass('header-fixed');
+            $('.header-home').removeClass('header-fixed');
+          }
+
         if(scroll >= hitpoint) {
 
-        
+
           $(secondary).addClass('secondary-fixed');
           $(header).addClass('header-transition');
         } else {
@@ -34,6 +46,8 @@ $(document).ready(function() {
           $(header).removeClass('header-transition');
           $(secondary).removeClass('secondary-fixed');
         }
+
+
 
 
 // pollen london
@@ -56,6 +70,18 @@ $(document).ready(function() {
          $('.img-semega').mouseleave(inactive)
 
     });
+
+
+  $('.sub-btn1').click(function(){
+      $('#sub-holder1').addClass('sub-open');
+      // return false
+    });
+
+  $('.sub-btn2,.sub-btn3').click(function(){
+    $('#sub-holder1').removeClass('sub-open');
+  });
+
+
 
 
 
