@@ -69,6 +69,20 @@ $(document).ready(function() {
          $('.img-semega').mouseenter(active)
          $('.img-semega').mouseleave(inactive)
 
+         var active1 = function(){
+          $('.frame-text').removeClass('inactive1').addClass('active1');
+          $('.frame-image').removeClass('inactive1').addClass('active1');          
+        };
+
+        var inactive1 = function(){
+            $('.frame-text').removeClass('active1').addClass('inactive1');
+            $('.frame-image').removeClass('active1').addClass('inactive1');          
+        };
+
+          $('.frame-text').mouseenter(active1)
+          $('.frame-text').mouseleave(inactive1)
+
+
     });
 
 

@@ -721,17 +721,28 @@ div
       display: flex
       align-items: center
       justify-content: center
-
+      transform: translate3d(0,0,0)
+      transition: transform 1000ms ease
 
       p
         width: 320px
         margin-right: -200px
+        transform: translate3d(0,0,0)
+        transition: transform 1000ms ease
     .frame-image
       background: url(../images/semega.jpg) center center
       background-size: cover
       background-repeat: no-repeat
       width: 60%
       z-index: 1
+
+
+    .frame-text.active1
+      position: relative
+      transform: translate3d(5%,5%,0)
+    
+    .frame-text.inactive1
+      transform: translate3d(0,0,0)
 
   // section 2
 .home-s2
