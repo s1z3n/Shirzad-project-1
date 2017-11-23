@@ -1,4 +1,3 @@
-var cc; 
 $(document).ready(function() {
 
 
@@ -72,12 +71,12 @@ $(document).ready(function() {
 
          var active1 = function(){
           $('.frame-text').removeClass('inactive1').addClass('active1');
-          $('.frame-image').removeClass('inactive1').addClass('active1');          
+          $('.frame-image').removeClass('inactive1').addClass('active1');
         };
 
         var inactive1 = function(){
             $('.frame-text').removeClass('active1').addClass('inactive1');
-            $('.frame-image').removeClass('active1').addClass('inactive1');          
+            $('.frame-image').removeClass('active1').addClass('inactive1');
         };
 
           $('.frame-text').mouseenter(active1)
@@ -87,39 +86,30 @@ $(document).ready(function() {
     });
 
 
-  // $('.sub-btn1').click(function(e){
-  //     console.log(e.currentTarget.className)
-  //     $('#sub-holder1').addClass('sub-open');
-  //     // return false
-  //   });
+  $('.sub-btn1').click(function(e){
+      console.log(e.currentTarget.className)
+      $('#sub-holder1').addClass('sub-open');
+      // return false
+    });
 
-  // $('.sub-btn2,.sub-btn3').click(function(e){
-  //   console.log(e.currentTarget.className)
-  //   $('#sub-holder1').removeClass('sub-open');
-  // });
+  $('.sub-btn2,.sub-btn3').click(function(e){
+    console.log(e.currentTarget.className)
+    $('#sub-holder1').removeClass('sub-open');
+  });
 
 
+  // $('.link-wrapper').on('click', function(e){
+  //     wrapperName = e.currentTarget.className
+
+  //     console.log($(wrapperName.toString() +' a').className != 'sub-open')
+  //     if ($(wrapperName.toString() +' a').className != 'sub-open') {
+  //       $(wrapperName.toString() +' a').addClass('sub-open')
+  //       $('#sub-holder1').addClass('sub-open');
+  //     } else {
+  //       $(wrapperName.toString() +' a').removeClass('sub-open');
+  //       $('#sub-holder1').removeClass('sub-open');
+  //     }
+  // })
 
 
 });
-
-$('.link-wrapper').on('click', function(e){      
-
-  wrapperName = e.currentTarget.className
-  wrapperName = wrapperName.split(' ')
-  var strNum = wrapperName[1].substr(-1)
-
-  $('#sub-holder'+strNum+'')
-  if ($('#sub-holder'+strNum+'').hasClass('sub-open')) {        
-
-      $('#sub-holder'+strNum+'').removeClass('sub-open');
-
-  } else {
-    $('#sub-holder').removeClass (function (index, className) {
-      return (className.match (/(^|\s)color-\S+/g) || []).join(' ');
-  });
-    $('#sub-holder'+strNum+'').addClass('sub-open');
-    
-  }
-  
-})

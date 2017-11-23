@@ -645,7 +645,7 @@ div {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1103,7 +1103,7 @@ div {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
