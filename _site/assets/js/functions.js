@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
 
@@ -107,7 +106,7 @@ $('.link-wrapper').on('click', function(e){
 
   wrapperName = e.currentTarget.className
   wrapperName = wrapperName.split(' ')
-  var strNum = wrapperName[1].substr(-1)
+  var strNum = wrapperName[1].match(/\d+/)[0]
 
   $('#sub-holder'+strNum+'')
   if ($('#sub-holder'+strNum+'').hasClass('sub-open')) {        
@@ -115,9 +114,11 @@ $('.link-wrapper').on('click', function(e){
       $('#sub-holder'+strNum+'').removeClass('sub-open');
 
   } else {
-    $('#sub-holder').removeClass (function (index, className) {
-      return (className.match (/(^|\s)color-\S+/g) || []).join(' ');
-  });
+    for(var i = 1; i < 16; i++) {
+      if($('#sub-holder'+i+'').hasClass('sub-open')){
+        $('#sub-holder'+i+'').removeClass('sub-open')
+      }
+    }    
     $('#sub-holder'+strNum+'').addClass('sub-open');
     
   }
