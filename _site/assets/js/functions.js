@@ -71,12 +71,12 @@ $(document).ready(function() {
 
          var active1 = function(){
           $('.frame-text').removeClass('inactive1').addClass('active1');
-          $('.frame-image').removeClass('inactive1').addClass('active1');          
+          $('.frame-image').removeClass('inactive1').addClass('active1');
         };
 
         var inactive1 = function(){
             $('.frame-text').removeClass('active1').addClass('inactive1');
-            $('.frame-image').removeClass('active1').addClass('inactive1');          
+            $('.frame-image').removeClass('active1').addClass('inactive1');
         };
 
           $('.frame-text').mouseenter(active1)
@@ -98,29 +98,43 @@ $(document).ready(function() {
   // });
 
 
+  // $('.link-wrapper').on('click', function(e){
+  //     wrapperName = e.currentTarget.className
+
+  //     console.log($(wrapperName.toString() +' a').className != 'sub-open')
+  //     if ($(wrapperName.toString() +' a').className != 'sub-open') {
+  //       $(wrapperName.toString() +' a').addClass('sub-open')
+  //       $('#sub-holder1').addClass('sub-open');
+  //     } else {
+  //       $(wrapperName.toString() +' a').removeClass('sub-open');
+  //       $('#sub-holder1').removeClass('sub-open');
+  //     }
+  // })
 
 
 });
 
+
+
 $('.link-wrapper').on('click', function(e){      
-
-  wrapperName = e.currentTarget.className
-  wrapperName = wrapperName.split(' ')
-  var strNum = wrapperName[1].match(/\d+/)[0]
-
-  $('#sub-holder'+strNum+'')
-  if ($('#sub-holder'+strNum+'').hasClass('sub-open')) {        
-
-      $('#sub-holder'+strNum+'').removeClass('sub-open');
-
-  } else {
-    for(var i = 1; i < 16; i++) {
-      if($('#sub-holder'+i+'').hasClass('sub-open')){
-        $('#sub-holder'+i+'').removeClass('sub-open')
-      }
-    }    
-    $('#sub-holder'+strNum+'').addClass('sub-open');
-    
-  }
   
-})
+    wrapperName = e.currentTarget.className
+    wrapperName = wrapperName.split(' ')
+    var strNum = wrapperName[1].match(/\d+/)
+  
+    $('#sub-holder'+strNum+'')
+    if ($('#sub-holder'+strNum+'').hasClass('sub-open')) {        
+  
+        $('#sub-holder'+strNum+'').removeClass('sub-open');
+  
+    } else {
+      for(var i = 1; i < 16; i++) {
+        if($('#sub-holder'+i+'').hasClass('sub-open')){
+          $('#sub-holder'+i+'').removeClass('sub-open')
+        }
+      }    
+      $('#sub-holder'+strNum+'').addClass('sub-open');
+      
+    }
+    
+  })

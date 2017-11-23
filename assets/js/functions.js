@@ -71,12 +71,12 @@ $(document).ready(function() {
 
          var active1 = function(){
           $('.frame-text').removeClass('inactive1').addClass('active1');
-          $('.frame-image').removeClass('inactive1').addClass('active1');          
+          $('.frame-image').removeClass('inactive1').addClass('active1');
         };
 
         var inactive1 = function(){
             $('.frame-text').removeClass('active1').addClass('inactive1');
-            $('.frame-image').removeClass('active1').addClass('inactive1');          
+            $('.frame-image').removeClass('active1').addClass('inactive1');
         };
 
           $('.frame-text').mouseenter(active1)
@@ -98,9 +98,9 @@ $(document).ready(function() {
   });
 
 
-  // $('.link-wrapper').on('click', function(e){      
+  // $('.link-wrapper').on('click', function(e){
   //     wrapperName = e.currentTarget.className
-      
+
   //     console.log($(wrapperName.toString() +' a').className != 'sub-open')
   //     if ($(wrapperName.toString() +' a').className != 'sub-open') {
   //       $(wrapperName.toString() +' a').addClass('sub-open')
