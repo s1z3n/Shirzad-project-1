@@ -579,7 +579,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: transparent; }
+        background-color: rgba(0, 0, 0, 0); }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1088,7 +1088,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: transparent; }
+        background-color: rgba(0, 0, 0, 0); }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
