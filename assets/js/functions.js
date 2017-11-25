@@ -86,30 +86,41 @@ $(document).ready(function() {
     });
 
 
-  $('.sub-btn1').click(function(e){
-      console.log(e.currentTarget.className)
-      $('#sub-holder1').addClass('sub-open');
-      // return false
-    });
+  // $('.sub-btn1').click(function(e){
+  //     console.log(e.currentTarget.className)
+  //     $('#sub-holder1').addClass('sub-open');
+  //     // return false
+  //   });
 
-  $('.sub-btn2,.sub-btn3').click(function(e){
-    console.log(e.currentTarget.className)
-    $('#sub-holder1').removeClass('sub-open');
-  });
+  // $('.sub-btn2,.sub-btn3').click(function(e){
+  //   console.log(e.currentTarget.className)
+  //   $('#sub-holder1').removeClass('sub-open');
+  // });
 
 
-  // $('.link-wrapper').on('click', function(e){
-  //     wrapperName = e.currentTarget.className
 
-  //     console.log($(wrapperName.toString() +' a').className != 'sub-open')
-  //     if ($(wrapperName.toString() +' a').className != 'sub-open') {
-  //       $(wrapperName.toString() +' a').addClass('sub-open')
-  //       $('#sub-holder1').addClass('sub-open');
-  //     } else {
-  //       $(wrapperName.toString() +' a').removeClass('sub-open');
-  //       $('#sub-holder1').removeClass('sub-open');
-  //     }
-  // })
 
 
 });
+
+
+  $('.link-wrapper').on('click', function(e){
+
+      wrapperName = e.currentTarget.className
+      wrapperName = wrapperName.split(' ')
+      elemNum = wrapperName[1].match(/\d+/)[0]
+      
+      if ($('#sub-holder'+elemNum+'').hasClass('sub-open')) {
+
+          $('#sub-holder'+elemNum+'').removeClass('sub-open');        
+        
+      } else {
+        for( var i = 1; i < 16; i++) {
+          if ($('#sub-holder'+i+'').hasClass('sub-open')) {
+            $('#sub-holder'+i+'').removeClass('sub-open');        
+          }
+        }
+        $('#sub-holder'+elemNum+'').addClass('sub-open')
+        
+      }
+  }) 
