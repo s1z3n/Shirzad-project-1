@@ -32,10 +32,10 @@
 
 
 .round-logo
-  width: 100px
-  height: 100px
+  width: 150px
+  height: 150px
   background-color: pink
-  border-radius: 100px
+  // border-radius: 150px
   margin: 20px
   background-size: contain
   background-repeat: no-repeat
@@ -44,10 +44,60 @@
   text-align: center
   height: 40px
   overflow: hidden
-.sub-logo1, .sub-logo2, .sub-logo3, .sub-logo4,
-.sub-logo5, .sub-logo6, .sub-logo7, .sub-logo8,
-.sub-logo9, .sub-logo10, .sub-logo11, .sub-logo12,
-.sub-logo13, .sub-logo14, .sub-logo15,
+.sub-logo1
+  background: url(../images/sub-arya.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo2
+  background: url(../images/sub-bakhtar.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo3
+  background: url(../images/sub-zigorat.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo4
+  background: url(../images/sub-karad.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo5
+  background: url(../images/sub-shade.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo6
+  background: url(../images/sub-club.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo7
+  background: url(../images/sub-logo.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo8
+  background: url(../images/sub-kimiya.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo9
+  background: url(../images/sub-it.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo10
+  background: url(../images/sub-varna.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo11
+  background: url(../images/sub-ofogh.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo12
+  background: url(../images/sub-negin.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+
+.sub-logo13
+  background: url(../images/sub-bank.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+.sub-logo14, .sub-logo15,
   background: url(../images/sub-logo.png) center center
   background-size: contain
   background-repeat: no-repeat
@@ -114,11 +164,38 @@
 // about semega page  // board members section
 
 .board-members
-  .link-wrapper
-    .board-img-1, .board-img-2,  .board-img-3, .board-img-4, .board-img-5,  .board-img-6, .board-img-7, .board-img-8,  .board-img-9, .board-img-10
-      background: url(../images/ceo-img.jpg) center center
-      background-size: contain
-      background-repeat: no-repeat
+.link-wrapper
+.board-img-1, .member1
+  background: url(../images/board-jahangiri.jpg) center center
+  background-size: cover
+.board-img-2, .member2
+  background: url(../images/board-hashemi.jpg) center center
+  background-size: cover
+.board-img-3, .member3
+  background: url(../images/ceo-img.jpg) center center
+  background-size: cover
+.board-img-4, .member4
+  background: url(../images/board-samimi.jpg) center center
+  background-size: cover
+.board-img-5, .member5
+  background: url(../images/board-vazirzade.png) center center
+  background-size: cover
+.board-img-6, .member6
+  // background: url(../images/ceo-img.jpg) center center
+  // background-size: cover
+.board-img-7, .member7
+  background: url(../images/board-edraki.png) center center
+  background-size: cover
+.board-img-8, .member8
+  background: url(../images/ceo-img.jpg) center center
+  background-size: cover
+.board-img-9, .member9
+  background: url(../images/ceo-img.jpg) center center
+  background-size: cover
+.board-img-10, .member10
+  background: url(../images/ceo-img.jpg) center center
+  background-size: cover
+
 
 
 .board-box1, .board-box2, .board-box4, .board-box5, .board-box7, .board-box8, .board-box10
@@ -144,6 +221,36 @@
     margin-bottom: -36px
     margin-top: auto
 
+// board members details
+.no-padding
+  padding: 0
+  justify-content: center
+.board-col1
+  width: 40%
+  display: flex
+  .board-img
+    height: 350px
+    width: 100%
+    background-color: skyblue
+    margin: 0
+    padding: 0
+  // .member1, .member2, .member3
+  //   background: url(../images/member1.jpg) center center
+  //   background-size: cover
+
+.board-col2
+  padding: 50px
+  width: 60%
+  display: flex
+  justify-content: space-between
+  color: #fff
+  p
+    margin-bottom: 10px
+  .item-p1
+    margin-left: 30px
+    width: 300px
+  .item-p2
+    width: 300px
 
 
 // investment page // ongoing projects
@@ -165,7 +272,7 @@
     .round-img
       width: 160px
       height: 160px
-      background-color: pink
+      background-color: #fff
       border-radius: 100px
       margin: 20px
       font-size: 20px
@@ -296,31 +403,7 @@
 .project-col2  p
   font-size: 18px
 
-// board members details
-.no-padding
-  padding: 0
-  justify-content: center
-.board-col1
-  width: 40%
-  display: flex
-  .board-img
-    height: 350px
-    width: 100%
-    background-color: skyblue
-    margin: 0
-    padding: 0
-  .member1, .member2, .member3
-    background: url(../images/member1.jpg) center center
-    background-size: cover
 
-.board-col2
-  padding: 50px
-  width: 50%
-  display: flex
-  justify-content: space-around
-  color: #fff
-  p
-    margin-bottom: 10px
 
 @media (max-width: 840px)
   .s-wrapper

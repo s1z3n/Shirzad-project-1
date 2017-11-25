@@ -364,24 +364,28 @@ section.home-page {
 .news-1 p {
   width: 180px;
   margin-top: 20px;
-  font-size: 15px; }
+  font-size: 20px;
+  text-align: center; }
 
 .news-below {
   width: 210px;
   height: 80px;
   overflow: hidden;
   justify-content: center;
-  font-size: 14px; }
+  font-size: 16px;
+  padding-top: 8px;
+  line-height: 20px; }
 
 .read-more {
   border-top: 1px solid #4FADDA;
   border-bottom: 1px solid #4FADDA;
   width: 210px;
-  height: 32px;
+  height: 40px;
   margin-top: 8px;
-  padding-bottom: 4px; }
+  padding-bottom: 4px;
+  padding-top: 6px; }
   .read-more a {
-    font-size: 14px; }
+    font-size: 16px; }
 
 .wrapper {
   margin: 40px 0px;
@@ -449,77 +453,6 @@ section.home-page {
     margin: 0px; }
     .frame p {
       padding: 20px; } }
-::-webkit-scrollbar {
-  width: 1px;
-  height: 1px; }
-
-::-webkit-scrollbar-button {
-  width: 1px;
-  height: 1px; }
-
-.h-container {
-  position: relative;
-  background-color: #f4f2ed;
-  z-index: 0; }
-
-div {
-  box-sizing: border-box; }
-
-.horizontal-scroll-wrapper {
-  position: absolute;
-  display: block;
-  top: 140px;
-  left: 0;
-  width: calc(# $finalHeight     + # $scrollBarHeight    );
-  max-height: 2000px;
-  margin: 0;
-  max-width: 500px;
-  padding-top: 1px;
-  background: #abc;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transform: rotate(-90deg) translateY(-400px);
-  transform-origin: right top; }
-  .horizontal-scroll-wrapper > div {
-    display: block;
-    padding: 5px;
-    background: #cab;
-    transform: rotate(90deg);
-    transform-origin: right top; }
-
-.squares {
-  padding: 400px 0 0 0; }
-  .squares > div {
-    width: 400px;
-    height: 400px;
-    margin: 0px 0; }
-  .squares .item-null {
-    background: url(../images/timeline-null.jpg) center center;
-    background-size: contain;
-    width: 400px;
-    height: 400px;
-    margin: 0px 0;
-    background-repeat: no-repeat; }
-  .squares .item-2 {
-    background: url(../images/timeline-1389.jpg) center center;
-    background-size: contain;
-    width: 400px;
-    height: 400px;
-    margin: 0px 0;
-    background-repeat: no-repeat; }
-  .squares .item-3 {
-    background: url(../images/timeline-1388.jpg) center center;
-    background-size: contain;
-    width: 400px;
-    height: 400px;
-    margin: 0px 0;
-    background-repeat: no-repeat; }
-  .squares .item-last {
-    width: 400px;
-    height: 400px;
-    margin: 0px 0;
-    background-color: #f4f2ed; }
-
 .light-bg {
   background-color: #F2EFEA; }
 
@@ -645,7 +578,7 @@ div {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1103,7 +1036,7 @@ div {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
@@ -1229,6 +1162,112 @@ div {
     margin: 0px; }
     .frame p {
       padding: 20px; } }
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px; }
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px; }
+
+.h-container {
+  position: relative;
+  background-color: #f4f2ed;
+  z-index: 0; }
+
+div {
+  box-sizing: border-box; }
+
+.horizontal-scroll-wrapper {
+  position: absolute;
+  display: block;
+  top: 140px;
+  left: 0;
+  width: calc(# $finalHeight     + # $scrollBarHeight    );
+  max-height: 2000px;
+  margin: 0;
+  max-width: 500px;
+  padding-top: 1px;
+  background: #abc;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-400px);
+  transform-origin: right top; }
+  .horizontal-scroll-wrapper > div {
+    display: block;
+    padding: 5px;
+    background: #cab;
+    transform: rotate(90deg);
+    transform-origin: right top; }
+
+.squares {
+  padding: 400px 0 0 0; }
+  .squares > div {
+    width: 400px;
+    height: 400px;
+    margin: 0px 0; }
+  .squares .item-null {
+    background: url(../images/timeline-null.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-2 {
+    background: url(../images/h-scroll7.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-3 {
+    background: url(../images/h-scroll6.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-4 {
+    background: url(../images/h-scroll5.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-5 {
+    background: url(../images/h-scroll4.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-6 {
+    background: url(../images/h-scroll3.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-7 {
+    background: url(../images/h-scroll2.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-8 {
+    background: url(../images/h-scroll1.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-repeat: no-repeat; }
+  .squares .item-last {
+    width: 400px;
+    height: 400px;
+    margin: 0px 0;
+    background-color: #f4f2ed; }
+
 .accordionWrapper {
   background-color: #4FADDA;
   height: 500px;
@@ -1250,6 +1289,31 @@ div {
 
 .accordion-1 {
   background: url(../images/accordion1.png) center center;
+  background-repeat: no-repeat;
+  background-color: #4FADDA; }
+
+.accordion-2 {
+  background: url(../images/accordion2.png) center center;
+  background-repeat: no-repeat;
+  background-color: #4FADDA; }
+
+.accordion-3 {
+  background: url(../images/accordion3.png) center center;
+  background-repeat: no-repeat;
+  background-color: #4FADDA; }
+
+.accordion-4 {
+  background: url(../images/accordion4.png) center center;
+  background-repeat: no-repeat;
+  background-color: #4FADDA; }
+
+.accordion-5 {
+  background: url(../images/accordion5.png) center center;
+  background-repeat: no-repeat;
+  background-color: #4FADDA; }
+
+.accordion-6 {
+  background: url(../images/accordion6.png) center center;
   background-repeat: no-repeat;
   background-color: #4FADDA; }
 
@@ -1295,7 +1359,7 @@ div {
 
 .open .accordionItemHeading {
   background-color: #D1B645;
-  width: 40px; }
+  min-width: 40px; }
 
 .image-place-holder {
   margin-top: 16px;
@@ -1411,10 +1475,9 @@ div {
   grid-auto-rows: minmax(100px, auto); }
 
 .round-logo {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: pink;
-  border-radius: 100px;
   margin: 20px;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -1425,10 +1488,72 @@ div {
   height: 40px;
   overflow: hidden; }
 
-.sub-logo1, .sub-logo2, .sub-logo3, .sub-logo4,
-.sub-logo5, .sub-logo6, .sub-logo7, .sub-logo8,
-.sub-logo9, .sub-logo10, .sub-logo11, .sub-logo12,
-.sub-logo13, .sub-logo14, .sub-logo15 {
+.sub-logo1 {
+  background: url(../images/sub-arya.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo2 {
+  background: url(../images/sub-bakhtar.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo3 {
+  background: url(../images/sub-zigorat.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo4 {
+  background: url(../images/sub-karad.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo5 {
+  background: url(../images/sub-shade.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo6 {
+  background: url(../images/sub-club.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo7 {
+  background: url(../images/sub-logo.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo8 {
+  background: url(../images/sub-kimiya.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo9 {
+  background: url(../images/sub-it.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo10 {
+  background: url(../images/sub-varna.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo11 {
+  background: url(../images/sub-ofogh.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo12 {
+  background: url(../images/sub-negin.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo13 {
+  background: url(../images/sub-bank.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo14, .sub-logo15 {
   background: url(../images/sub-logo.png) center center;
   background-size: contain;
   background-repeat: no-repeat; }
@@ -1487,10 +1612,41 @@ div {
 .sub-col2 {
   width: 40%; }
 
-.board-members .link-wrapper .board-img-1, .board-members .link-wrapper .board-img-2, .board-members .link-wrapper .board-img-3, .board-members .link-wrapper .board-img-4, .board-members .link-wrapper .board-img-5, .board-members .link-wrapper .board-img-6, .board-members .link-wrapper .board-img-7, .board-members .link-wrapper .board-img-8, .board-members .link-wrapper .board-img-9, .board-members .link-wrapper .board-img-10 {
+.board-img-1, .member1 {
+  background: url(../images/board-jahangiri.jpg) center center;
+  background-size: cover; }
+
+.board-img-2, .member2 {
+  background: url(../images/board-hashemi.jpg) center center;
+  background-size: cover; }
+
+.board-img-3, .member3 {
   background: url(../images/ceo-img.jpg) center center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background-size: cover; }
+
+.board-img-4, .member4 {
+  background: url(../images/board-samimi.jpg) center center;
+  background-size: cover; }
+
+.board-img-5, .member5 {
+  background: url(../images/board-vazirzade.png) center center;
+  background-size: cover; }
+
+.board-img-7, .member7 {
+  background: url(../images/board-edraki.png) center center;
+  background-size: cover; }
+
+.board-img-8, .member8 {
+  background: url(../images/ceo-img.jpg) center center;
+  background-size: cover; }
+
+.board-img-9, .member9 {
+  background: url(../images/ceo-img.jpg) center center;
+  background-size: cover; }
+
+.board-img-10, .member10 {
+  background: url(../images/ceo-img.jpg) center center;
+  background-size: cover; }
 
 .board-box1, .board-box2, .board-box4, .board-box5, .board-box7, .board-box8, .board-box10 {
   border-left: 1px solid #D1B645; }
@@ -1515,6 +1671,34 @@ div {
   margin-bottom: -36px;
   margin-top: auto; }
 
+.no-padding {
+  padding: 0;
+  justify-content: center; }
+
+.board-col1 {
+  width: 40%;
+  display: flex; }
+  .board-col1 .board-img {
+    height: 350px;
+    width: 100%;
+    background-color: skyblue;
+    margin: 0;
+    padding: 0; }
+
+.board-col2 {
+  padding: 50px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff; }
+  .board-col2 p {
+    margin-bottom: 10px; }
+  .board-col2 .item-p1 {
+    margin-left: 30px;
+    width: 300px; }
+  .board-col2 .item-p2 {
+    width: 300px; }
+
 .s-wrapper {
   width: 100%;
   margin: auto;
@@ -1528,7 +1712,7 @@ div {
     .s-wrapper .link-wrapper .round-img {
       width: 160px;
       height: 160px;
-      background-color: pink;
+      background-color: #fff;
       border-radius: 100px;
       margin: 20px;
       font-size: 20px;
@@ -1651,32 +1835,6 @@ div {
 
 .project-col2 p {
   font-size: 18px; }
-
-.no-padding {
-  padding: 0;
-  justify-content: center; }
-
-.board-col1 {
-  width: 40%;
-  display: flex; }
-  .board-col1 .board-img {
-    height: 350px;
-    width: 100%;
-    background-color: skyblue;
-    margin: 0;
-    padding: 0; }
-  .board-col1 .member1, .board-col1 .member2, .board-col1 .member3 {
-    background: url(../images/member1.jpg) center center;
-    background-size: cover; }
-
-.board-col2 {
-  padding: 50px;
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  color: #fff; }
-  .board-col2 p {
-    margin-bottom: 10px; }
 
 @media (max-width: 840px) {
   .s-wrapper {
