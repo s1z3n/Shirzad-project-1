@@ -44,8 +44,9 @@ h5 {
 
 p {
   margin: 0 0 25px 0;
-  font-size: 20px;
-  text-align: justify; }
+  font-size: 18px;
+  text-align: justify;
+  line-height: 22px; }
 
 em {
   font-style: italic; }
@@ -713,12 +714,11 @@ section.home-page {
     line-height: 28px; }
   .s4-container ul, .strategy-s1-container ul, .strategy-s2-container ul {
     padding: 0px 60px;
-    list-style-type: disc; }
+    list-style-type: disc;
+    font-size: 22px; }
     .s4-container ul li, .strategy-s1-container ul li, .strategy-s2-container ul li {
       list-style-type: disc;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 38px; }
+      font-weight: bold; }
       .s4-container ul li p, .strategy-s1-container ul li p, .strategy-s2-container ul li p {
         padding: 0px;
         font-weight: 400; }
@@ -758,7 +758,7 @@ section.home-page {
     height: 160px;
     padding-top: 40px; }
   .s4-container .points li, .strategy-s1-container .points li, .strategy-s2-container .points li {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
     font-weight: normal;
     text-align: justify;
@@ -936,6 +936,58 @@ section.home-page {
   align-items: center;
   margin-bottom: 20px; }
 
+.media-1 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.media-2 {
+  background: url(../images/news2.jpg) center center;
+  background-size: cover; }
+
+.media-3 {
+  background: url(../images/news3.jpg) center center;
+  background-size: cover; }
+
+.media-4 {
+  background: url(../images/news4.jpg) center center;
+  background-size: cover; }
+
+.article-1 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.article-2 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.article-3 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.article-4 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.article-5 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.v-news-1 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.v-news-2 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.v-news-3 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
+.v-news-4 {
+  background: url(../images/news1.jpg) center center;
+  background-size: cover; }
+
 .home-s5 .section5-container {
   height: 200px;
   display: flex;
@@ -1066,7 +1118,7 @@ section.home-page {
   .news-archive .archive-btn {
     background-color: #4FADDA;
     text-align: center;
-    padding: 10px 30px 15px;
+    padding: 10px 30px 10px;
     font-size: 15px;
     color: #fff;
     font-weight: bold; }
@@ -1318,19 +1370,13 @@ div {
   background-color: #4FADDA; }
 
 .accordionItemContent {
-  background-color: honeydew;
-  color: #fff; }
+  color: #fff;
+  height: 500px; }
 
 .content-1 {
   background-color: rgba(0, 0, 0, 0.4);
   background: url(../images/takht-jamshid.jpg) center center;
-  height: 500px;
-  background-size: cover;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat; }
+  background-size: cover; }
 
 .overlay {
   width: 100%;
@@ -1344,12 +1390,13 @@ div {
   justify-content: center; }
 
 .accordionContentHeadding {
-  font-size: 24pt; }
+  font-size: 28px; }
 
 .accordionContentHeadding + p {
-  font-size: 15pt;
+  font-size: 18px;
   font-weight: bold;
-  margin-top: 24px; }
+  margin-top: 24px;
+  line-height: 22px; }
 
 .close .accordionItemContent {
   display: none; }
@@ -1391,8 +1438,8 @@ div {
   align-items: center; }
   .center-dots .circle {
     align-items: center;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background-color: #D1B645;
     border-radius: 20px;
     border: 2px solid #4FADDA; }
