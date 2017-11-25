@@ -1,0 +1,122 @@
+// horizantal scroll
+
+
+$finalHeight: 400px
+$finalWidth: 5 * $finalHeight
+$scrollBarHeight: 1px
+
+::-webkit-scrollbar
+  width: $scrollBarHeight
+  height: $scrollBarHeight
+
+
+::-webkit-scrollbar-button
+  width: $scrollBarHeight
+  height: $scrollBarHeight
+
+
+
+.h-container
+  position: relative
+  background-color: #f4f2ed
+  z-index: 0
+
+div
+  box-sizing: border-box
+
+
+.horizontal-scroll-wrapper
+  position: absolute
+  display: block
+  top: 140px
+  left: 0
+  width: calc(# $finalHeight     + # $scrollBarHeight    )
+  max-height: $finalWidth
+  margin: 0
+  max-width: 500px
+  padding-top: $scrollBarHeight
+  background: #abc
+  overflow-y: auto
+  overflow-x: hidden
+  transform: rotate(-90deg) translateY(-$finalHeight)
+  transform-origin: right top
+  & > div
+    display: block
+    padding: 5px
+    background: #cab
+    transform: rotate(90deg)
+    transform-origin: right top
+
+
+
+.squares
+  padding: $finalHeight 0 0 0
+  & > div
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+  .item-null
+    background: url(../images/timeline-null.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-2
+    background: url(../images/h-scroll7.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-3
+    background: url(../images/h-scroll6.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-4
+    background: url(../images/h-scroll5.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-5
+    background: url(../images/h-scroll4.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-6
+    background: url(../images/h-scroll3.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-7
+    background: url(../images/h-scroll2.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+  .item-8
+    background: url(../images/h-scroll1.jpg) center center
+    background-size: contain
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-repeat: no-repeat
+
+  .item-last
+    width: $finalHeight
+    height: $finalHeight
+    margin: 0px 0
+    background-color: #f4f2ed
+
+
+// end of horizantal scroll
