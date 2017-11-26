@@ -305,7 +305,7 @@ section.home-page {
   .secondary-menu .link-wrapper {
     overflow: scroll;
     display: flex;
-    width: 100%;
+    width: 200%;
     margin-right: 40px;
     align-items: center; }
     .secondary-menu .link-wrapper a {
@@ -318,6 +318,8 @@ section.home-page {
         background: url(../images/lable.png) center center;
         background-size: contain;
         background-repeat: no-repeat; }
+  .secondary-menu .media-menu, .secondary-menu .tourism-menu, .secondary-menu .investment-menu, .secondary-menu .strategy-menu {
+    justify-content: center; }
 
 @keyframes moving {
   0% {
