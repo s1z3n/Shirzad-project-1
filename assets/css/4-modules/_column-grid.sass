@@ -111,22 +111,22 @@
 .subsidaries-box5, .subsidaries-box10, .subsidaries-box15,
   border-bottom: 1px solid $accent-color-yellow
 .subsidaries-box1, .subsidaries-box2, .subsidaries-box3, .subsidaries-box4, .subsidaries-box6, .subsidaries-box7, .subsidaries-box8, .subsidaries-box9,
-  .flower-img
-    background: url(../images/flower-logo-lightbg.jpg) center center
-    background-size: contain
-    background-repeat: no-repeat
-    width: 30px
-    height: 30px
-    position: relative
-    top: 0px
-    left: 0px
-    z-index: 1
-    align-self: flex-end
-    margin-left: -36px
-    margin-right: auto
-    margin-bottom: -36px
-    margin-top: auto
-    z-index: 4
+.flower-img-light
+  background: url(../images/flower-logo-lightbg.jpg) center center
+  background-size: contain
+  background-repeat: no-repeat
+  width: 30px
+  height: 30px
+  position: relative
+  top: 0px
+  left: 0px
+  z-index: 1
+  align-self: flex-end
+  margin-left: -36px
+  margin-right: auto
+  margin-bottom: -36px
+  margin-top: auto
+  z-index: 4
 .subsidaries-box11, .subsidaries-box12, .subsidaries-box13, .subsidaries-box14, .subsidaries-box15,
   border-bottom: none
 
@@ -262,16 +262,20 @@
 
 
 
+
   .link-wrapper
     display: flex
     flex-direction: column
     align-items: center
+    align-content: stretch
+    justify-content: space-between
     padding: 20px
+    height: 340px
 
 
     .round-img
-      width: 160px
-      height: 160px
+      min-width: 160px
+      min-height: 160px
       background-color: #fff
       border-radius: 100px
       margin: 20px
@@ -280,9 +284,13 @@
       margin-top: 4px
     h3
       // font-size: 20px
+      text-align: center
+      max-width: 260px
+
     p
       margin-bottom: 15px
       margin-top: 4px
+
     a
       margin: 8px
       padding: 5px 20px 0px
@@ -296,9 +304,45 @@
       .material-icons
         margin-right: 4px
 
-.project-img-1, .project-img-2, .project-img-3, .project-img-4, .project-img-5, .project-img-6, .project-img-7, .project-img-8, .project-img-9,
+.project-img-1
   background: url(../images/img10.jpg) center center
   background-size: cover
+
+.project-img-2
+  background: url(../images/grand-hotel.png) center center
+  background-size: cover
+.project-img-3
+  background: url(../images/kerman-4star.jpg) center center
+  background-size: cover
+.project-img-4
+  background: url(../images/car-park.jpg) center center
+  background-size: cover
+.project-img-5
+  background: url(../images/hotel-sirjan.jpg) center center
+  background-size: cover
+.project-img-6
+  background: url(../images/negin-project.jpg) center center
+  background-size: cover
+
+
+
+.fin-project-img-1
+  background: url(../images/hotel.jpg) center center
+  background-size: cover
+
+.fin-project-img-2
+  background: url(../images/karad-project.jpg) center center
+  background-size: cover
+
+.fin-project-img-3
+  background: url(../images/img10.jpg) center center
+  background-size: cover
+
+
+
+
+
+
 .project-box1, .project-box2, .project-box4, .project-box5, .project-box7, .project-box8
   border-left: 1px solid $accent-color-yellow
 
@@ -342,7 +386,7 @@
   z-index: 4
   margin-top: -1px
 
-.holder1
+.holder1,
   display: flex
 
 
@@ -364,44 +408,70 @@
       background-color: skyblue
       margin-bottom: 20px
 
+
     .project-map
       width: 90%
       height: 50%
       background-color: skyblue
 
 
-  .project-col2
-    display: flex
-    flex-wrap: wrap
-    width: 65%
-    color: #fff
+.on-project1-img
+  background: url(../images/karvansara.jpg) center center
+  background-size: cover
 
-    .item-h1
-      min-width: 100%
-      h3
-        font-weight: bold
-        font-size: 30px
-        background-color: pink
-        background-color: $accent-color-blue
-        padding: 10px 40px
+.on-project2-img
+  background: url(../images/grand-hotel.png) center center
+  background-size: cover
 
-    .item-p1
-      width: 50%
-      padding: 20px
-      margin-top: 20px
-      border-right: 1px dashed #fff
-    .item-p2
-      width: 50%
-      padding: 20px
-      margin-top: 20px
-      border-right: 1px dashed #fff
-      font-size: 24px
+
+.on-project1-map
+  background: url(../images/karvansara-map.jpg) center center
+  background-size: cover
+
+.on-project2-map
+  background: url(../images/map2.jpg) center center
+  background-size: cover
+
+.project-col2
+  display: flex
+  flex-wrap: wrap
+  width: 65%
+  color: #fff
+
+  .item-h1
+    min-width: 100%
+    h3
+      font-weight: bold
+      font-size: 30px
+      background-color: pink
+      background-color: $accent-color-blue
+      padding: 10px 40px
+
+  .item-p1
+    width: 50%
+    padding: 20px
+    margin-top: 20px
+    border-right: 1px dashed #fff
+    ul
+      margin-right: 16px
+      font-size: 18px
+      li
+        list-style: disc
+        line-height: 24px
+
+  .item-p2
+    width: 50%
+    padding: 20px
+    margin-top: 20px
+    border-right: 1px dashed #fff
+    font-size: 24px
 
 .project-col2  h6
   font-size: 20px
   line-height: 34px
 .project-col2  p
   font-size: 18px
+
 
 
 

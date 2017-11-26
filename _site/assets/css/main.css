@@ -579,7 +579,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1088,7 +1088,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
@@ -1612,7 +1612,8 @@ div {
 .subsidaries-box5, .subsidaries-box10, .subsidaries-box15 {
   border-bottom: 1px solid #D1B645; }
 
-.subsidaries-box1 .flower-img, .subsidaries-box2 .flower-img, .subsidaries-box3 .flower-img, .subsidaries-box4 .flower-img, .subsidaries-box6 .flower-img, .subsidaries-box7 .flower-img, .subsidaries-box8 .flower-img, .subsidaries-box9 .flower-img {
+.subsidaries-box1, .subsidaries-box2, .subsidaries-box3, .subsidaries-box4, .subsidaries-box6, .subsidaries-box7, .subsidaries-box8, .subsidaries-box9,
+.flower-img-light {
   background: url(../images/flower-logo-lightbg.jpg) center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1755,16 +1756,22 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px; }
+    align-content: stretch;
+    justify-content: space-between;
+    padding: 20px;
+    height: 340px; }
     .s-wrapper .link-wrapper .round-img {
-      width: 160px;
-      height: 160px;
+      min-width: 160px;
+      min-height: 160px;
       background-color: #fff;
       border-radius: 100px;
       margin: 20px;
       font-size: 20px;
       font-weight: bold;
       margin-top: 4px; }
+    .s-wrapper .link-wrapper h3 {
+      text-align: center;
+      max-width: 260px; }
     .s-wrapper .link-wrapper p {
       margin-bottom: 15px;
       margin-top: 4px; }
@@ -1781,7 +1788,39 @@ div {
       .s-wrapper .link-wrapper a .material-icons {
         margin-right: 4px; }
 
-.project-img-1, .project-img-2, .project-img-3, .project-img-4, .project-img-5, .project-img-6, .project-img-7, .project-img-8, .project-img-9 {
+.project-img-1 {
+  background: url(../images/img10.jpg) center center;
+  background-size: cover; }
+
+.project-img-2 {
+  background: url(../images/grand-hotel.png) center center;
+  background-size: cover; }
+
+.project-img-3 {
+  background: url(../images/kerman-4star.jpg) center center;
+  background-size: cover; }
+
+.project-img-4 {
+  background: url(../images/car-park.jpg) center center;
+  background-size: cover; }
+
+.project-img-5 {
+  background: url(../images/hotel-sirjan.jpg) center center;
+  background-size: cover; }
+
+.project-img-6 {
+  background: url(../images/negin-project.jpg) center center;
+  background-size: cover; }
+
+.fin-project-img-1 {
+  background: url(../images/hotel.jpg) center center;
+  background-size: cover; }
+
+.fin-project-img-2 {
+  background: url(../images/karad-project.jpg) center center;
+  background-size: cover; }
+
+.fin-project-img-3 {
   background: url(../images/img10.jpg) center center;
   background-size: cover; }
 
@@ -1851,30 +1890,53 @@ div {
       width: 90%;
       height: 50%;
       background-color: skyblue; }
-  .holder-wrapper .project-col2 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 65%;
-    color: #fff; }
-    .holder-wrapper .project-col2 .item-h1 {
-      min-width: 100%; }
-      .holder-wrapper .project-col2 .item-h1 h3 {
-        font-weight: bold;
-        font-size: 30px;
-        background-color: pink;
-        background-color: #4FADDA;
-        padding: 10px 40px; }
-    .holder-wrapper .project-col2 .item-p1 {
-      width: 50%;
-      padding: 20px;
-      margin-top: 20px;
-      border-right: 1px dashed #fff; }
-    .holder-wrapper .project-col2 .item-p2 {
-      width: 50%;
-      padding: 20px;
-      margin-top: 20px;
-      border-right: 1px dashed #fff;
-      font-size: 24px; }
+
+.on-project1-img {
+  background: url(../images/karvansara.jpg) center center;
+  background-size: cover; }
+
+.on-project2-img {
+  background: url(../images/grand-hotel.png) center center;
+  background-size: cover; }
+
+.on-project1-map {
+  background: url(../images/karvansara-map.jpg) center center;
+  background-size: cover; }
+
+.on-project2-map {
+  background: url(../images/map2.jpg) center center;
+  background-size: cover; }
+
+.project-col2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 65%;
+  color: #fff; }
+  .project-col2 .item-h1 {
+    min-width: 100%; }
+    .project-col2 .item-h1 h3 {
+      font-weight: bold;
+      font-size: 30px;
+      background-color: pink;
+      background-color: #4FADDA;
+      padding: 10px 40px; }
+  .project-col2 .item-p1 {
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+    border-right: 1px dashed #fff; }
+    .project-col2 .item-p1 ul {
+      margin-right: 16px;
+      font-size: 18px; }
+      .project-col2 .item-p1 ul li {
+        list-style: disc;
+        line-height: 24px; }
+  .project-col2 .item-p2 {
+    width: 50%;
+    padding: 20px;
+    margin-top: 20px;
+    border-right: 1px dashed #fff;
+    font-size: 24px; }
 
 .project-col2 h6 {
   font-size: 20px;
