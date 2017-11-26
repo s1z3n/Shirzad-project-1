@@ -1639,8 +1639,7 @@ div {
 .subsidaries-box5, .subsidaries-box10, .subsidaries-box15 {
   border-bottom: 1px solid #D1B645; }
 
-.subsidaries-box1, .subsidaries-box2, .subsidaries-box3, .subsidaries-box4, .subsidaries-box6, .subsidaries-box7, .subsidaries-box8, .subsidaries-box9,
-.flower-img-light {
+.subsidaries-box1 .flower-img, .subsidaries-box2 .flower-img, .subsidaries-box3 .flower-img, .subsidaries-box4 .flower-img, .subsidaries-box6 .flower-img, .subsidaries-box7 .flower-img, .subsidaries-box8 .flower-img, .subsidaries-box9 .flower-img {
   background: url(../images/flower-logo-lightbg.jpg) center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1872,6 +1871,22 @@ div {
   margin-right: auto;
   margin-bottom: -36px;
   margin-top: auto; }
+.project-box1 .flower-img-light, .project-box2 .flower-img-light {
+  background: url(../images/flower-logo-lightbg.jpg) center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  align-self: flex-end;
+  margin-left: -36px;
+  margin-right: auto;
+  margin-bottom: -36px;
+  margin-top: auto;
+  z-index: 4; }
 
 .pointer-img {
   width: 50px;
