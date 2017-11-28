@@ -314,10 +314,6 @@ section.home-page {
       text-align: center;
       font-size: 20px;
       padding: 16px; }
-      .secondary-menu .link-wrapper a:hover {
-        background: url(../images/lable.png) center center;
-        background-size: contain;
-        background-repeat: no-repeat; }
   .secondary-menu .media-menu, .secondary-menu .tourism-menu, .secondary-menu .investment-menu, .secondary-menu .strategy-menu {
     justify-content: center; }
 
@@ -334,6 +330,11 @@ section.home-page {
   transform: translate(0px, -66px);
   animation: moving 300ms ease-in-out;
   z-index: 200; }
+
+.link-wrapper .active {
+  background: url(../images/lable.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .world-view-wrapper {
   background-color: #F2EFEA;
@@ -460,7 +461,8 @@ section.home-page {
   background-color: #F2EFEA; }
 
 .ceo {
-  background-color: #F2EFEA; }
+  background-color: #F2EFEA;
+  margin-top: 385px; }
   .ceo .ceo-img {
     background: url(../images/ceo.png) center right;
     background-size: contain;
