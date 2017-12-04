@@ -123,6 +123,29 @@ $(document).ready(function() {
       }
   })
 
+  // $('.link-wrapper').on('click', function(e){
+  //
+  //     wrapperName = e.currentTarget.className
+  //     wrapperName = wrapperName.split(' ')
+  //     elemNum = wrapperName[1].match(/\d+/)[0]
+  //
+  //     if ($('#board-holder'+elemNum+'').hasClass('board-open')) {
+  //
+  //         $('#board-holder'+elemNum+'').removeClass('board-open');
+  //
+  //     } else {
+  //       for( var i = 1; i < 16; i++) {
+  //         if ($('#board-holder'+i+'').hasClass('board-open')) {
+  //           $('#board-holder'+i+'').removeClass('board-open');
+  //         }
+  //       }
+  //       $('#board-holder'+elemNum+'').addClass('board-open')
+  //
+  //     }
+  // })
+
+
+
   $(document).ready(function () {
       $(document).on("scroll", onScroll);
 
@@ -163,7 +186,7 @@ $(document).ready(function() {
       });
   }
   $('.main-carousel').slick({
-    centerMode: true,
+    // centerMode: true,
     centerPadding: '40px',
     slidesToShow: 1,
     arrows: false,
@@ -224,19 +247,28 @@ $('.slider-company').slick({
     autoplaySpeed: 2000,
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 1060,
             settings: {
                 arrows: false,
-                slidesToShow: 3
+                slidesToShow: 4
             }
         },
         {
-            breakpoint: 480,
+        breakpoint: 880,
+        settings: {
+            arrows: false,
+            slidesToShow: 3
+        }
+        },
+
+        {
+            breakpoint: 640,
             settings: {
                 arrows: false,
-                slidesToShow: 1
+                slidesToShow: 2
             }
-        }
+        },
+
     ]
 });
 
@@ -276,7 +308,7 @@ $('.slider-company').slick({
         //     }
 
         // })
-    
+
 
     $('.invest-carousel').slick({
       slidesToShow: 1,
