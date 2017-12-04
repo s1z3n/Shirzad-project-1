@@ -1013,13 +1013,12 @@ section.home-page {
     left: 0; }
   .home-s5 .section5-container .logo-wrapper {
     width: 100%;
-    padding: 0px 100px;
+    padding: 0px 60px;
     height: 200px;
     display: flex;
-    align-items: center;
-    overflow: scroll; }
+    align-items: center; }
     .home-s5 .section5-container .logo-wrapper .c-logo {
-      min-width: 160px;
+      min-width: 150px;
       height: 80px;
       margin: 20px;
       opacity: 0.7; }
@@ -1036,6 +1035,20 @@ section.home-page {
       background-size: contain;
       background-repeat: no-repeat; }
 
+@media (max-width: 720px) {
+  .home-s5 .section5-container .logo-wrapper {
+    padding: 0px 40px; }
+    .home-s5 .section5-container .logo-wrapper .c-logo {
+      min-width: 140px;
+      height: 70px;
+      margin: 10px; } }
+@media (max-width: 520px) {
+  .home-s5 .section5-container .logo-wrapper {
+    padding: 0px 20px; }
+    .home-s5 .section5-container .logo-wrapper .c-logo {
+      min-width: 120px;
+      height: 60px;
+      margin: 10px; } }
 .hero2 {
   width: 100%;
   display: flex;
@@ -1774,6 +1787,9 @@ div {
   .board-col2 .item-p2 {
     width: 300px; }
 
+.board-open {
+  display: flex; }
+
 .s-wrapper {
   width: 100%;
   margin: auto;
@@ -1908,9 +1924,6 @@ div {
   display: none;
   z-index: 4;
   margin-top: -1px; }
-
-.holder1 {
-  display: flex; }
 
 .holder-wrapper {
   display: flex;
