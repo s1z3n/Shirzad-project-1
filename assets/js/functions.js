@@ -98,9 +98,6 @@ $(document).ready(function() {
   // });
 
 
-
-
-
 });
 
 
@@ -164,3 +161,118 @@ $(document).ready(function() {
           }
       });
   }
+  $('.main-carousel').slick({
+    centerMode: true,
+    centerPadding: '40px',
+    slidesToShow: 1,
+    arrows: false,
+    rtl: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerPadding: '0px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+  
+$('.slider-project').slick({
+    centerMode: true,
+    centerPadding: '40px',
+    slidesToShow: 1,
+    arrows: false,
+    rtl: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerPadding: '0px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+$('.slider-company').slick({
+    centerPadding: '0',
+    slidesToShow: 5,
+    rtl: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+  
+        // var logoWrapper
+        // logoWrapper = document.getElementsByClassName('logo-wrapper')
+        
+        // var left = 0
+
+        // $('div.arrow.arrow-left').on('click', function(){            
+
+        //     logoWrapper[0].style.position = 'relative'    
+            
+        //     if( left <= 800 && left >= -800) {
+                
+        //         logoWrapper[0].style.right = left + 'px'
+        //         left = left + 100
+        //         console.log(left)
+        //     }
+        //     else {
+        //         left = -900
+        //     }
+            
+        // })
+
+        // $('div.arrow.arrow-right').on('click', function(){
+            
+        //     logoWrapper[0].style.position = 'relative'    
+            
+        //     if( left <= 800 && left >= -800) {
+                
+        //         logoWrapper[0].style.right = -left + 'px'
+        //         left = left + 100
+        //         console.log(left)
+        //     }
+        //     else {
+        //         left = 900
+        //     }
+            
+        // })
+    
