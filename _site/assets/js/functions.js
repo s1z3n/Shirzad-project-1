@@ -276,6 +276,13 @@ $('.slider-company').slick({
         //     }
 
         // })
+    
 
+    $('.invest-carousel').slick({
+      slidesToShow: 1,
+      arrows: true,
+      rtl: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
 
-    $('.investment-1').slick();
+    });
