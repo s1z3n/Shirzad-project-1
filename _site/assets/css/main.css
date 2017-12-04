@@ -182,7 +182,7 @@ section.about-semega {
 section.home-page {
   background: url(../images/home-hero-img.jpg) center center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   display: flex; }
   section.home-page .home-hero-container {
@@ -245,9 +245,6 @@ section.home-page {
     margin-left: 0px;
     display: none;
     margin: 50px 0px;
-    height: 100vh; }
-
-  section.hero {
     height: 100vh; }
 
   .logo {

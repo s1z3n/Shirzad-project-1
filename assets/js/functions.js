@@ -122,17 +122,17 @@ $(document).ready(function() {
 
       }
   })
-   
+
   $('.board-list').on('click', function(e){
-    
+
           wrapperName = e.currentTarget.className
           wrapperName = wrapperName.split(' ')
           elemNum = wrapperName[2].match(/\d+/)[0]
-    
+
           if ($('.holder'+elemNum+'').hasClass('sub-open')) {
-    
+
               $('.holder'+elemNum+'').removeClass('sub-open');
-    
+
           } else {
             for( var i = 1; i < 7; i++) {
               if ($('.holder'+i+'').hasClass('sub-open')) {
@@ -140,7 +140,7 @@ $(document).ready(function() {
               }
             }
             $('.holder'+elemNum+'').addClass('sub-open')
-    
+
           }
       })
 
