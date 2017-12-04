@@ -146,7 +146,7 @@ ul, li {
 .logo {
   width: 250px;
   height: 50px;
-  background: url(../images/semega.png);
+  background: url(../images/semega.png) center center;
   margin: 8px 24px;
   background-size: contain;
   background-repeat: no-repeat;
