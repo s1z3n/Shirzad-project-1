@@ -102,11 +102,11 @@ $(document).ready(function() {
 });
 
 
-  $('.link-wrapper').on('click', function(e){
+  $('.link-list').on('click', function(e){
 
       wrapperName = e.currentTarget.className
       wrapperName = wrapperName.split(' ')
-      elemNum = wrapperName[1].match(/\d+/)[0]
+      elemNum = wrapperName[2].match(/\d+/)[0]
 
       if ($('#sub-holder'+elemNum+'').hasClass('sub-open')) {
 
@@ -122,6 +122,27 @@ $(document).ready(function() {
 
       }
   })
+   
+  $('.board-list').on('click', function(e){
+    
+          wrapperName = e.currentTarget.className
+          wrapperName = wrapperName.split(' ')
+          elemNum = wrapperName[2].match(/\d+/)[0]
+    
+          if ($('.holder'+elemNum+'').hasClass('sub-open')) {
+    
+              $('.holder'+elemNum+'').removeClass('sub-open');
+    
+          } else {
+            for( var i = 1; i < 7; i++) {
+              if ($('.holder'+i+'').hasClass('sub-open')) {
+                $('.holder'+i+'').removeClass('sub-open');
+              }
+            }
+            $('.holder'+elemNum+'').addClass('sub-open')
+    
+          }
+      })
 
   $(document).ready(function () {
       $(document).on("scroll", onScroll);
