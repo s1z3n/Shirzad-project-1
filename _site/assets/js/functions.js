@@ -129,17 +129,17 @@ $(document).ready(function() {
           wrapperName = wrapperName.split(' ')
           elemNum = wrapperName[2].match(/\d+/)[0]
 
-          if ($('.holder'+elemNum+'').hasClass('sub-open')) {
+          if ($('.holder'+elemNum+'').hasClass('board-open')) {
 
-              $('.holder'+elemNum+'').removeClass('sub-open');
+              $('.holder'+elemNum+'').removeClass('board-open');
 
           } else {
             for( var i = 1; i < 7; i++) {
-              if ($('.holder'+i+'').hasClass('sub-open')) {
-                $('.holder'+i+'').removeClass('sub-open');
+              if ($('.holder'+i+'').hasClass('board-open')) {
+                $('.holder'+i+'').removeClass('board-open');
               }
             }
-            $('.holder'+elemNum+'').addClass('sub-open')
+            $('.holder'+elemNum+'').addClass('board-open')
 
           }
       })
