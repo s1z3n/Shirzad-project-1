@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 
+
   var accItem = document.getElementsByClassName('accordionItem');
     var accHD = document.getElementsByClassName('accordionItemHeading');
     for (i = 0; i < accHD.length; i++) {
@@ -187,7 +188,7 @@ $(document).ready(function() {
         }
     ]
 });
-  
+
 $('.slider-project').slick({
     centerMode: true,
     centerPadding: '40px',
@@ -238,18 +239,18 @@ $('.slider-company').slick({
         }
     ]
 });
-  
+
         // var logoWrapper
         // logoWrapper = document.getElementsByClassName('logo-wrapper')
-        
+
         // var left = 0
 
-        // $('div.arrow.arrow-left').on('click', function(){            
+        // $('div.arrow.arrow-left').on('click', function(){
 
-        //     logoWrapper[0].style.position = 'relative'    
-            
+        //     logoWrapper[0].style.position = 'relative'
+
         //     if( left <= 800 && left >= -800) {
-                
+
         //         logoWrapper[0].style.right = left + 'px'
         //         left = left + 100
         //         console.log(left)
@@ -257,15 +258,15 @@ $('.slider-company').slick({
         //     else {
         //         left = -900
         //     }
-            
+
         // })
 
         // $('div.arrow.arrow-right').on('click', function(){
-            
-        //     logoWrapper[0].style.position = 'relative'    
-            
+
+        //     logoWrapper[0].style.position = 'relative'
+
         //     if( left <= 800 && left >= -800) {
-                
+
         //         logoWrapper[0].style.right = -left + 'px'
         //         left = left + 100
         //         console.log(left)
@@ -273,6 +274,8 @@ $('.slider-company').slick({
         //     else {
         //         left = 900
         //     }
-            
+
         // })
-    
+
+
+    $('.investment-1').slick();

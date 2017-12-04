@@ -182,7 +182,7 @@ section.about-semega {
 section.home-page {
   background: url(../images/home-hero-img.jpg) center center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 700px;
   background-size: cover;
   display: flex; }
   section.home-page .home-hero-container {
@@ -583,7 +583,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1092,7 +1092,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
