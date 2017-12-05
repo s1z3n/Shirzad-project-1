@@ -1899,19 +1899,6 @@ div {
   margin-top: auto;
   z-index: 4; }
 
-.pointer-img {
-  width: 50px;
-  height: 50px;
-  background-color: skyblue;
-  margin-bottom: -26px;
-  background: url(../images/logo-pointer.png) center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: none; }
-
-.pointer-img1 {
-  display: block; }
-
 .placeholder {
   background-color: #777;
   grid-column: 1/4;
@@ -1920,6 +1907,11 @@ div {
   margin-top: -1px; }
 
 .board-open {
+  display: flex;
+  position: relative;
+  max-height: 100%; }
+
+.project-open {
   display: flex;
   position: relative;
   max-height: 100%; }

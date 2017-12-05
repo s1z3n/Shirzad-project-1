@@ -113,7 +113,8 @@ $(document).ready(function() {
           $('#sub-holder'+elemNum+'').removeClass('sub-open');
 
       } else {
-        for( var i = 1; i < 16; i++) {
+        var neededLength = document.getElementsByClassName('link-list')
+        for( var i = 1; i < neededLength.length; i++) {
           if ($('#sub-holder'+i+'').hasClass('sub-open')) {
             $('#sub-holder'+i+'').removeClass('sub-open');
           }
@@ -131,10 +132,11 @@ $(document).ready(function() {
 
           if ($('#board-holder'+elemNum+'').hasClass('board-open')) {
 
-              $('#board-holder'+elemNum+'').removeClass('board-open');
+              $('#board-holder'+elemNum+'').removeClass('board-open, pointer-img');
 
           } else {
-            for( var i = 1; i < 7; i++) {
+            var neededLength = document.getElementsByClassName('board-list')
+            for( var i = 1; i < neededLength.length; i++) {
               if ($('#board-holder'+i+'').hasClass('board-open')) {
                 $('#board-holder'+i+'').removeClass('board-open');
               }
@@ -143,27 +145,27 @@ $(document).ready(function() {
 
           }
       })
+      $('.project-list').on('click', function(e){
 
-  // $('.link-wrapper').on('click', function(e){
-  //
-  //     wrapperName = e.currentTarget.className
-  //     wrapperName = wrapperName.split(' ')
-  //     elemNum = wrapperName[1].match(/\d+/)[0]
-  //
-  //     if ($('#board-holder'+elemNum+'').hasClass('board-open')) {
-  //
-  //         $('#board-holder'+elemNum+'').removeClass('board-open');
-  //
-  //     } else {
-  //       for( var i = 1; i < 16; i++) {
-  //         if ($('#board-holder'+i+'').hasClass('board-open')) {
-  //           $('#board-holder'+i+'').removeClass('board-open');
-  //         }
-  //       }
-  //       $('#board-holder'+elemNum+'').addClass('board-open')
-  //
-  //     }
-  // })
+              wrapperName = e.currentTarget.className
+              wrapperName = wrapperName.split(' ')
+              elemNum = wrapperName[2].match(/\d+/)[0]
+
+              if ($('#project-holder'+elemNum+'').hasClass('project-open')) {
+
+                  $('#project-holder'+elemNum+'').removeClass('project-open');
+
+              } else {
+                var neededLength = document.getElementsByClassName('project-list')
+                for( var i = 1; i < neededLength.length; i++) {
+                  if ($('#project-holder'+i+'').hasClass('project-open')) {
+                    $('#project-holder'+i+'').removeClass('project-open');
+                  }
+                }
+                $('#project-holder'+elemNum+'').addClass('project-open')
+
+              }
+          })
 
 
 
