@@ -210,57 +210,57 @@ $(document).ready(function() {
   }
   $('.main-carousel').slick({
     // centerMode: true,
-    centerPadding: '40px',
+    // centerPadding: '40px',
     slidesToShow: 1,
     arrows: false,
     rtl: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerPadding: '0px',
-                slidesToShow: 1
-            }
-        }
-    ]
+    // responsive: [
+    //     {
+    //         breakpoint: 768,
+    //         settings: {
+    //
+    //             slidesToShow: 2
+    //         }
+    //     },
+    //     {
+    //         breakpoint: 480,
+    //         settings: {
+    //             arrows: false,
+    //             centerPadding: '0px',
+    //             slidesToShow: 1
+    //         }
+    //     }
+    // ]
 });
 
-$('.slider-project').slick({
-    centerMode: true,
-    centerPadding: '40px',
-    slidesToShow: 1,
-    arrows: false,
-    rtl: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerPadding: '0px',
-                slidesToShow: 1
-            }
-        }
-    ]
-});
+// $('.slider-project').slick({
+//     centerMode: true,
+//     centerPadding: '40px',
+//     slidesToShow: 1,
+//     arrows: false,
+//     rtl: true,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     responsive: [
+//         {
+//             breakpoint: 768,
+//             settings: {
+//
+//                 slidesToShow: 2
+//             }
+//         },
+//         {
+//             breakpoint: 480,
+//             settings: {
+//                 arrows: false,
+//                 centerPadding: '0px',
+//                 slidesToShow: 1
+//             }
+//         }
+//     ]
+// });
 
 $('.slider-company').slick({
     centerPadding: '0',

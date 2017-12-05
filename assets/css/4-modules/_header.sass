@@ -114,32 +114,44 @@ section.media-hero
 section.about-semega
   background: url(../images/about-banner.jpg) center center
   background-repeat: no-repeat
+  background-size: cover
 
 section.home-page
   background: url(../images/home-hero-img.jpg) center center
   background-repeat: no-repeat
-  height: 90vh
+  height: 95vh
   background-size: cover
   display: flex
+
   .home-hero-container
-    background: url(../images/home-frame-hero.png) center center
-    background-repeat: no-repeat
-    height: 500px
-    width: 700px
-    background-size: contain
-    margin-left: 100px
+    display: flex
+    width: 90%
+    justify-content: center
+    align-items: center
+    margin-top: 100px
+    margin-left: auto
     margin-right: auto
+    .h-hero-frame
+      background: url(../images/home-frame-hero.png) center center
+      background-repeat: no-repeat
+      height: 600px
+      width: 1000px
+
+      background-size: contain
+      // margin-left: 100px
+      // margin-right: auto
     .hero-text
       background-color: rgba(0, 0, 0, 0.6)
-      width: 450px
-      height: 450px
+      width: 500px
+      height: 500px
       display: flex
       flex-direction: column
       justify-content: space-around
       align-items: flex-end
       padding: 70px
-      margin-top: 150px
-      margin-right: -350px
+      margin-top: 250px
+      margin-left: -150px
+      z-index: 10
       h1
         color: #fff
         text-align: left
