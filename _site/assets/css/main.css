@@ -1784,11 +1784,6 @@ div {
   .board-col2 .item-p2 {
     width: 300px; }
 
-.board-open {
-  display: flex;
-  position: relative;
-  max-height: 100%; }
-
 .s-wrapper {
   width: 100%;
   margin: auto;
@@ -1923,6 +1918,11 @@ div {
   display: none;
   z-index: 4;
   margin-top: -1px; }
+
+.board-open {
+  display: flex;
+  position: relative;
+  max-height: 100%; }
 
 .holder-wrapper {
   display: flex;

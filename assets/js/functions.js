@@ -129,17 +129,17 @@ $(document).ready(function() {
           wrapperName = wrapperName.split(' ')
           elemNum = wrapperName[2].match(/\d+/)[0]
 
-          if ($('.holder'+elemNum+'').hasClass('board-open')) {
+          if ($('#board-holder'+elemNum+'').hasClass('board-open')) {
 
-              $('.holder'+elemNum+'').removeClass('board-open');
+              $('#board-holder'+elemNum+'').removeClass('board-open');
 
           } else {
             for( var i = 1; i < 7; i++) {
-              if ($('.holder'+i+'').hasClass('board-open')) {
-                $('.holder'+i+'').removeClass('board-open');
+              if ($('#board-holder'+i+'').hasClass('board-open')) {
+                $('#board-holder'+i+'').removeClass('board-open');
               }
             }
-            $('.holder'+elemNum+'').addClass('board-open')
+            $('#board-holder'+elemNum+'').addClass('board-open')
 
           }
       })
