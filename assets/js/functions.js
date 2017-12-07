@@ -235,32 +235,25 @@ $(document).ready(function() {
     // ]
 });
 
-// $('.slider-project').slick({
-//     centerMode: true,
-//     centerPadding: '40px',
-//     slidesToShow: 1,
-//     arrows: false,
-//     rtl: true,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     responsive: [
-//         {
-//             breakpoint: 768,
-//             settings: {
-//
-//                 slidesToShow: 2
-//             }
-//         },
-//         {
-//             breakpoint: 480,
-//             settings: {
-//                 arrows: false,
-//                 centerPadding: '0px',
-//                 slidesToShow: 1
-//             }
-//         }
-//     ]
-// });
+$('.slider-projects').slick({
+    slidesToShow: 1.1,
+    arrows: false,
+    focusOnSelect: true,
+    rtl: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    asNavFor: '.slider-text',
+
+});
+
+$('.slider-text').slick({
+    slidesToShow: 1,
+    arrows: false,
+    fade: true,
+    speed: 1000,
+
+});
 
 $('.slider-company').slick({
     centerPadding: '0',

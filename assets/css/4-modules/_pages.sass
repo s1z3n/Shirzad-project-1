@@ -665,45 +665,135 @@
   .section2-container
     display: flex
     width: 90%
-    height: 600px
-    margin-right: auto
+    justify-content: center
+    margin: auto
+    margin-top: 50px
+
+
 
     .col-1
-      width: 40%
-      height: 90%
-      background: url(../images/home-s2-img1.png) center center
+      width: 500px
+      height: 600px
+      background: url(../images/h-world-img1.jpg) top center
       background-size: contain
       background-repeat: no-repeat
-      margin-left: 20px
-      padding-bottom: 80px
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-left: 40px
+      .f-1
+        background: url(../images/h-world1.png) top center
+        background-size: contain
+        background-repeat: no-repeat
+        width: 80%
+        height: 90%
+        margin: auto
+        margin-top: -50px
+      h5
+        margin-top: -240px
+        margin-bottom: auto
+        width: 65%
+        font-size: 20px
+        line-height: 24px
+
 
     .col-2
-      width: 45%
-      height: 90%
-      background: url(../images/home-s2-img2.png) center center
+      width: 560px
+      height: 560px
+      background: url(../images/h-world2.png) top center
       background-size: contain
       background-repeat: no-repeat
-      margin-right: 20px
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-right: 40px
+      .f-2
+        background: url(../images/h-world-img2.jpg) top center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 85%
+        height: 425px
+        margin: auto
+        margin-top: -50px
+      h5
+        margin-top: -90px
+        margin-bottom: auto
+        width: 75%
+        font-size: 20px
+        line-height: 24px
+
+
 
 // section 3
 .home-s3
-  .section3-container
-    display: flex
-    width: 90%
-    height: 600px
-    justify-content: flex-start
-    .img
-      background: url(../images/home-s3-img.png) center right
-      background-size: contain
-      background-repeat: no-repeat
-      width: 100%
-      display: flex
-      justify-content: flex-end
-      align-items: center
-      .text-container
-        width: 30%
-        margin-left: 3%
-        padding: 40px
+  // .section3-container
+  //   display: flex
+  //   width: 90%
+  //   height: 600px
+  //   justify-content: flex-end
+  //   .img
+  //     background: url(../images/home-s3-img.png) center right
+  //     background-size: contain
+  //     background-repeat: no-repeat
+  //     width: 100%
+  //     display: flex
+  //     // justify-content: flex-end
+  //     align-items: center
+  //     .text-container
+  //       width: 30%
+  //       margin-left: 3%
+  //       padding: 40px
+
+.section3-wrapper
+  width: 100%
+  display: flex
+  height: 500px
+  align-items: center
+  justify-content: flex-end
+.img-slider
+  max-width: 60%
+  height: 360px
+  background-color: #fff
+  display: flex
+  align-items: center
+  padding-right: 20px
+  // direction: ltr
+  // z-index: -1
+
+  .slider
+    height: 320px
+    margin: 20px 10px
+.text-holder
+  width: 500px
+  height: 420px
+  border: 4px solid $accent-color-blue
+  margin-left: -80px
+  margin-right: 20px
+  display: flex
+  align-items: center
+  direction: ltr
+  z-index: 2
+  .text-container
+    width: 300px
+    margin-left: 120px
+    margin-right: 60px
+    margin-top: 60px
+    h4
+      font-size: 24px
+      line-height: 28px
+      direction: rtl
+    p
+      direction: rtl
+.text2
+  display: none
+
+.slide2
+  background: url(../images/karvansara.jpg) center center
+  background-size: cover
+
+.slide1
+  background: url(../images/grand-hotel.png) center center
+  background-size: cover
 
 
 
