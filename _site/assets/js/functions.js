@@ -136,7 +136,7 @@ $(document).ready(function() {
 
           } else {
             var neededLength = document.getElementsByClassName('board-list')
-            for( var i = 1; i < neededLength.length; i++) {
+            for( var i = 1; i < neededLength.length + 1; i++) {
               if ($('#board-holder'+i+'').hasClass('board-open')) {
                 $('#board-holder'+i+'').removeClass('board-open');
               }
@@ -157,7 +157,7 @@ $(document).ready(function() {
 
               } else {
                 var neededLength = document.getElementsByClassName('project-list')
-                for( var i = 1; i < neededLength.length; i++) {
+                for( var i = 1; i < neededLength.length + 1; i++) {
                   if ($('#project-holder'+i+'').hasClass('project-open')) {
                     $('#project-holder'+i+'').removeClass('project-open');
                   }
