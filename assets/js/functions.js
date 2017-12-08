@@ -251,7 +251,7 @@ $('.slider-text').slick({
     slidesToShow: 1,
     arrows: false,
     fade: true,
-    speed: 1000,
+    speed: 1500,
 
 });
 
