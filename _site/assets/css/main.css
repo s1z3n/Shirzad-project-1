@@ -589,7 +589,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1090,7 +1090,8 @@ section.home-page {
     padding: 0px 60px;
     height: 200px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: -64px; }
     .home-s5 .section5-container .logo-wrapper .c-logo {
       min-width: 150px;
       height: 80px;
@@ -1178,7 +1179,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
@@ -1537,7 +1538,7 @@ div {
   display: grid;
   grid-template-columns: 1fr 70px 1fr;
   align-items: center;
-  padding: 62px 0px 0px; }
+  padding: 62px 0px; }
   .separator .right-line {
     display: grid;
     grid-template-columns: 1fr auto 2fr;
