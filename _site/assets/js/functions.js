@@ -54,34 +54,22 @@ $(document).ready(function() {
 // pollen london
 
 
-        var active = function(){
-             $('.frame').removeClass('inactive').addClass('active');
-             $('.img-semega').removeClass('inactive').addClass('active');
+        var active = function(e){          
+            console.log(e.target)               
+             $(e.target).removeClass('inactive').addClass('active');
          };
 
-         var inactive = function(){
-             $('.frame').removeClass('active').addClass('inactive');
-             $('.img-semega').removeClass('active').addClass('inactive');
+         var inactive = function(e){            
+            console.log(e.target)               
+             $(e.target).removeClass('active').addClass('inactive');
+             
          };
 
-         $('.frame').mouseenter(active)
-         $('.frame').mouseleave(inactive)
+         $('.pollen').mouseenter(active)
+         $('.pollen').mouseleave(inactive)
 
-         $('.img-semega').mouseenter(active)
-         $('.img-semega').mouseleave(inactive)
-
-         var active1 = function(){
-          $('.frame-text').removeClass('inactive1').addClass('active1');
-          $('.frame-image').removeClass('inactive1').addClass('active1');
-        };
-
-        var inactive1 = function(){
-            $('.frame-text').removeClass('active1').addClass('inactive1');
-            $('.frame-image').removeClass('active1').addClass('inactive1');
-        };
-
-          $('.frame-text').mouseenter(active1)
-          $('.frame-text').mouseleave(inactive1)
+         $('.pollen-img').mouseenter(active)
+         $('.pollen-img').mouseleave(inactive)
 
 
     });
@@ -109,16 +97,19 @@ $(document).ready(function() {
       elemNum = wrapperName[2].match(/\d+/)[0]
 
       if ($('#sub-holder'+elemNum+'').hasClass('sub-open')) {
-
+          $('.sub-btn'+elemNum+'').css('background-color', '#4FADDA')
           $('#sub-holder'+elemNum+'').removeClass('sub-open');
 
       } else {
         var neededLength = document.getElementsByClassName('link-list')
-        for( var i = 1; i < neededLength.length; i++) {
+        for( var i = 1; i < 16; i++) {
           if ($('#sub-holder'+i+'').hasClass('sub-open')) {
+            $('.sub-btn'+i+'').css('background-color', '#4FADDA')
             $('#sub-holder'+i+'').removeClass('sub-open');
           }
         }
+        
+        $('.sub-btn'+elemNum+'').css('background-color', 'gray')
         $('#sub-holder'+elemNum+'').addClass('sub-open')
 
       }
@@ -131,17 +122,20 @@ $(document).ready(function() {
           elemNum = wrapperName[2].match(/\d+/)[0]
 
           if ($('#board-holder'+elemNum+'').hasClass('board-open')) {
-
+              $('.clicked-button'+i+'').css('background-color', '#4FADDA')
               $('#board-holder'+elemNum+'').removeClass('board-open, pointer-img');
 
           } else {
             var neededLength = document.getElementsByClassName('board-list')
+            
             for( var i = 1; i < neededLength.length + 1; i++) {
               if ($('#board-holder'+i+'').hasClass('board-open')) {
+                $('.clicked-button'+i+'').css('background-color', '#4FADDA')
                 $('#board-holder'+i+'').removeClass('board-open');
               }
             }
-            $('#board-holder'+elemNum+'').addClass('board-open')
+            $('.clicked-button'+elemNum+'').css('background-color', 'gray')
+            $('#board-holder'+elemNum+'').addClass('board-open')            
 
           }
       })
@@ -152,16 +146,19 @@ $(document).ready(function() {
               elemNum = wrapperName[2].match(/\d+/)[0]
 
               if ($('#project-holder'+elemNum+'').hasClass('project-open')) {
-
+                  $('.clicked-btn'+i+'').css('background-color', '#4FADDA')
                   $('#project-holder'+elemNum+'').removeClass('project-open');
 
               } else {
                 var neededLength = document.getElementsByClassName('project-list')
+                
                 for( var i = 1; i < neededLength.length + 1; i++) {
                   if ($('#project-holder'+i+'').hasClass('project-open')) {
+                    $('.clicked-btn'+i+'').css('background-color', '#4FADDA')
                     $('#project-holder'+i+'').removeClass('project-open');
                   }
                 }
+                $('.clicked-btn'+elemNum+'').css('background-color', 'gray')
                 $('#project-holder'+elemNum+'').addClass('project-open')
 
               }
