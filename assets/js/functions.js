@@ -54,15 +54,15 @@ $(document).ready(function() {
 // pollen london
 
 
-        var active = function(e){          
-            console.log(e.target)               
+        var active = function(e){
+            console.log(e.target)
              $(e.target).removeClass('inactive').addClass('active');
          };
 
-         var inactive = function(e){            
-            console.log(e.target)               
+         var inactive = function(e){
+            console.log(e.target)
              $(e.target).removeClass('active').addClass('inactive');
-             
+
          };
 
          $('.pollen').mouseenter(active)
@@ -108,7 +108,7 @@ $(document).ready(function() {
             $('#sub-holder'+i+'').removeClass('sub-open');
           }
         }
-        
+
         $('.sub-btn'+elemNum+'').css('background-color', 'gray')
         $('#sub-holder'+elemNum+'').addClass('sub-open')
 
@@ -127,7 +127,7 @@ $(document).ready(function() {
 
           } else {
             var neededLength = document.getElementsByClassName('board-list')
-            
+
             for( var i = 1; i < neededLength.length + 1; i++) {
               if ($('#board-holder'+i+'').hasClass('board-open')) {
                 $('.clicked-button'+i+'').css('background-color', '#4FADDA')
@@ -135,7 +135,7 @@ $(document).ready(function() {
               }
             }
             $('.clicked-button'+elemNum+'').css('background-color', 'gray')
-            $('#board-holder'+elemNum+'').addClass('board-open')            
+            $('#board-holder'+elemNum+'').addClass('board-open')
 
           }
       })
@@ -151,7 +151,7 @@ $(document).ready(function() {
 
               } else {
                 var neededLength = document.getElementsByClassName('project-list')
-                
+
                 for( var i = 1; i < neededLength.length + 1; i++) {
                   if ($('#project-holder'+i+'').hasClass('project-open')) {
                     $('.clicked-btn'+i+'').css('background-color', '#4FADDA')
