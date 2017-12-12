@@ -241,6 +241,15 @@ $('.slider-projects').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     asNavFor: '.slider-text',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              slidesToShow: 1
+            }
+        },
+    ]
 
 });
 
@@ -249,6 +258,7 @@ $('.slider-text').slick({
     arrows: false,
     fade: true,
     speed: 1500,
+    // asNavFor: '.slider-projects',
 
 });
 
@@ -279,6 +289,7 @@ $('.slider-company').slick({
             settings: {
                 arrows: false,
                 slidesToShow: 2
+
             }
         },
 
@@ -329,5 +340,44 @@ $('.slider-company').slick({
       rtl: true,
       autoplay: true,
       autoplaySpeed: 2000,
+
+    });
+
+    $('.slick-car').slick({
+      centerPadding: '0',
+      slidesToShow: 4,
+      arrows: true,
+      rtl: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+          {
+              breakpoint: 1260,
+              settings: {
+                  arrows: false,
+                  slidesToShow: 3,
+              }
+          },
+          {
+          breakpoint: 950,
+          settings: {
+              arrows: false,
+              slidesToShow: 2,
+          }
+          },
+
+          {
+              breakpoint: 620,
+              settings: {
+                  arrows: true,
+                  slidesToShow: 1,
+
+
+
+              }
+          },
+
+      ]
+
 
     });
