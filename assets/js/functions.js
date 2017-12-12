@@ -243,7 +243,7 @@ $('.slider-projects').slick({
     asNavFor: '.slider-text',
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 820,
             settings: {
               arrows: true,
               slidesToShow: 1

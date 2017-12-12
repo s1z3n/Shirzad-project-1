@@ -914,7 +914,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1438,17 +1438,18 @@ section.home-page {
       margin-right: auto;
       padding: 0 10px; }
     .section3-wrapper .text-holder {
-      width: 100%;
+      width: 80%;
       height: auto;
       border: 4px solid #4FADDA;
       margin: 0px;
-      margin-right: -80px;
+      margin-right: auto;
+      margin-left: auto;
       margin-top: -80px;
       display: flex;
       direction: ltr;
       z-index: 2; }
       .section3-wrapper .text-holder .text-container {
-        padding: 100px 120px 20px 50px;
+        padding: 100px 50px;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: 0px; } }
@@ -1630,7 +1631,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: rgba(0, 0, 0, 0); }
+        background-color: transparent; }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
