@@ -343,6 +343,8 @@ $('.slider-company').slick({
 
     });
 
+  
+
     $('.slick-car').slick({
       centerPadding: '0',
       slidesToShow: 4,
@@ -350,7 +352,6 @@ $('.slider-company').slick({
       rtl: true,
       autoplay: true,
       autoplaySpeed: 2000,
-      dots: true,
       responsive: [
           {
               breakpoint: 1260,

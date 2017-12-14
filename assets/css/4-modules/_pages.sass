@@ -25,7 +25,7 @@
     padding: 0px 20px
 
 .news
-  background: url(../images/news-frame.png) center center
+  // background: url(../images/news-frame.png) center center
   background-repeat: no-repeat
   min-width: 250px
   max-width: 360px
@@ -150,6 +150,8 @@
 // about semega
 
 
+
+
 // ceo section
 .light-bg
   background-color: $bg-color-light
@@ -157,21 +159,37 @@
 .ceo
   background-color: $bg-color-light
   margin-top: 385px
-  .ceo-img
-    background: url(../images/ceo.png) center right
-    background-size: contain
-    background-repeat: no-repeat
-    width: 95%
-    height: 600px
-    display: flex
-    .text-ceo
-      width: 650px
-      height: 410px
-      background-color: rgba(237, 226, 218, 0.8)
-      margin-left: 100px
-      margin-right: auto
-      margin-top: 150px
-      padding: 40px
+.ceo-img
+  background: url(../images/ceo.png) center right
+  background-size: contain
+  background-repeat: no-repeat
+  width: 95%
+  height: 600px
+  display: flex
+.text-ceo
+  width: 650px
+  height: 410px
+  background-color: rgba(237, 226, 218, 0.8)
+  margin: auto
+  margin-right: 40%
+  padding: 40px
+
+@media (max-width: 1270px)
+  .text-ceo
+    width: 750px
+    height: auto
+    background-color: rgba(237, 226, 218, 0.8)
+    margin: auto
+    margin-right: 30%
+    padding: 30px
+@media (max-width: 1160px)
+  .text-ceo
+    width: 650px
+    height: auto
+    background-color: rgba(237, 226, 218, 0.8)
+    margin-top: 400
+    margin-right: 30%
+    padding: 30px
 
 // subsidaries section
 
@@ -319,11 +337,6 @@
       .container input:checked ~ .checkmark
         border: 5px solid $accent-color-yellow
         opacity: 1
-
-
-
-
-
 
 
 
@@ -940,7 +953,7 @@
   height: 200px
   display: flex
   overflow: hidden
-  justify-content: center
+  justify-content: flex-start
   align-items: center
   margin-bottom: 20px
 
@@ -1103,55 +1116,43 @@
         opacity: 1
 .media-s2
   background-color: $bg-color
-.news-archive
-  // background-color: pink
-  width: 1080px
-  display: flex
-  justify-content: flex-end
-  margin: 40px auto
-  .archive-btn
-    background-color: $accent-color-blue
-    text-align: center
-    padding: 10px 30px 10px
-    font-size: 15px
-    color: #fff
-    font-weight: bold
-
 
 .media-s3
   background-color: $bg-color-light
 
 .media-s4
   background-color: $bg-color
+  margin-bottom: 40px
 
 
 
 
 
 // Ali shirzad's code
-
+//about semega
+// semega introduction
 .wrapper
   margin: 40px 0px
   display: grid
   grid-template-columns: 1fr 1fr
   align-items: center
 
-  .frame
-    height: 540px
-    border: 4px solid $accent-color-yellow
-    grid-row: 1
-    margin-left: -40px
-    margin-right: 80px
-    display: flex
-    align-items: center
-    z-index: 1
+.frame
+  height: 540px
+  border: 4px solid $accent-color-yellow
+  grid-row: 1
+  margin-left: -40px
+  margin-right: 80px
+  display: flex
+  align-items: center
+  z-index: 1
 
-    p
-      padding: 80px
-      font-size: 18px
-      justify-content: center
-      align-self: center
-      text-align: justify
+  p
+    padding: 80px
+    font-size: 18px
+    justify-content: center
+    align-self: center
+    text-align: justify
 
 .pollen
   transform: translate3d(0,0,0)
@@ -1203,17 +1204,30 @@
 .img-semega
   height: 440px
 
-@media (max-width: 1020px)
+@media (max-width: 1000px)
   .wrapper
-    grid-template-columns: 1fr
+    margin: 0px 0px
+    display: flex
+    flex-wrap: wrap-reverse
+    // grid-template-columns: auto
+    // align-items: center
 
   .frame
-    margin: 40px
-    margin-top: -40px
-    grid-row: 2
+    height: auto
+    margin-left: 40px
+    margin-right: 40px
+    display: flex
+    align-items: center
+
+
     p
-      padding: 40px
-      padding-top: 80px
+      padding: 60px 40px 20px
+  .img-semega
+    height: 400px
+    width: 100%
+    display: flex
+    flex-direction: column-reverse
+
 
 @media (max-width: 400px)
   .frame
