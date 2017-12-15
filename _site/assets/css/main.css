@@ -2096,7 +2096,7 @@ div {
 .co-name {
   max-width: 160px;
   text-align: center;
-  height: 40px;
+  height: 47px;
   overflow: hidden; }
 
 .sub-logo1 {
@@ -2110,7 +2110,7 @@ div {
   background-repeat: no-repeat; }
 
 .sub-logo3 {
-  background: url(../images/sub-zigorat.png) center center;
+  background: url(../images/sub-logo.png) center center;
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -2130,7 +2130,7 @@ div {
   background-repeat: no-repeat; }
 
 .sub-logo7 {
-  background: url(../images/sub-logo.png) center center;
+  background: url(../images/sub-zigorat.png) center center;
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -2200,12 +2200,18 @@ div {
   background-color: #777;
   grid-column: 1/6;
   display: flex;
+  font-weight: bold;
   z-index: -1;
   margin-top: -1px;
   color: #fff;
   max-height: 0;
   overflow: hidden;
   position: absolute; }
+
+.website-ancher-style {
+  color: white;
+  font-size: 14px;
+  font-weight: normal; }
 
 .sub-wrapper {
   display: flex;
