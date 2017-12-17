@@ -56,14 +56,14 @@ $(document).ready(function() {
 
         var active = function(e){
             console.log(e.target.nodeName)
-            if( e.target.nodeName != 'P'){
+            if( e.target.nodeName == 'DIV'){
                 $(e.target).removeClass('inactive').addClass('active');
             }
 
          };
 
          var inactive = function(e){
-            if( e.target.nodeName != 'P'){
+            if( e.target.nodeName == 'DIV'){
              $(e.target).removeClass('active').addClass('inactive');
             }
          };
