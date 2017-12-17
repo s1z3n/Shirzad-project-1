@@ -1529,19 +1529,43 @@ section.home-page {
     margin-top: -64px; }
     .home-s5 .section5-container .logo-wrapper .c-logo {
       min-width: 150px;
-      height: 80px;
+      height: 170px;
       margin: 20px;
       opacity: 0.7; }
-    .home-s5 .section5-container .logo-wrapper .logo-1, .home-s5 .section5-container .logo-wrapper .logo-4, .home-s5 .section5-container .logo-wrapper .logo-7 {
-      background: url(../images/c-logo3.png) center center;
+    .home-s5 .section5-container .logo-wrapper .logo-1 {
+      background: url(../images/c-logo-1.png) center center;
       background-size: contain;
       background-repeat: no-repeat; }
-    .home-s5 .section5-container .logo-wrapper .logo-2, .home-s5 .section5-container .logo-wrapper .logo-5, .home-s5 .section5-container .logo-wrapper .logo-8 {
-      background: url(../images/c-logo2.png) center center;
+    .home-s5 .section5-container .logo-wrapper .logo-2 {
+      background: url(../images/c-logo-2.png) center center;
       background-size: contain;
       background-repeat: no-repeat; }
-    .home-s5 .section5-container .logo-wrapper .logo-3, .home-s5 .section5-container .logo-wrapper .logo-6, .home-s5 .section5-container .logo-wrapper .logo-9 {
-      background: url(../images/c-logo1.png) center center;
+    .home-s5 .section5-container .logo-wrapper .logo-3 {
+      background: url(../images/c-logo-3.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .home-s5 .section5-container .logo-wrapper .logo-4 {
+      background: url(../images/c-logo-4.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .home-s5 .section5-container .logo-wrapper .logo-5 {
+      background: url(../images/c-logo-5.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .home-s5 .section5-container .logo-wrapper .logo-6 {
+      background: url(../images/c-logo-6.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .home-s5 .section5-container .logo-wrapper .logo-7 {
+      background: url(../images/c-logo-7.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .home-s5 .section5-container .logo-wrapper .logo-8 {
+      background: url(../images/c-logo-8.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .home-s5 .section5-container .logo-wrapper .logo-9 {
+      background: url(../images/c-logo-9.png) center center;
       background-size: contain;
       background-repeat: no-repeat; }
 
@@ -1787,6 +1811,13 @@ div {
     margin: 0px 0; }
   .squares .item-null {
     background: url(../images/timeline-null.jpg) center center;
+    background-size: contain;
+    width: 400px;
+    height: 400px;
+    margin: -17px 0;
+    background-repeat: no-repeat; }
+  .squares .item-1 {
+    background: url(../images/h-scroll8.jpg) center center;
     background-size: contain;
     width: 400px;
     height: 400px;
