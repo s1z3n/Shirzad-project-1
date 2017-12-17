@@ -59,7 +59,7 @@ $(document).ready(function() {
             if( e.target.nodeName != 'P'){
                 $(e.target).removeClass('inactive').addClass('active');
             }
-             
+
          };
 
          var inactive = function(e){
@@ -123,7 +123,7 @@ $(document).ready(function() {
           wrapperName = e.currentTarget.className
           wrapperName = wrapperName.split(' ')
           elemNum = wrapperName[2].match(/\d+/)[0]
-          
+
           if ($('#board-holder'+elemNum+'').hasClass('board-open')) {
               $('.clicked-button'+elemNum+'').css('background-color', '#4FADDA')
               $('#board-holder'+elemNum+'').removeClass('board-open');
@@ -266,8 +266,9 @@ $('.slider-text').slick({
 });
 
 $('.slider-company').slick({
-    centerPadding: '0',
-    slidesToShow: 5,
+    centerPadding: '20',
+    slidesToShow: 6,
+    // arrows: true,
     rtl: true,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -275,14 +276,21 @@ $('.slider-company').slick({
         {
             breakpoint: 1060,
             settings: {
-                arrows: false,
+                // arrows: false,
                 slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 1260,
+            settings: {
+                // arrows: false,
+                slidesToShow: 5
             }
         },
         {
         breakpoint: 880,
         settings: {
-            arrows: false,
+            // arrows: false,
             slidesToShow: 3
         }
         },
@@ -290,7 +298,7 @@ $('.slider-company').slick({
         {
             breakpoint: 640,
             settings: {
-                arrows: false,
+                // arrows: false,
                 slidesToShow: 2
 
             }
@@ -299,42 +307,6 @@ $('.slider-company').slick({
     ]
 });
 
-        // var logoWrapper
-        // logoWrapper = document.getElementsByClassName('logo-wrapper')
-
-        // var left = 0
-
-        // $('div.arrow.arrow-left').on('click', function(){
-
-        //     logoWrapper[0].style.position = 'relative'
-
-        //     if( left <= 800 && left >= -800) {
-
-        //         logoWrapper[0].style.right = left + 'px'
-        //         left = left + 100
-        //         console.log(left)
-        //     }
-        //     else {
-        //         left = -900
-        //     }
-
-        // })
-
-        // $('div.arrow.arrow-right').on('click', function(){
-
-        //     logoWrapper[0].style.position = 'relative'
-
-        //     if( left <= 800 && left >= -800) {
-
-        //         logoWrapper[0].style.right = -left + 'px'
-        //         left = left + 100
-        //         console.log(left)
-        //     }
-        //     else {
-        //         left = 900
-        //     }
-
-        // })
 
 
     $('.invest-carousel').slick({
@@ -346,7 +318,7 @@ $('.slider-company').slick({
 
     });
 
-  
+
 
     $('.slick-car').slick({
       centerPadding: '0',
