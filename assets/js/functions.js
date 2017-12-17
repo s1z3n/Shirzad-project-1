@@ -55,14 +55,17 @@ $(document).ready(function() {
 
 
         var active = function(e){
-            console.log(e.target)
-             $(e.target).removeClass('inactive').addClass('active');
+            console.log(e.target.nodeName)
+            if( e.target.nodeName != 'P'){
+                $(e.target).removeClass('inactive').addClass('active');
+            }
+             
          };
 
          var inactive = function(e){
-            console.log(e.target)
+            if( e.target.nodeName != 'P'){
              $(e.target).removeClass('active').addClass('inactive');
-
+            }
          };
 
          $('.pollen').mouseenter(active)
@@ -120,10 +123,10 @@ $(document).ready(function() {
           wrapperName = e.currentTarget.className
           wrapperName = wrapperName.split(' ')
           elemNum = wrapperName[2].match(/\d+/)[0]
-
+          
           if ($('#board-holder'+elemNum+'').hasClass('board-open')) {
-              $('.clicked-button'+i+'').css('background-color', '#4FADDA')
-              $('#board-holder'+elemNum+'').removeClass('board-open, pointer-img');
+              $('.clicked-button'+elemNum+'').css('background-color', '#4FADDA')
+              $('#board-holder'+elemNum+'').removeClass('board-open');
 
           } else {
             var neededLength = document.getElementsByClassName('board-list')
@@ -146,7 +149,7 @@ $(document).ready(function() {
               elemNum = wrapperName[2].match(/\d+/)[0]
 
               if ($('#project-holder'+elemNum+'').hasClass('project-open')) {
-                  $('.clicked-btn'+i+'').css('background-color', '#4FADDA')
+                  $('.clicked-btn'+elemNum+'').css('background-color', '#4FADDA')
                   $('#project-holder'+elemNum+'').removeClass('project-open');
 
               } else {

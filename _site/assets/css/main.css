@@ -949,7 +949,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: transparent; }
+        background-color: rgba(0, 0, 0, 0); }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1614,7 +1614,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: transparent; }
+        background-color: rgba(0, 0, 0, 0); }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
@@ -1790,62 +1790,57 @@ div {
     background-size: contain;
     width: 400px;
     height: 400px;
-    margin: 0px 0;
+    margin: -17px 0;
     background-repeat: no-repeat; }
   .squares .item-2 {
     background: url(../images/h-scroll7.jpg) center center;
     background-size: contain;
     width: 400px;
     height: 400px;
-    margin: 0px 0;
+    margin: -17px 0;
     background-repeat: no-repeat; }
   .squares .item-3 {
     background: url(../images/h-scroll6.jpg) center center;
     background-size: contain;
     width: 400px;
     height: 400px;
-    margin: 0px 0;
+    margin: -17px 0;
     background-repeat: no-repeat; }
   .squares .item-4 {
     background: url(../images/h-scroll5.jpg) center center;
     background-size: contain;
     width: 400px;
     height: 400px;
-    margin: 0px 0;
+    margin: -17px 0;
     background-repeat: no-repeat; }
   .squares .item-5 {
     background: url(../images/h-scroll4.jpg) center center;
     background-size: contain;
     width: 400px;
     height: 400px;
-    margin: 0px 0;
+    margin: -17px 0;
     background-repeat: no-repeat; }
   .squares .item-6 {
     background: url(../images/h-scroll3.jpg) center center;
     background-size: contain;
     width: 400px;
     height: 400px;
-    margin: 0px 0;
+    margin: -17px 0;
     background-repeat: no-repeat; }
   .squares .item-7 {
     background: url(../images/h-scroll2.jpg) center center;
     background-size: contain;
     width: 400px;
     height: 400px;
-    margin: 0px 0;
+    margin: -17px 0;
     background-repeat: no-repeat; }
   .squares .item-8 {
     background: url(../images/h-scroll1.jpg) center center;
     background-size: contain;
     width: 400px;
     height: 400px;
-    margin: 0px 0;
+    margin: -17px 0;
     background-repeat: no-repeat; }
-  .squares .item-last {
-    width: 400px;
-    height: 400px;
-    margin: 0px 0;
-    background-color: #f4f2ed; }
 
 @media (max-width: 1220px) {
   .squares .item-last {
@@ -2096,7 +2091,7 @@ div {
 .co-name {
   max-width: 160px;
   text-align: center;
-  height: 40px;
+  height: 47px;
   overflow: hidden; }
 
 .sub-logo1 {
@@ -2110,7 +2105,7 @@ div {
   background-repeat: no-repeat; }
 
 .sub-logo3 {
-  background: url(../images/sub-zigorat.png) center center;
+  background: url(../images/sub-logo.png) center center;
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -2130,7 +2125,7 @@ div {
   background-repeat: no-repeat; }
 
 .sub-logo7 {
-  background: url(../images/sub-logo.png) center center;
+  background: url(../images/sub-zigorat.png) center center;
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -2200,12 +2195,18 @@ div {
   background-color: #777;
   grid-column: 1/6;
   display: flex;
+  font-weight: bold;
   z-index: -1;
   margin-top: -1px;
   color: #fff;
   max-height: 0;
   overflow: hidden;
   position: absolute; }
+
+.website-ancher-style {
+  color: white;
+  font-size: 14px;
+  font-weight: normal; }
 
 .sub-wrapper {
   display: flex;
