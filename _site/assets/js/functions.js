@@ -267,26 +267,33 @@ $('.slider-text').slick({
 
 $('.slider-company').slick({
     centerPadding: '20',
-    slidesToShow: 6,
-    // arrows: true,
+    slidesToShow: 7,
+    arrows: true,
     rtl: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
         {
-            breakpoint: 1060,
-            settings: {
-                // arrows: false,
-                slidesToShow: 4
-            }
-        },
-        {
-            breakpoint: 1260,
+            breakpoint: 1460,
             settings: {
                 // arrows: false,
                 slidesToShow: 5
             }
         },
+        {
+            breakpoint: 1068,
+            settings: {
+                // arrows: false,
+                slidesToShow: 3
+            }
+        },
+        // {
+        //     breakpoint: 1260,
+        //     settings: {
+        //         // arrows: false,
+        //         slidesToShow: 5
+        //     }
+        // },
         {
         breakpoint: 880,
         settings: {
@@ -296,10 +303,10 @@ $('.slider-company').slick({
         },
 
         {
-            breakpoint: 640,
+            breakpoint: 720,
             settings: {
                 // arrows: false,
-                slidesToShow: 2
+                slidesToShow: 1
 
             }
         },
@@ -311,7 +318,7 @@ $('.slider-company').slick({
 
     $('.invest-carousel').slick({
       slidesToShow: 1,
-      arrows: true,
+      // arrows: true,
       rtl: true,
       autoplay: true,
       autoplaySpeed: 2000,

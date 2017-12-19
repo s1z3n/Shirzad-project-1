@@ -320,9 +320,7 @@ ul, li {
   min-width: 240px;
   max-width: 360px;
   height: 40px;
-  margin-top: 8px;
-  padding-bottom: 4px;
-  padding-top: 6px; }
+  margin: auto 0px; }
   .read-more a {
     font-size: 16px; }
 
@@ -574,41 +572,30 @@ section.about-semega {
   background-size: cover; }
 
 section.home-page {
-  background: url(../images/home-hero-img.jpg) center center;
-  background-repeat: no-repeat;
-  height: 95vh;
-  background-size: cover;
-  display: flex; }
-
-.home-hero-container {
-  display: flex;
-  width: 90%;
-  justify-content: center;
-  align-items: flex-end;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto; }
+  overflow: hidden; }
 
 .h-hero-frame {
-  background: url(../images/home-frame-hero.png) center center;
   background-repeat: no-repeat;
-  height: 600px;
-  width: 1000px;
-  background-size: contain; }
+  height: 70%;
+  width: 70%;
+  background-size: contain;
+  position: absolute;
+  border: 4px solid #D1B645;
+  margin: auto;
+  top: 200px;
+  bottom: 100px;
+  left: 100px; }
 
 .hero-text {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   padding: 70px;
-  margin-left: -250px;
-  z-index: 10;
-  position: relative;
-  bottom: -100px; }
+  margin-right: -150px;
+  margin-top: 200px; }
   .hero-text h1 {
     color: #fff;
     text-align: left;
@@ -623,22 +610,6 @@ section.home-page {
     padding: 4px;
     padding-bottom: 6px; }
 
-@media (max-width: 900px) {
-  .hero-text {
-    margin-left: -450px;
-    width: 600px;
-    height: 400px;
-    bottom: auto; } }
-@media (max-width: 560px) {
-  .hero-text {
-    margin: auto;
-    width: 100%;
-    height: 50vh;
-    margin-top: 100px;
-    padding: 40px; }
-
-  .h-hero-frame {
-    display: none; } }
 .page-title {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
@@ -824,40 +795,50 @@ section.home-page {
 
 .ceo {
   background-color: #F2EFEA;
-  margin-top: 385px; }
+  margin-top: 385px;
+  direction: ltr; }
+
+.ceo-wrapper {
+  width: 100%;
+  min-height: 500px;
+  height: auto; }
+  .ceo-wrapper .ceo-frame {
+    min-width: 80%;
+    max-width: 90%;
+    height: 450px;
+    border: 4px solid #D1B645;
+    margin-top: -475px;
+    margin-right: 40px; }
 
 .ceo-img {
-  background: url(../images/ceo.png) center right;
-  background-size: contain;
+  background: url(../images/ceo-img2.jpg) center right;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 95%;
-  height: 600px;
-  display: flex; }
+  width: 50%;
+  height: 500px;
+  display: flex;
+  background-color: pink; }
 
 .text-ceo {
-  width: 650px;
-  height: 410px;
+  min-width: 40%;
+  max-width: 700px;
+  height: auto;
   background-color: rgba(237, 226, 218, 0.8);
   margin: auto;
-  margin-right: 40%;
+  margin-left: 15%;
+  margin-top: 25px;
   padding: 40px; }
 
-@media (max-width: 1270px) {
+@media (max-width: 1500px) {
   .text-ceo {
-    width: 750px;
+    min-width: 40%;
+    max-width: 700px;
     height: auto;
     background-color: rgba(237, 226, 218, 0.8);
     margin: auto;
-    margin-right: 30%;
-    padding: 30px; } }
-@media (max-width: 1160px) {
-  .text-ceo {
-    width: 650px;
-    height: auto;
-    background-color: rgba(237, 226, 218, 0.8);
-    margin-top: 400;
-    margin-right: 30%;
-    padding: 30px; } }
+    margin-left: 5%;
+    margin-top: 25px;
+    padding: 40px; } }
 .subsidaries {
   display: flex;
   width: 100%;
@@ -1769,6 +1750,13 @@ section.home-page {
     margin: 0px; }
     .frame p {
       padding: 20px; } }
+.slick-next {
+  right: 25px !important; }
+
+.slick-prev {
+  left: 25px !important;
+  background-color: pink !important; }
+
 ::-webkit-scrollbar {
   width: 1px;
   height: 1px; }
@@ -1876,6 +1864,11 @@ div {
     height: 400px;
     margin: -17px 0;
     background-repeat: no-repeat; }
+  .squares .item-last {
+    width: 200px;
+    height: 200px;
+    margin: 0px 0;
+    background-color: #f4f2ed; }
 
 @media (max-width: 1220px) {
   .squares .item-last {

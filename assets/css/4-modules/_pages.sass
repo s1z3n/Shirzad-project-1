@@ -89,37 +89,67 @@
 .ceo
   background-color: $bg-color-light
   margin-top: 385px
+  direction: ltr
+.ceo-wrapper
+  width: 100%
+  min-height: 500px
+  height: auto
+  // display: flex
+  // justify-content: flex-start
+
+  .ceo-frame
+    min-width: 80%
+    max-width: 90%
+    height: 450px
+    border: 4px solid $accent-color-yellow
+    margin-top: -475px
+    margin-right: 40px
+
+
 .ceo-img
-  background: url(../images/ceo.png) center right
-  background-size: contain
+  background: url(../images/ceo-img2.jpg) center right
+  background-size: cover
   background-repeat: no-repeat
-  width: 95%
-  height: 600px
+  width: 50%
+  height: 500px
   display: flex
+  background-color: pink
+
 .text-ceo
-  width: 650px
-  height: 410px
+  min-width: 40%
+  max-width: 700px
+  height: auto
   background-color: rgba(237, 226, 218, 0.8)
   margin: auto
-  margin-right: 40%
+  margin-left: 15%
+  margin-top: 25px
   padding: 40px
 
-@media (max-width: 1270px)
+@media (max-width: 1500px)
   .text-ceo
-    width: 750px
+    min-width: 40%
+    max-width: 700px
     height: auto
     background-color: rgba(237, 226, 218, 0.8)
     margin: auto
-    margin-right: 30%
-    padding: 30px
-@media (max-width: 1160px)
-  .text-ceo
-    width: 650px
-    height: auto
-    background-color: rgba(237, 226, 218, 0.8)
-    margin-top: 400
-    margin-right: 30%
-    padding: 30px
+    margin-left: 5%
+    margin-top: 25px
+    padding: 40px
+//   .text-ceo
+//     width: 750px
+//     height: auto
+//     background-color: rgba(237, 226, 218, 0.8)
+//     margin: auto
+//     margin-right: 30%
+//     padding: 30px
+// @media (max-width: 1160px)
+//   .text-ceo
+//     width: 650px
+//     height: auto
+//     background-color: rgba(237, 226, 218, 0.8)
+//     margin-top: 400
+//     margin-right: 30%
+//     padding: 30px
 
 // subsidaries section
 
@@ -1153,8 +1183,7 @@
     margin: 0px 0px
     display: flex
     flex-wrap: wrap-reverse
-    // grid-template-columns: auto
-    // align-items: center
+
 
   .frame
     height: auto
@@ -1184,3 +1213,13 @@
       padding: 20px
 
 // horizantal scroll
+
+
+
+
+
+.slick-next
+  right: 25px !important
+.slick-prev
+  left: 25px !important
+  background-color: pink !important
