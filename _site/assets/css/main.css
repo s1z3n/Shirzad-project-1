@@ -1750,13 +1750,6 @@ section.home-page {
     margin: 0px; }
     .frame p {
       padding: 20px; } }
-.slick-next {
-  right: 25px !important; }
-
-.slick-prev {
-  left: 25px !important;
-  background-color: pink !important; }
-
 ::-webkit-scrollbar {
   width: 1px;
   height: 1px; }

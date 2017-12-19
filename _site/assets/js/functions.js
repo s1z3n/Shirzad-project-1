@@ -260,7 +260,7 @@ $('.slider-text').slick({
     slidesToShow: 1,
     arrows: false,
     fade: true,
-    speed: 1500,
+    speed: 1000,
     // asNavFor: '.slider-projects',
 
 });
@@ -338,14 +338,14 @@ $('.slider-company').slick({
           {
               breakpoint: 1260,
               settings: {
-                  arrows: false,
+                  arrows: true,
                   slidesToShow: 3,
               }
           },
           {
           breakpoint: 950,
           settings: {
-              arrows: false,
+              arrows: true,
               slidesToShow: 2,
           }
           },
