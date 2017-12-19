@@ -89,7 +89,6 @@
 .ceo
   background-color: $bg-color-light
   margin-top: 385px
-  direction: ltr
 .ceo-wrapper
   width: 100%
   min-height: 500px
@@ -97,13 +96,13 @@
   // display: flex
   // justify-content: flex-start
 
-  .ceo-frame
-    min-width: 80%
-    max-width: 90%
-    height: 450px
-    border: 4px solid $accent-color-yellow
-    margin-top: -475px
-    margin-right: 40px
+.ceo-frame
+  // max-width: 1400px
+  width: 80%
+  height: 450px
+  border: 4px solid $accent-color-yellow
+  margin-top: -475px
+  margin-right: 40px
 
 
 .ceo-img
@@ -112,8 +111,7 @@
   background-repeat: no-repeat
   width: 50%
   height: 500px
-  display: flex
-  background-color: pink
+  // display: flex
 
 .text-ceo
   min-width: 40%
@@ -121,35 +119,22 @@
   height: auto
   background-color: rgba(237, 226, 218, 0.8)
   margin: auto
-  margin-left: 15%
+  margin-left: 5%
   margin-top: 25px
   padding: 40px
 
 @media (max-width: 1500px)
+  .ceo-frame
+    width: 90%
+
+
+@media (max-width: 1160px)
   .text-ceo
-    min-width: 40%
-    max-width: 700px
-    height: auto
-    background-color: rgba(237, 226, 218, 0.8)
-    margin: auto
-    margin-left: 5%
-    margin-top: 25px
-    padding: 40px
-//   .text-ceo
-//     width: 750px
-//     height: auto
-//     background-color: rgba(237, 226, 218, 0.8)
-//     margin: auto
-//     margin-right: 30%
-//     padding: 30px
-// @media (max-width: 1160px)
-//   .text-ceo
-//     width: 650px
-//     height: auto
-//     background-color: rgba(237, 226, 218, 0.8)
-//     margin-top: 400
-//     margin-right: 30%
-//     padding: 30px
+    width: 500px
+    margin-left: 1%
+
+// @media (max-width: 860px)
+
 
 // subsidaries section
 
@@ -1217,7 +1202,7 @@
 
 
 
-// 
+//
 // .slick-next
 //   right: 25px !important
 // .slick-prev
