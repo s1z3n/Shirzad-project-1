@@ -582,7 +582,7 @@ section.home-page {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 16px 32px;
   font-size: 24pt;
-  margin-top: -100px; }
+  margin-top: -50px; }
 
 @media (max-width: 1360px) {
   .nav-main .nav-item {
@@ -766,14 +766,14 @@ section.home-page {
 
 .ceo-wrapper {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   height: auto; }
 
 .ceo-frame {
   width: 80%;
-  height: 450px;
+  height: 500px;
   border: 4px solid #D1B645;
-  margin-top: -475px;
+  margin-top: -550px;
   margin-right: 40px; }
 
 .ceo-img {
@@ -781,17 +781,20 @@ section.home-page {
   background-size: cover;
   background-repeat: no-repeat;
   width: 50%;
-  height: 500px; }
+  height: 600px; }
 
 .text-ceo {
   min-width: 40%;
   max-width: 700px;
-  height: auto;
+  height: 450px;
   background-color: rgba(237, 226, 218, 0.8);
   margin: auto;
   margin-left: 5%;
-  margin-top: 25px;
-  padding: 40px; }
+  margin-top: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 @media (max-width: 1500px) {
   .ceo-frame {
@@ -800,6 +803,26 @@ section.home-page {
   .text-ceo {
     width: 500px;
     margin-left: 1%; } }
+@media (max-width: 940px) {
+  .ceo-frame {
+    margin: auto;
+    margin-top: -50px;
+    height: auto; }
+
+  .text-ceo {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 46px;
+    margin-bottom: 40px; }
+
+  .ceo-img {
+    width: 100%;
+    height: 500px; } }
+@media (max-width: 480px) {
+  .text-ceo {
+    width: 100%;
+    margin-bottom: 0px; } }
 .subsidaries {
   display: flex;
   width: 100%;
@@ -821,18 +844,56 @@ section.home-page {
     height: 700px;
     margin-right: -140px; }
 
+@media (max-width: 1250px) {
+  .subsidaries .subsidaries-p {
+    width: 500px;
+    margin-top: -100px;
+    margin-right: 40px;
+    margin-left: -120px; }
+  .subsidaries .subsidaries-img {
+    margin-right: 0px; } }
+@media (max-width: 950px) {
+  .subsidaries {
+    flex-direction: column;
+    width: 100%;
+    height: auto; }
+    .subsidaries .subsidaries-p {
+      width: 80%;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-left: 0px; }
+    .subsidaries .subsidaries-img {
+      background: url(../images/sunsidiaries-3.png) top center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 0px;
+      margin-bottom: 50px;
+      width: 90%;
+      height: 450px; } }
+@media (max-width: 540px) {
+  .subsidaries .subsidaries-p {
+    margin-bottom: 40px; }
+  .subsidaries .subsidaries-img {
+    height: 350px; } }
 .organizational-chart {
   background-color: #F2EFEA;
   width: 100%; }
 
 .org-chart {
-  background: url(../images/org-chart.png) top right;
+  background: url(../images/org-chart.png) top center;
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 1200px;
   height: 600px;
-  margin: 0px auto; }
+  margin: 0px auto;
+  padding: 40px 10px; }
 
+@media (max-width: 940px) {
+  .org-chart {
+    height: 450px; } }
+@media (max-width: 600px) {
+  .org-chart {
+    height: 350px; } }
 .invetment-hero2 {
   width: 100%;
   display: flex;
@@ -1825,12 +1886,12 @@ div {
     margin: -17px 0;
     background-repeat: no-repeat; }
   .squares .item-last {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     margin: 0px 0;
     background-color: #f4f2ed; }
 
-@media (max-width: 1220px) {
+@media (max-width: 1440px) {
   .squares .item-last {
     margin: 120px 0; } }
 @media (max-width: 1000px) {
@@ -2041,6 +2102,37 @@ div {
 
   .center-dots, .left-line {
     display: none; } }
+.subsidaries-s {
+  background-color: #F2EFEA; }
+
+.sub-heading {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  padding-right: 14px; }
+
+.text {
+  font-weight: bold; }
+
+.line-right, .line-left {
+  background: url(../images/line10.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 20px;
+  margin: 2px 9px; }
+
+.line-left {
+  transform: rotate(180deg); }
+
+@media (max-width: 520px) {
+  .sub-heading .line-right, .sub-heading .line-left {
+    background-size: contain;
+    width: 80px !important;
+    height: 15px; }
+  .sub-heading .line-left {
+    transform: rotate(180deg); } }
 .subsidaries-s {
   background-color: #F2EFEA; }
 
