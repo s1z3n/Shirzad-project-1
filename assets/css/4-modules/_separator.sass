@@ -87,3 +87,35 @@
 
 
 // end of separators sections
+
+
+// about semega page subsidaries section
+.subsidaries-s
+  background-color: $bg-color-light
+.sub-heading
+  display: flex
+  width: 100%
+  height: 10%
+  justify-content: center
+  padding-right: 14px
+.text
+  font-weight: bold
+
+.line-right, .line-left
+  background: url(../images/line10.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  width: 150px
+  height: 20px
+  margin: 2px 9px
+.line-left
+  transform: rotate(180deg)
+
+@media (max-width: 520px)
+  .sub-heading
+    .line-right, .line-left
+      background-size: contain
+      width: 80px !important
+      height: 15px
+    .line-left
+      transform: rotate(180deg)

@@ -567,7 +567,7 @@ section.media-hero {
   background: url(../images/investment-hero.jpg) center center; }
 
 section.about-semega {
-  background: url(../images/darbare-semega.png) center center;
+  background: url(../images/about-banner.jpg) center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -582,7 +582,7 @@ section.home-page {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 16px 32px;
   font-size: 24pt;
-  margin-top: -100px; }
+  margin-top: -50px; }
 
 @media (max-width: 1360px) {
   .nav-main .nav-item {
@@ -854,7 +854,7 @@ section.home-page {
     margin-right: 0px; } }
 @media (max-width: 950px) {
   .subsidaries {
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 100%;
     height: auto; }
     .subsidaries .subsidaries-p {
@@ -863,30 +863,37 @@ section.home-page {
       margin-right: 0px;
       margin-left: 0px; }
     .subsidaries .subsidaries-img {
-      background: url(../images/subsidiaries-2.png) top center;
+      background: url(../images/sunsidiaries-3.png) top center;
       background-size: contain;
       background-repeat: no-repeat;
       margin-right: 0px;
-      width: 500px;
-      height: 600px; } }
+      margin-bottom: 50px;
+      width: 90%;
+      height: 450px; } }
 @media (max-width: 540px) {
   .subsidaries .subsidaries-p {
     margin-bottom: 40px; }
   .subsidaries .subsidaries-img {
-    width: 380px;
-    height: 500px; } }
+    height: 350px; } }
 .organizational-chart {
   background-color: #F2EFEA;
   width: 100%; }
 
 .org-chart {
-  background: url(../images/org-chart.png) top right;
+  background: url(../images/org-chart.png) top center;
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 1200px;
   height: 600px;
-  margin: 0px auto; }
+  margin: 0px auto;
+  padding: 40px 10px; }
 
+@media (max-width: 940px) {
+  .org-chart {
+    height: 450px; } }
+@media (max-width: 600px) {
+  .org-chart {
+    height: 350px; } }
 .invetment-hero2 {
   width: 100%;
   display: flex;
@@ -2089,6 +2096,37 @@ div {
 
   .center-dots, .left-line {
     display: none; } }
+.subsidaries-s {
+  background-color: #F2EFEA; }
+
+.sub-heading {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  padding-right: 14px; }
+
+.text {
+  font-weight: bold; }
+
+.line-right, .line-left {
+  background: url(../images/line10.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 20px;
+  margin: 2px 9px; }
+
+.line-left {
+  transform: rotate(180deg); }
+
+@media (max-width: 520px) {
+  .sub-heading .line-right, .sub-heading .line-left {
+    background-size: contain;
+    width: 80px !important;
+    height: 15px; }
+  .sub-heading .line-left {
+    transform: rotate(180deg); } }
 .subsidaries-s {
   background-color: #F2EFEA; }
 
