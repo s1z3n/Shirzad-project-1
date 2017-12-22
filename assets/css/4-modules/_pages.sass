@@ -485,7 +485,7 @@
     font-size: 22px
     li
       list-style-type: disc
-      font-weight: bold
+      font-weight: normal
       p
         padding: 0px
         font-weight: 400
@@ -498,62 +498,77 @@
 
 
 
-  .strategy-table1
-    background: url(../images/strategy-table1.jpg) center center
-    margin: 40px 0px
-    width: 100%
-    height: 340px
-    background-size: contain
-    background-repeat: no-repeat
-    border-right: 10px solid #333
+.strategy-table1
+  background: url(../images/strategy-table1.jpg) center center
+  margin: 40px 0px
+  width: 100%
+  height: 340px
+  background-size: contain
+  background-repeat: no-repeat
+  border-right: 10px solid #333
 
 
-  .chart-4
-    background: url(../images/chart-4.svg) center center
-    background-size: contain
-    background-repeat: no-repeat
-    width: 100%
-    height: 400px
-    margin: 40px auto
-    border-right: 10px solid #333
+.chart-4
+  background: url(../images/chart-4.svg) center center
+  background-size: contain
+  background-repeat: no-repeat
+  width: 100%
+  height: 400px
+  margin: 40px auto
+  border-right: 10px solid #333
 
 
 
-  .quotation, .quotation-w
-    background: url(../images/quotation.png) center center
-    background-size: contain
-    background-repeat: no-repeat
-    width: 800px
-    height: 110px
-    padding: 24px 80px
-    margin-bottom: 30px
-    border-right: 10px solid #333
+.quotation, .quotation-w
+  background: url(../images/quotation.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  width: 800px
+  height: 110px
+  padding: 24px 80px
+  margin-bottom: 30px
+  border-right: 10px solid #333
+
+.quotation-w
+  background: url(../images/quotation-w.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  height: auto
+  padding-top: 40px
+  line-height: 28px
+
+@media (max-width: 800px)
   .quotation-w
-    background: url(../images/quotation-w.png) center center
-    background-size: contain
-    background-repeat: no-repeat
-    height: 160px
-    padding-top: 40px
-  .points
-    li
-      font-size: 18px
-      line-height: 32px
-      font-weight: normal
-      text-align: justify
-      padding-left: 40px
+    background: none
+    width: 90%
+    border: 1px solid $accent-color-yellow
+    background-color: $bg-color-light
+    border-radius: 16px
+    margin: auto
+    padding: 20px
+    margin-bottom: 40px
+
+
+.points
+  li
+    font-size: 18px
+    line-height: 32px
+    font-weight: normal
+    text-align: justify
+    padding-left: 40px
 
 
 .strategy-s2
   background-color: $bg-color-light
 
-  .strategy-table2
-    background: url(../images/strategy-table2.png) center center
-    margin: 40px 0px
-    width: 100%
-    height: 400px
-    background-size: contain
-    background-repeat: no-repeat
-    border-right: 10px solid #333
+.strategy-table2
+  background: url(../images/strategy-table2.png) center center
+  margin: 40px 0px
+  width: 100%
+  height: 400px
+  background-size: contain
+  background-repeat: no-repeat
+  border-right: 10px solid #333
 
 
 .strategy-s4
@@ -570,58 +585,110 @@
     background-repeat: no-repeat
     border-right: 10px solid #333
 
+@media (max-width: 860px)
+  .strategy-s4
+    .strategy-s4-chart
+      height: 600px
+
+@media (max-width: 500px)
+  .strategy-s4
+    .strategy-s4-chart
+      height: 400px
+
+
 .strategy-s5
   background-color: $bg-color-light
-  .strategy-s5-img
-    background: url(../images/strategy-s5-img.png) center center
-    background-size: contain
-    background-repeat: no-repeat
-    width: 90%
-    height: 500px
-    margin: auto
-    display: flex
-    justify-content: flex-end
-    align-items: center
 
-    div
+.strategy-s5-1
+  display: flex
+  width: 100%
+  max-width: 1400px
+  align-items: center
+  justify-content: center
+  margin: auto
+
+
+.strategy-s5-img
+  background: url(../images/strategy-hakemiyat.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  width: 500px
+  height: 400px
+  z-index: 1
+.strategy-s5-text
+  width: 70%
+  padding: 20px
+  border: 4px solid $accent-color-blue
+  margin-left: -250px
+  p
+    padding: 40px
+    width: 70%
+
+@media (max-width: 1160px)
+  .strategy-s5-text
+    p
       width: 60%
 
-      p
-        max-width: 550px
-        padding: 50px
-        margin-left: 0px
-        margin-right: auto
-    .empty-col
-      width: 40%
 
+@media (max-width: 1160px)
+  .strategy-s5-1
+    flex-direction: column
+  .strategy-s5-img
+    width: 90%
+  .strategy-s5-text
+    width: 90%
+    margin: auto
+    padding: 30px 10px
+    p
+      width: 90%
+      padding: 0
+      margin: auto
+
+.strategy-s5-5
+  display: flex
+  width: 100%
+  height: 450px
+  background-color: $bg-color
+  justify-content: center
+  align-items: center
+  margin-top: 40px
+  // div
+  //   height: 320px
+  //   margin: 20px
+
+  .col-1
+    background: url(../images/strategy-s6-img.png) center right
+    background-size: contain
+    background-repeat: no-repeat
+    width: 30%
+    max-width: 500px
+    height: 320px
+    margin: 20px
+  .col-2
+    border: 4px solid $accent-color-blue
+    width: 50%
+    max-width: 600px
+    height: auto
+    p
+      margin: auto
+      padding: 40px
+
+@media (max-width: 800px)
   .strategy-s5-5
-    display: flex
-    width: 100%
-    height: 450px
-    background-color: $bg-color
+    flex-direction: column-reverse
+    height: auto
     justify-content: center
     align-items: center
-    margin-top: 40px
-    div
-      width: 50%
-      max-width: 700px
-      height: 320px
-      margin: 20px
-
     .col-1
       background: url(../images/strategy-s6-img.png) center center
       background-size: contain
       background-repeat: no-repeat
+      width: 90%
+      height: 320px
+      margin-bottom: 40px
     .col-2
-      background: url(../images/blue-frame-2.png) center center
-      background-size: contain
-      background-repeat: no-repeat
-      // width: 400px
-      p
-        width: 360px
-        margin: auto
-        padding: 40px
-
+      margin: 40px
+      width: 80%
 
 .strategy-s6
   background-color: $bg-color-light
@@ -868,20 +935,21 @@
   z-index: 2
   .text-container
     width: 300px
-    margin-left: 120px
-    margin-right: 60px
-    margin-top: 60px
+    height: auto
+    margin: 60px 60px 60px 120px
+
+
     h4
       font-size: 24px
       line-height: 28px
       direction: rtl
     p
       direction: rtl
-    a    
+    a
       margin: 8px
       padding: 10px
       background-color: #4FADDA
-      font-size: 18px      
+      font-size: 18px
       color: #fff
 .text2
   display: none
@@ -1158,6 +1226,139 @@
 
 
 
+// home page sections
+  // section 6
+
+#hr
+  background-color: $bg-color-light
+
+.hr-wrapper
+  max-width: 1400px
+  display: flex
+  flex-direction: column
+  margin: auto
+.hr-s
+  width: 60%
+
+.t-1
+  margin-left: auto
+  margin-right: 40px
+  border: 4px solid $accent-color-yellow
+  padding: 40px 80px
+  z-index: 1
+  h5
+    font-size: 22px
+
+.p-1
+  margin-left: 0px
+  margin-right: auto
+  margin-top: -40px
+  height: 400px
+  background: url(../images/hr-p1.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  background-color: $bg-color
+
+.p-2
+  margin-left: auto
+  margin-right: 40px
+  margin-top: -40px
+  height: 350px
+  border: 4px solid $accent-color-yellow
+  padding: 40px 80px
+  background: url(../images/hr-p2.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  z-index: 1
+
+
+.p-3
+  margin-left: 0
+  margin-top: -40px
+  margin-right: auto
+  height: 400px
+  background: url(../images/hr-p3.png) center center
+  background-size: contain
+  background-repeat: no-repeat
+  background-color: $bg-color
+
+
+@media (max-width: 760px)
+  .hr-s
+    width: 95%
+    margin: auto
+    margin-top: 20px
+
+@media (max-width: 560px)
+  .t-1
+    padding: 40px 30px
+  .p-1, .p-2, .p-3
+    height: 250px
+
+
+
+.social-text
+  max-width: 1200px
+  margin: auto
+  padding: 20px
+.social-boxes
+  display: flex
+  max-width: 1200px
+  margin: auto
+  justify-content: center
+.social-box
+  background-color: $bg-color-light
+  width: 280px
+  height: auto
+  border-top: 4px solid #111
+  margin: 10px
+  padding: 24px
+  p
+    line-height: 22px
+
+@media (max-width: 950px)
+  .social-boxes
+    flex-wrap: wrap
+    max-width: 800px
+  .social-box
+    margin-bottom: 10px
+  .social-text
+    padding: 40px
+
+@media (max-width: 600px)
+  .social-box
+    width: 45%
+    min-width: 220px
+
+@media (max-width: 480px)
+  .social-box
+    width: 80%
+
+
+
+#certificate
+  background-color: $bg-color-light
+
+.cert-wrapper
+  display: flex
+  width: 90%
+  max-width: 1200px
+  margin: auto
+  padding: 10px 40px 30px
+  align-items: center
+.cert
+  margin: 20px
+
+
+
+
+
+
+
+
+
+
+
 // Ali shirzad's code
 //about semega
 // semega introduction
@@ -1285,5 +1486,5 @@
   padding: 5px 20px 0px
   padding-left: 10px
   background-color: #4FADDA
-  font-size: 18px  
+  font-size: 18px
   color: #fff

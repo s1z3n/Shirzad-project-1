@@ -365,3 +365,29 @@ $('.slider-company').slick({
 
 
     });
+
+
+
+    $('.slick-cert').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      rtl: true,
+      responsive: [
+          {
+              breakpoint: 800,
+              settings: {
+                  arrows: true,
+                  slidesToShow: 2,
+              }
+          },
+          {
+          breakpoint: 500,
+          settings: {
+              arrows: true,
+              slidesToShow: 1,
+          }
+          },
+      ]
+    });
