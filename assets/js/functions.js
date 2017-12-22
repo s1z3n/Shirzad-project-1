@@ -267,7 +267,7 @@ $('.slider-text').slick({
 
 $('.slider-company').slick({
     centerPadding: '20',
-    slidesToShow: 7,
+    slidesToShow: 5,
     arrows: true,
     rtl: true,
     autoplay: true,

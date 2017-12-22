@@ -832,12 +832,12 @@ section.home-page {
   align-items: center; }
   .subsidaries .subsidaries-p {
     width: 550px;
-    margin-top: -100px;
+    margin-top: 15px;
     margin-right: -135px; }
     .subsidaries .subsidaries-p h4 {
       margin-bottom: 10px; }
   .subsidaries .subsidaries-img {
-    background: url(../images/subsidiaries-2.png) center right;
+    background: url(../images/subsidiaries-3.png) center right;
     background-size: contain;
     background-repeat: no-repeat;
     width: 600px;
@@ -1587,14 +1587,14 @@ section.home-page {
     padding: 0px 40px; }
     .home-s5 .section5-container .logo-wrapper .c-logo {
       min-width: 140px;
-      height: 70px;
+      height: 160px;
       margin: 10px; } }
 @media (max-width: 520px) {
   .home-s5 .section5-container .logo-wrapper {
     padding: 0px 20px; }
     .home-s5 .section5-container .logo-wrapper .c-logo {
       min-width: 120px;
-      height: 60px;
+      height: 126px;
       margin: 10px; } }
 .hero2 {
   width: 100%;
@@ -1778,6 +1778,14 @@ section.home-page {
     margin: 0px; }
     .frame p {
       padding: 20px; } }
+.download-link {
+  margin: 8px;
+  padding: 5px 20px 0px;
+  padding-left: 10px;
+  background-color: #4FADDA;
+  font-size: 18px;
+  color: #fff; }
+
 ::-webkit-scrollbar {
   width: 1px;
   height: 1px; }
@@ -2240,7 +2248,7 @@ div {
   background-repeat: no-repeat; }
 
 .sub-logo14, .sub-logo15 {
-  background: url(../images/sub-logo.png) center center;
+  background: url(../images/sub-negin-ofogh.png) center center;
   background-size: contain;
   background-repeat: no-repeat; }
 
