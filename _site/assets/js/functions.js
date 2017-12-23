@@ -391,3 +391,16 @@ $('.slider-company').slick({
           },
       ]
     });
+
+
+    $('.accordion-mobile-slick').slick({
+      slidesToShow: 1,
+      arrows: true,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      initialSlide: 4,
+      rtl: true,
+
+
+    });

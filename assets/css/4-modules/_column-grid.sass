@@ -518,12 +518,32 @@
 #board-holder7
   order: 13
 #board-holder8
-  order: 15           
+  order: 15
 
 
 
 
 // investment page // ongoing projects
+
+.investment-project
+  width: 100%
+  margin: auto
+  display: flex
+  flex-wrap: wrap
+
+.project-list
+  width: 33.33%
+  h3
+    height: 60px
+    font-size: 24px
+
+  p
+    margin-bottom: 15px
+    margin-top: 4px
+    height: 30px
+
+
+
 .s-wrapper
   width: 100%
   margin: auto
@@ -534,10 +554,9 @@
     display: flex
     flex-direction: column
     align-items: center
-    // align-content: stretch
     justify-content: space-between
     padding: 20px
-    // height: 400px
+
 
 
     .round-img
@@ -569,6 +588,8 @@
         cursor: pointer
       .material-icons
         margin-right: 4px
+
+
 
 
 
@@ -765,52 +786,41 @@
 
 
 
-@media (max-width: 840px)
-  // .s-wrapper
-  //   width: 100%
-  //   max-width: 1400px
-  //   margin: auto
-  //   display: grid
-  //   grid-template-columns: 1fr 1fr
-  // .placeholder
-  //   grid-column: 1/3
-  //   // height: 400px
-  //   display: flex
-  //   z-index: 2
-
-  .project-box1
-    order: 1
-  .project-box2
-    order: 2
-  .holder1, .holder2
-    order: 3
-  .project-box3
-    order: 4
-  .project-box4
-    order: 5
-  .holder3, .holder4
-    order: 6
-  .project-box5
-    order: 7
-  .project-box6
-    order: 8
-  .holder5, .holder6,
-    order: 9
-  .project-box7
-    order: 10
-  .project-box8
-    order: 11
-  .holder7, .holder8
-    order: 12
-  .project-box9
-    order: 13
-  .holder9
-    order: 14
-
-
-@media (min-width: 1400px)
-
-  .project-box1, .project-box4, .project-box7,
-    margin-right: 30%
-  .project-box3, .project-box6, .project-box9
-    margin-left: 30%
+// @media (max-width: 840px)
+//
+//   .project-box1
+//     order: 1
+//   .project-box2
+//     order: 2
+//   .holder1, .holder2
+//     order: 3
+//   .project-box3
+//     order: 4
+//   .project-box4
+//     order: 5
+//   .holder3, .holder4
+//     order: 6
+//   .project-box5
+//     order: 7
+//   .project-box6
+//     order: 8
+//   .holder5, .holder6,
+//     order: 9
+//   .project-box7
+//     order: 10
+//   .project-box8
+//     order: 11
+//   .holder7, .holder8
+//     order: 12
+//   .project-box9
+//     order: 13
+//   .holder9
+//     order: 14
+//
+//
+// @media (min-width: 1400px)
+//
+//   .project-box1, .project-box4, .project-box7,
+//     margin-right: 30%
+//   .project-box3, .project-box6, .project-box9
+//     margin-left: 30%

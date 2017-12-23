@@ -18,7 +18,7 @@
   width: 40px
   display: flex
   align-items: center
-.accordion-1
+.accordion-1,
   background: url(../images/accordion1-1.png) center center
   background-repeat: no-repeat
   background-color: $accent-color-blue
@@ -52,29 +52,31 @@
 .accordionItemContent
   color: #fff
   height: 500px
+  overflow: scroll
 
 
-.content-1
+
+.content-1, .acc-item-1
   background-color: rgba(0, 0, 0, 0.4)
   background: url(../images/takht-jamshid.jpg) center center
   background-size: cover
-.content-2
+.content-2, .acc-item-2
   background-color: rgba(0, 0, 0, 0.4)
   background: url(../images/tabiei.jpg) center center
   background-size: cover
-.content-3
+.content-3, .acc-item-3
   background-color: rgba(0, 0, 0, 0.4)
   background: url(../images/farhangi.jpg) center center
   background-size: cover
-.content-4
+.content-4, .acc-item-4
   background-color: rgba(0, 0, 0, 0.4)
   background: url(../images/mazhabi.jpg) center center
   background-size: cover
-.content-5
+.content-5, .acc-item-5
   background-color: rgba(0, 0, 0, 0.4)
   background: url(../images/pezeshki.jpg) center center
   background-size: cover
-.content-6
+.content-6, .acc-item-6
   background-color: rgba(0, 0, 0, 0.4)
   background: url(../images/modern.jpg) center center
   background-size: cover
@@ -83,14 +85,16 @@
 
 .overlay
   width: 100%
-  height: 100%
+  height: auto
   background-color: rgba(0, 0, 0, 0.5)
 
 .accordion-content-wrapper
   display: flex
   flex-direction: column
-  padding: 100px
+  padding: 60px 100px
   justify-content: center
+  overflow: hidden
+  min-height: 500px
 
 
 .accordionContentHeadding
@@ -107,12 +111,6 @@
 .close .accordionItemContent
   display: none
 
-
-
-
-
-
-
 .open .accordionItemContent
   display: block
   // opacity: 1
@@ -125,7 +123,6 @@
 
 
 
-
 // image place holder below accordion
 
 .image-place-holder
@@ -134,3 +131,62 @@
   width: 100%
   height: 160px
   background-color: grey
+
+
+
+.accordion-mobile
+  display: none
+
+
+
+.accordion-mobile
+  width: 100%
+  height: 500px
+
+
+.accordion-mobile-slick
+  display: flex
+  width: 90%
+  height: 100%
+  margin: auto
+
+
+
+  .acc-item
+    height: 500px
+    overflow: scroll
+
+
+
+
+.acc-mob
+  color: #fff
+
+
+
+
+
+
+
+
+@media (max-width: 1000px)
+  .accordion-content-wrapper
+    padding: 40px
+
+
+
+@media (max-width: 800px)
+  .accordionWrapper
+    display: none
+
+  .accordion-mobile
+    display: block
+
+
+@media (max-width: 600px)
+  .accordion-mobile-slick
+    display: flex
+    width: 85%
+    height: 500px
+    margin: auto
+    // overflow: scroll
