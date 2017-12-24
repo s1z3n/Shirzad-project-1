@@ -531,7 +531,7 @@
   display: flex
   flex-wrap: wrap
 
-.project-list
+.project-list, .done-project-list
   width: 33.33%
   h3
     height: 60px
@@ -595,38 +595,39 @@
   border-radius: 500px
 
 
-//
-// .fin-project-img-3
-//   background: url(../images/img10.jpg) center center
-//   background-size: cover
+
+#finish-projects
+  background-color: $bg-color-light
 
 
 
-
-
-
-.project-box1, .project-box2, .project-box4, .project-box5, .project-box7, .project-box8
+.project-list, .done-project-list
   border-left: 1px solid $accent-color-yellow
-
-.project-box1, .project-box2, .project-box3
   border-bottom: 1px solid $accent-color-yellow
 
-.project-box1, .project-box2
-  .flower-img
-    background: url(../images/flower-logo-yellowbg.jpg) center center
-    background-size: contain
-    background-repeat: no-repeat
-    width: 30px
-    height: 30px
-    position: relative
-    top: 0px
-    left: 0px
-    z-index: 0
-    align-self: flex-end
-    margin-left: -36px
-    margin-right: auto
-    margin-bottom: -36px
-    margin-top: auto
+.project-box1, .project-box4, .project-box7, .project-box10, .project-box13, .project-box16,
+  border-right: 1px solid $accent-color-yellow
+
+.project-box1, .project-box2, .project-box3,
+  border-top: 1px solid $accent-color-yellow
+
+
+// .project-list, .done-project-list
+//   .flower-img
+//     background: url(../images/flower-logo-yellowbg.jpg) center center
+//     background-size: contain
+//     background-repeat: no-repeat
+//     width: 30px
+//     height: 30px
+//     position: relative
+//     top: 0px
+//     left: 0px
+//     z-index: 0
+//     align-self: flex-end
+//     margin-left: -36px
+//     margin-right: auto
+//     margin-bottom: -36px
+//     margin-top: auto
 
   .flower-img-light
     background: url(../images/flower-logo-lightbg.jpg) center center
@@ -656,6 +657,9 @@
 //   display: none
 // .pointer-img1
 //   display: block
+
+
+// inside projects
 
 .placeholder
   background-color: #777
@@ -693,30 +697,13 @@
       margin-bottom: 20px
       overflow: hidden
       object-fit: cover
-
-
     .project-map
       width: 90%
       height: 50%
       overflow: hidden
+      object-fit: cover
 
 
-// .on-project1-img
-//   background: url(../images/karvansara.jpg) center center
-//   background-size: cover
-
-// .on-project2-img
-//   background: url(../images/grand-hotel.png) center center
-//   background-size: cover
-//
-//
-// .on-project1-map
-//   background: url(../images/karvansara-map.jpg) center center
-//   background-size: cover
-//
-// .on-project2-map
-//   background: url(../images/map2.jpg) center center
-//   background-size: cover
 
 .project-col2
   display: flex
@@ -751,6 +738,9 @@
     margin-top: 20px
     border-right: 1px dashed #fff
     font-size: 24px
+    .download-link
+      padding: 8px 16px
+      float: left
 
 .project-col2  h6
   font-size: 20px
@@ -760,41 +750,422 @@
 
 
 
-// @media (max-width: 840px)
-//
-//   .project-box1
-//     order: 1
-//   .project-box2
-//     order: 2
-//   .holder1, .holder2
-//     order: 3
-//   .project-box3
-//     order: 4
-//   .project-box4
-//     order: 5
-//   .holder3, .holder4
-//     order: 6
-//   .project-box5
-//     order: 7
-//   .project-box6
-//     order: 8
-//   .holder5, .holder6,
-//     order: 9
-//   .project-box7
-//     order: 10
-//   .project-box8
-//     order: 11
-//   .holder7, .holder8
-//     order: 12
-//   .project-box9
-//     order: 13
-//   .holder9
-//     order: 14
-//
-//
-// @media (min-width: 1400px)
-//
-//   .project-box1, .project-box4, .project-box7,
-//     margin-right: 30%
-//   .project-box3, .project-box6, .project-box9
-//     margin-left: 30%
+@media (max-width: 1060px)
+  .holder-wrapper
+    flex-wrap: wrap-reverse
+    .project-col1
+      width: 95%
+      flex-direction: row
+      .project-img
+        width: 50%
+        height: 100%
+        margin: 10px
+      .project-map
+        width: 50%
+        min-height: 100%
+        margin: 10px
+
+    .project-col2
+      display: flex
+      flex-wrap: wrap
+      width: 95%
+      color: #fff
+
+@media (max-width: 650px)
+  .holder-wrapper
+    flex-wrap: wrap-reverse
+    .project-col1
+      width: 95%
+      flex-direction: column
+
+      .project-img
+        width: 100%
+        height: 50%
+        margin: 10px
+      .project-map
+        width: 100%
+        min-height: 50%
+        margin: 10px
+
+    .project-col2
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      color: #fff
+
+      .item-h1
+        h3
+          font-weight: bold
+          font-size: 30px
+          background-color: pink
+          background-color: $accent-color-blue
+          padding: 10px 20px
+      .item-p1
+        width: 100%
+        padding: 0 10px
+      .item-p2
+        width: 100%
+        padding: 0 10px
+        margin-top: 0px
+
+
+
+
+// onegoing projects
+.ongoing-project-box1, .ongoing-project-box2, .ongoing-project-box3
+  order: 0
+
+#on-project-holder1, #on-project-holder2, #on-project-holder3
+  order: 1
+
+.ongoing-project-box4, .ongoing-project-box5, .ongoing-project-box6,
+  order: 2
+
+#on-project-holder4, #on-project-holder5, #on-project-holder6
+  order: 3
+
+.ongoing-project-box7, .ongoing-project-box8, .ongoing-project-box9,
+  order: 4
+
+#on-project-holder7, #on-project-holder8, #on-project-holder9
+  order: 5
+
+.ongoing-project-box10, .ongoing-project-box11, .ongoing-project-box12,
+  order: 6
+
+#on-project-holder10, #on-project-holder11, #on-project-holder12
+  order: 7
+
+.ongoing-project-box13, .ongoing-project-box14, .ongoing-project-box15,
+  order: 8
+
+#on-project-holder13, #on-project-holder14, #on-project-holder15
+  order: 9
+
+
+
+// done projects
+.done-project-box1, .done-project-box2, .done-project-box3
+  order: 0
+
+#done-project-holder1, #done-project-holder2, #done-project-holder3
+  order: 1
+
+.done-project-box4, .done-project-box5, .done-project-box6
+  order: 2
+
+#done-project-holder4, #done-project-holder5, #done-project-holder6
+  order: 3
+
+.done-project-box7, .done-project-box8, .done-project-box9
+  order: 4
+
+#done-project-holder7, #done-project-holder8, #done-project-holder9
+  order: 5
+
+.done-project-box10, .done-project-box11, .done-project-box12
+  order: 6
+
+#done-project-holder10, #done-project-holder11, #done-project-holder12
+  order: 7
+
+.done-project-box13, .done-project-box14, .done-project-box15
+  order: 8
+
+#done-project-holder13, #done-project-holder14, #done-project-holder15
+  order: 9
+
+
+@media (max-width: 860px)
+  .project-list, .done-project-list
+    width: 50%
+
+  // onegoing projects
+  .ongoing-project-box1, .ongoing-project-box2,
+    order: 0
+
+  #on-project-holder1, #on-project-holder2,
+    order: 1
+
+  .ongoing-project-box3, .ongoing-project-box4,
+    order: 2
+
+  #on-project-holder3, #on-project-holder4,
+    order: 3
+
+  .ongoing-project-box5, .ongoing-project-box6,
+    order: 4
+
+  #on-project-holder5, #on-project-holder6,
+    order: 5
+
+  .ongoing-project-box7, .ongoing-project-box8,
+    order: 6
+
+  #on-project-holder7, #on-project-holder8,
+    order: 7
+
+  .ongoing-project-box9, .ongoing-project-box10,
+    order: 8
+
+  #on-project-holder9, #on-project-holder10,
+    order: 9
+
+  .ongoing-project-box11, .ongoing-project-box12,
+    order: 10
+
+  #on-project-holder11, #on-project-holder12,
+    order: 11
+
+  .ongoing-project-box13, .ongoing-project-box14,
+    order: 12
+
+  #on-project-holder13, #on-project-holder14,
+    order: 13
+
+  .ongoing-project-box15,
+    order: 14
+
+  #on-project-holder15,
+    order: 15
+
+
+
+  // done projects
+  .done-project-box1, .done-project-box2,
+    order: 0
+
+  #done-project-holder1, #done-project-holder2,
+    order: 1
+
+  .done-project-box3, .done-project-box4,
+    order: 2
+
+  #done-project-holder3, #done-project-holder4,
+    order: 3
+
+  .done-project-box5, .done-project-box6,
+    order: 4
+
+  #done-project-holder5, #done-project-holder6,
+    order: 5
+
+  .done-project-box7, .done-project-box8,
+    order: 6
+
+  #done-project-holder7, #done-project-holder8,
+    order: 7
+
+  .done-project-box9, .done-project-box10,
+    order: 8
+
+  #done-project-holder9, #done-project-holder10,
+    order: 9
+
+  .done-project-box11, .done-project-box12,
+    order: 10
+
+  #done-project-holder11, #done-project-holder12,
+    order: 11
+
+  .done-project-box13, .done-project-box14,
+    order: 12
+
+  #done-project-holder13, #done-project-holder14,
+    order: 13
+
+  .done-project-box15,
+    order: 14
+
+  #done-project-holder15
+    order: 15
+
+
+
+
+
+
+@media (max-width: 600px)
+  .project-list, .done-project-list
+    width: 100%
+
+  .ongoing-project-box1,
+    order: 0
+
+  #on-project-holder1,
+    order: 1
+
+  .ongoing-project-box2,
+    order: 2
+
+  #on-project-holder2,
+    order: 3
+
+  .ongoing-project-box3,
+    order: 4
+
+  #on-project-holder3,
+    order: 5
+
+  .ongoing-project-box4,
+    order: 6
+
+  #on-project-holder4,
+    order: 7
+
+  .ongoing-project-box5,
+    order: 8
+
+  #on-project-holder5,
+    order: 9
+
+  .ongoing-project-box6,
+    order: 10
+
+  #on-project-holder6,
+    order: 11
+
+  .ongoing-project-box7,
+    order: 12
+
+  #on-project-holder7,
+    order: 13
+
+  .ongoing-project-box8,
+    order: 14
+
+  #on-project-holder8,
+    order: 15
+
+  .ongoing-project-box9,
+    order: 16
+
+  #on-project-holder9,
+    order: 17
+
+  .ongoing-project-box10,
+    order: 18
+
+  #on-project-holder10,
+    order: 19
+
+  .ongoing-project-box11,
+    order: 20
+
+  #on-project-holder11,
+    order: 21
+
+  .ongoing-project-box12,
+    order: 22
+
+  #on-project-holder12,
+    order: 23
+
+  .ongoing-project-box13,
+    order: 24
+
+  #on-project-holder13,
+    order: 25
+
+  .ongoing-project-box14,
+    order: 26
+
+  #on-project-holder14,
+    order: 27
+
+  .ongoing-project-box15,
+    order: 28
+
+  #on-project-holder14,
+    order: 29
+
+  // done projects
+  .done-project-box1,
+    order: 0
+
+  #done-project-holder1
+    order: 1
+
+  .done-project-box2,
+    order: 2
+
+  #done-project-holder2
+    order: 3
+
+  .done-project-box3,
+    order: 4
+
+  #done-project-holder3
+    order: 5
+
+  .done-project-box4,
+    order: 6
+
+  #done-project-holder4
+    order: 7
+
+  .done-project-box5
+    order: 8
+
+  #done-project-holder5
+    order: 9
+
+  .done-project-box6
+    order: 10
+
+  #done-project-holder6
+    order: 11
+
+  .done-project-box7,
+    order: 12
+
+  #done-project-holder7
+    order: 13
+
+  .done-project-box8
+    order: 14
+
+  #done-project-holder8
+    order: 15
+
+  .done-project-box9
+    order: 16
+
+  #done-project-holder9
+    order: 17
+
+  .done-project-box10
+    order: 18
+
+  #done-project-holder10
+    order: 19
+
+  .done-project-box11
+    order: 20
+
+  #done-project-holder11
+    order: 21
+
+  .done-project-box12
+    order: 22
+
+  #done-project-holder12
+    order: 23
+
+  .done-project-box13
+    order: 24
+
+  #done-project-holder13
+    order: 25
+
+  .done-project-box14
+    order: 26
+
+  #done-project-holder14
+    order: 27
+
+  .done-project-box15
+    order: 28
+
+  #done-project-holder15
+    order: 29

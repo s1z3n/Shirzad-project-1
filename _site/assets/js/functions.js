@@ -142,30 +142,55 @@ $(document).ready(function() {
 
           }
       })
-      $('.project-list').on('click', function(e){
+    $('.project-list').on('click', function(e){
 
-              wrapperName = e.currentTarget.className
-              wrapperName = wrapperName.split(' ')
-              elemNum = wrapperName[2].match(/\d+/)[0]
+            wrapperName = e.currentTarget.className
+            wrapperName = wrapperName.split(' ')
+            elemNum = wrapperName[2].match(/\d+/)[0]
 
-              if ($('#project-holder'+elemNum+'').hasClass('project-open')) {
-                  $('.clicked-btn'+elemNum+'').css('background-color', '#4FADDA')
-                  $('#project-holder'+elemNum+'').removeClass('project-open');
+            if ($('#on-project-holder'+elemNum+'').hasClass('project-open')) {
+                $('.clicked-btn'+elemNum+'').css('background-color', '#4FADDA')
+                $('#on-project-holder'+elemNum+'').removeClass('project-open');
 
-              } else {
-                var neededLength = document.getElementsByClassName('project-list')
+            } else {
+              var neededLength = document.getElementsByClassName('project-list')
 
-                for( var i = 1; i < neededLength.length + 1; i++) {
-                  if ($('#project-holder'+i+'').hasClass('project-open')) {
-                    $('.clicked-btn'+i+'').css('background-color', '#4FADDA')
-                    $('#project-holder'+i+'').removeClass('project-open');
-                  }
+              for( var i = 1; i < neededLength.length + 1; i++) {
+                if ($('#on-project-holder'+i+'').hasClass('project-open')) {
+                  $('.clicked-btn'+i+'').css('background-color', '#4FADDA')
+                  $('#on-project-holder'+i+'').removeClass('project-open');
                 }
-                $('.clicked-btn'+elemNum+'').css('background-color', 'gray')
-                $('#project-holder'+elemNum+'').addClass('project-open')
-
               }
-          })
+              $('.clicked-btn'+elemNum+'').css('background-color', 'gray')
+              $('#on-project-holder'+elemNum+'').addClass('project-open')
+
+            }
+        })
+
+        $('.done-project-list').on('click', function(e){
+
+                wrapperName = e.currentTarget.className
+                wrapperName = wrapperName.split(' ')
+                elemNum = wrapperName[2].match(/\d+/)[0]
+
+                if ($('#done-project-holder'+elemNum+'').hasClass('project-open')) {
+                    $('.clicked-btn'+elemNum+'').css('background-color', '#4FADDA')
+                    $('#done-project-holder'+elemNum+'').removeClass('project-open');
+
+                } else {
+                  var neededLength = document.getElementsByClassName('done-project-list')
+
+                  for( var i = 1; i < neededLength.length + 1; i++) {
+                    if ($('#done-project-holder'+i+'').hasClass('project-open')) {
+                      $('.clicked-btn'+i+'').css('background-color', '#4FADDA')
+                      $('#done-project-holder'+i+'').removeClass('project-open');
+                    }
+                  }
+                  $('.clicked-btn'+elemNum+'').css('background-color', 'gray')
+                  $('#done-project-holder'+elemNum+'').addClass('project-open')
+
+                }
+            })
 
 
 
