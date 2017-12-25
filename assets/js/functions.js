@@ -52,10 +52,7 @@ $(document).ready(function() {
 
 
 // pollen london
-
-
         var active = function(e){
-            console.log(e.target.nodeName)
             if( e.target.nodeName == 'DIV'){
                 $(e.target).removeClass('inactive').addClass('active');
             }
@@ -76,18 +73,6 @@ $(document).ready(function() {
 
 
     });
-
-
-  // $('.sub-btn1').click(function(e){
-  //     console.log(e.currentTarget.className)
-  //     $('#sub-holder1').addClass('sub-open');
-  //     // return false
-  //   });
-
-  // $('.sub-btn2,.sub-btn3').click(function(e){
-  //   console.log(e.currentTarget.className)
-  //   $('#sub-holder1').removeClass('sub-open');
-  // });
 
 
 });
@@ -241,23 +226,7 @@ $(document).ready(function() {
     rtl: true,
     autoplay: true,
     autoplaySpeed: 2000,
-    // responsive: [
-    //     {
-    //         breakpoint: 768,
-    //         settings: {
-    //
-    //             slidesToShow: 2
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 480,
-    //         settings: {
-    //             arrows: false,
-    //             centerPadding: '0px',
-    //             slidesToShow: 1
-    //         }
-    //     }
-    // ]
+
 });
 
 $('.slider-projects').slick({
@@ -308,21 +277,13 @@ $('.slider-company').slick({
         {
             breakpoint: 1068,
             settings: {
-                // arrows: false,
                 slidesToShow: 3
             }
         },
-        // {
-        //     breakpoint: 1260,
-        //     settings: {
-        //         // arrows: false,
-        //         slidesToShow: 5
-        //     }
-        // },
+
         {
         breakpoint: 880,
         settings: {
-            // arrows: false,
             slidesToShow: 3
         }
         },
@@ -330,7 +291,6 @@ $('.slider-company').slick({
         {
             breakpoint: 720,
             settings: {
-                // arrows: false,
                 slidesToShow: 1
 
             }
@@ -343,7 +303,6 @@ $('.slider-company').slick({
 
     $('.invest-carousel').slick({
       slidesToShow: 1,
-      // arrows: true,
       rtl: true,
       autoplay: true,
       autoplaySpeed: 2000,
