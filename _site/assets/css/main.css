@@ -831,7 +831,8 @@ section.home-page {
   height: 700px;
   background-color: #F2EFEA;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 90px; }
   .subsidaries .subsidaries-p {
     width: 550px;
     margin-top: 15px;
@@ -972,7 +973,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: transparent; }
+        background-color: rgba(0, 0, 0, 0); }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1569,7 +1570,8 @@ section.home-page {
       padding: 10px;
       background-color: #4FADDA;
       font-size: 18px;
-      color: #fff; }
+      color: #fff;
+      margin-left: 28px; }
 
 .text2 {
   display: none; }
@@ -1772,7 +1774,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: transparent; }
+        background-color: rgba(0, 0, 0, 0); }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
