@@ -381,9 +381,7 @@ ul, li {
       padding: 40px 0px; }
   .abstract .col-left {
     height: 550px;
-    background-color: skyblue;
-    background: url(../images/media-2nd-hero.jpg) center center;
-    background-size: cover; }
+    object-fit: cover; }
 
 .bg-overlaps {
   width: 100%;
