@@ -230,11 +230,11 @@ $(document).ready(function() {
 });
 
 $('.slider-projects').slick({
-    slidesToShow: 1.1,
+    slidesToShow: 1.5,
     arrows: false,
     focusOnSelect: true,
-    rtl: true,
-    infinite: true,
+    ltr: true,
+    // infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
     asNavFor: '.slider-text',
@@ -255,6 +255,7 @@ $('.slider-text').slick({
     arrows: false,
     fade: true,
     speed: 1000,
+    ltr: true,
     // asNavFor: '.slider-projects',
 
 });
@@ -391,7 +392,7 @@ $('.slider-company').slick({
 
 
 
-    // ===== Scroll to Top ==== 
+    // ===== Scroll to Top ====
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
@@ -404,6 +405,3 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
-
-
-
