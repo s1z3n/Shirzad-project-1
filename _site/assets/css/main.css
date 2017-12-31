@@ -586,7 +586,8 @@ section.home-page {
 
 @media (max-width: 1360px) {
   .nav-main .nav-item {
-    padding: 16px; } }
+    padding: 16px;
+    font-size: 2vh; } }
 @media (max-width: 1240px) {
   .header, .header-home {
     display: flex;
