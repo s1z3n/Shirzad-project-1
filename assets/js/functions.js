@@ -53,6 +53,7 @@ $(document).ready(function() {
 
 // pollen london
         var active = function(e){
+            e.preventDefault()
             if( e.target.nodeName == 'DIV'){
                 $(e.target).removeClass('inactive').addClass('active');
             }
@@ -79,11 +80,11 @@ $(document).ready(function() {
 
 
   $('.link-list').on('click', function(e){
-
-      wrapperName = e.currentTarget.className
+      e.preventDefault()
+      wrapperName = e.currentTarget.className      
       wrapperName = wrapperName.split(' ')
       elemNum = wrapperName[2].match(/\d+/)[0]
-
+      
       if ($('#sub-holder'+elemNum+'').hasClass('sub-open')) {
           $('.sub-btn'+elemNum+'').css('background-color', '#4FADDA')
           $('#sub-holder'+elemNum+'').removeClass('sub-open');
@@ -132,7 +133,7 @@ $(document).ready(function() {
             wrapperName = e.currentTarget.className
             wrapperName = wrapperName.split(' ')
             elemNum = wrapperName[2].match(/\d+/)[0]
-
+            
             if ($('#on-project-holder'+elemNum+'').hasClass('project-open')) {
                 $('.clicked-btn'+elemNum+'').css('background-color', '#4FADDA')
                 $('#on-project-holder'+elemNum+'').removeClass('project-open');
@@ -157,7 +158,7 @@ $(document).ready(function() {
                 wrapperName = e.currentTarget.className
                 wrapperName = wrapperName.split(' ')
                 elemNum = wrapperName[2].match(/\d+/)[0]
-
+                
                 if ($('#done-project-holder'+elemNum+'').hasClass('project-open')) {
                     $('.clicked-btn'+elemNum+'').css('background-color', '#4FADDA')
                     $('#done-project-holder'+elemNum+'').removeClass('project-open');
