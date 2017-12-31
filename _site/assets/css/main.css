@@ -513,7 +513,7 @@ ul, li {
 .nav-main {
   max-width: 1250px;
   display: flex;
-  width: 75%;
+  width: 65%;
   justify-content: center;
   margin-left: 8px;
   align-items: center; }
@@ -535,10 +535,10 @@ ul, li {
   border: 1px solid #fff; }
 
 .logo {
-  width: 250px;
-  height: 50px;
+  width: 350px;
+  height: 100px;
   background: url(../images/semega-logo.svg) center center;
-  margin: 8px 24px;
+  margin: -9px 24px;
   background-size: contain;
   background-repeat: no-repeat;
   justify-content: center; }
@@ -2496,7 +2496,7 @@ div {
   background: url(../images/sub-bakhtar.png) center center; }
 
 .sub-logo3 {
-  background: url(../images/sub-logo.png) center center; }
+  background: url(../images/sub-milad-zigorat.png) center center; }
 
 .sub-logo4 {
   background: url(../images/sub-karad.png) center center; }
@@ -2528,8 +2528,13 @@ div {
 .sub-logo13 {
   background: url(../images/sub-bank.png) center center; }
 
-.sub-logo14, .sub-logo15 {
+.sub-logo14 {
   background: url(../images/sub-negin-ofogh.png) center center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.sub-logo15 {
+  background: url(../images/sub-mehr.png) center center;
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -2768,6 +2773,10 @@ div {
 
 .board-img-5, .member5 {
   background: url(../images/board-vazirzade.png) center center;
+  background-size: cover; }
+
+.board-img-6, .member6 {
+  background: url(../images/board-taheri.jpg) center center;
   background-size: cover; }
 
 .board-img-7, .member7 {
