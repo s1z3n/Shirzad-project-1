@@ -650,6 +650,10 @@ section.home-page {
   position: absolute;
   visibility: hidden; }
 
+@media (max-width: 500px) {
+  .logo {
+    width: 250px;
+    height: 50px; } }
 .secondary-menu {
   height: 54px;
   display: flex;
