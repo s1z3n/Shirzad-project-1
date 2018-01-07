@@ -1,6 +1,5 @@
 
 .header, .header-home
-  // background-color: rgba(0, 0, 0, 0.6)
 
   display: flex
   width: 100%
@@ -17,11 +16,9 @@
 
 .header-fixed
   background-color: #555
-  // height: 56px
   position: fixed
   padding-bottom: 0px
   background-image: none
-  // animation: movingdown 300ms ease-in-out
 
 
 
@@ -52,7 +49,7 @@
 .nav-main
   max-width: 1250px
   display: flex
-  width: 65%
+  width: 75%
   justify-content: center
   margin-left: 8px
   align-items: center
@@ -60,12 +57,10 @@
     padding: 20px 30px
     color: #fff
     font-weight: bold
-    font-size: 1.2vw
     &:hover
 
 #lang
   color: #fff
-  font-size: 10pt
   font-weight: normal
   padding: 2px 4px
   margin: 16px 30px
@@ -75,20 +70,18 @@
   border: 1px solid #fff
 
 .logo
-  width: 350px
+  width: 300px
   height: 100px
   background: url(../images/semega-logo.svg) center center
   margin: -9px 24px
   background-size: contain
   background-repeat: no-repeat
   justify-content: center
-  // background-color: lime
 
 
 section.hero
   height: 500px
   background-size: cover
-  // margin-top: 50px
   display: flex
   width: 100%
   justify-content: center
@@ -119,47 +112,14 @@ section.about-semega
 section.home-page
   overflow: hidden
 
-  // .home-hero-img
-  // max-height: 900px
 
 
 
-// .h-hero-frame
-//   background-repeat: no-repeat
-//   height: 70%
-//   width: 70%
-//   background-size: contain
-//   position: absolute
-//   border: 4px solid $accent-color-yellow
-//   margin: auto
-//   top: 200px
-//   bottom: 100px
-//   left: 100px
-//
-// .hero-text
-//   background-color: rgba(0, 0, 0, 0.6)
-//   width: 400px
-//   height: 400px
-//   display: flex
-//   justify-content: space-around
-//   align-items: center
-//   padding: 70px
-//   margin-right: -150px
-//   margin-top: 200px
-//
-//   h1
-//     color: #fff
-//     text-align: left
-//     font-size: 38px
-//   a
-//     width: 120px
-//     background-color: #4fadda
-//     color: #fff
-//     border: 1px solid $bg-color
-//     border-radius: 5px
-//     text-align: center
-//     padding: 4px
-//     padding-bottom: 6px
+@media (max-width: 1360px)
+  .nav-main
+    .nav-item
+      padding: 16px
+
 
 
 @media (max-width: 900px)
@@ -170,19 +130,12 @@ section.home-page
 .page-title
   color: #fff
   background-color: rgba(0, 0, 0, 0.6)
-
   padding: 16px 32px
-  font-size: 24pt
   margin-top: -50px
 
 
 
-@media (max-width: 1360px)
-  .nav-main
-    .nav-item
-      padding: 16px
-      // font-weight: normal
-      font-size: 2vh
+
 
 
 @media (max-width: 1240px)

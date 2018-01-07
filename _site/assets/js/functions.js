@@ -81,10 +81,10 @@ $(document).ready(function() {
 
   $('.link-list').on('click', function(e){
       e.preventDefault()
-      wrapperName = e.currentTarget.className      
+      wrapperName = e.currentTarget.className
       wrapperName = wrapperName.split(' ')
       elemNum = wrapperName[2].match(/\d+/)[0]
-      
+
       if ($('#sub-holder'+elemNum+'').hasClass('sub-open')) {
           $('.sub-btn'+elemNum+'').css('background-color', '#4FADDA')
           $('#sub-holder'+elemNum+'').removeClass('sub-open');
@@ -133,7 +133,7 @@ $(document).ready(function() {
             wrapperName = e.currentTarget.className
             wrapperName = wrapperName.split(' ')
             elemNum = wrapperName[2].match(/\d+/)[0]
-            
+
             if ($('#on-project-holder'+elemNum+'').hasClass('project-open')) {
                 $('.clicked-btn'+elemNum+'').css('background-color', '#4FADDA')
                 $('#on-project-holder'+elemNum+'').removeClass('project-open');
@@ -158,7 +158,7 @@ $(document).ready(function() {
                 wrapperName = e.currentTarget.className
                 wrapperName = wrapperName.split(' ')
                 elemNum = wrapperName[2].match(/\d+/)[0]
-                
+
                 if ($('#done-project-holder'+elemNum+'').hasClass('project-open')) {
                     $('.clicked-btn'+elemNum+'').css('background-color', '#4FADDA')
                     $('#done-project-holder'+elemNum+'').removeClass('project-open');
@@ -308,6 +308,7 @@ $('.slider-company').slick({
       rtl: true,
       autoplay: true,
       autoplaySpeed: 2000,
+      // dots: true,
 
     });
 

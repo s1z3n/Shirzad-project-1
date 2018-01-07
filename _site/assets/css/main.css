@@ -320,7 +320,9 @@ ul, li {
   min-width: 240px;
   max-width: 360px;
   height: 40px;
-  margin: auto 0px; }
+  margin: auto 0px;
+  padding-bottom: 4px;
+  padding-top: 6px; }
   .read-more a {
     font-size: 16px; }
 
@@ -513,19 +515,17 @@ ul, li {
 .nav-main {
   max-width: 1250px;
   display: flex;
-  width: 65%;
+  width: 75%;
   justify-content: center;
   margin-left: 8px;
   align-items: center; }
   .nav-main .nav-item {
     padding: 20px 30px;
     color: #fff;
-    font-weight: bold;
-    font-size: 1.2vw; }
+    font-weight: bold; }
 
 #lang {
   color: #fff;
-  font-size: 10pt;
   font-weight: normal;
   padding: 2px 4px;
   margin: 16px 30px;
@@ -535,7 +535,7 @@ ul, li {
   border: 1px solid #fff; }
 
 .logo {
-  width: 350px;
+  width: 300px;
   height: 100px;
   background: url(../images/semega-logo.svg) center center;
   margin: -9px 24px;
@@ -574,6 +574,9 @@ section.about-semega {
 section.home-page {
   overflow: hidden; }
 
+@media (max-width: 1360px) {
+  .nav-main .nav-item {
+    padding: 16px; } }
 @media (max-width: 900px) {
   section.home-page {
     top: 50px; } }
@@ -581,13 +584,8 @@ section.home-page {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 16px 32px;
-  font-size: 24pt;
   margin-top: -50px; }
 
-@media (max-width: 1360px) {
-  .nav-main .nav-item {
-    padding: 16px;
-    font-size: 2vh; } }
 @media (max-width: 1240px) {
   .header, .header-home {
     display: flex;
@@ -1498,6 +1496,7 @@ section.home-page {
       font-size: 20px;
       position: relative;
       bottom: -40px;
+      margin: auto;
       margin-top: 3px;
       padding: 0 20px; }
 
@@ -1509,7 +1508,8 @@ section.home-page {
     margin-top: 0px; }
     .section2-container .s2-col-1 {
       width: 400px;
-      height: 320px; }
+      height: 320px;
+      margin-bottom: 40px; }
       .section2-container .s2-col-1 .border-line {
         height: 460px;
         margin-top: -360px; }
@@ -1627,7 +1627,8 @@ section.home-page {
         margin-top: 50px; } }
 @media (max-width: 520px) {
   .section3-wrapper .text-holder {
-    right: 20px; }
+    right: 0px;
+    width: 95%; }
     .section3-wrapper .text-holder .text-container {
       padding: 50px 20px;
       margin-top: 50px; } }
@@ -1637,22 +1638,8 @@ section.home-page {
   justify-content: center;
   align-items: center;
   width: 100%; }
-  .home-s5 .section5-container .arrow {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background: url(../images/arrow2.png) center center;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0.15);
-    opacity: 0.9; }
-  .home-s5 .section5-container .arrow-right {
-    right: 0;
-    transform: rotate(180deg);
-    transform-origin: center; }
-  .home-s5 .section5-container .arrow-left {
-    left: 0; }
   .home-s5 .section5-container .logo-wrapper {
-    width: 100%;
+    width: 90%;
     padding: 0px 60px;
     height: 200px;
     display: flex;
@@ -2063,6 +2050,9 @@ section.home-page {
 #return-to-top:hover i {
   color: #fff;
   top: 5px; }
+
+.slick-dots li button {
+  font-size: 10px !important; }
 
 ::-webkit-scrollbar {
   width: 1px;
@@ -2490,53 +2480,43 @@ div {
   overflow: hidden; }
 
 .sub-logo1 {
-  background: url(../images/sub-arya.png) center center; }
+  background: url(../images/sub-bank.png) center center; }
 
 .sub-logo2 {
-  background: url(../images/sub-bakhtar.png) center center; }
+  background: url(../images/sub-negin.png) center center; }
 
 .sub-logo3 {
-  background: url(../images/sub-milad-zigorat.png) center center; }
+  background: url(../images/sub-negin-ofogh.png) center center; }
 
 .sub-logo4 {
-  background: url(../images/sub-karad.png) center center; }
+  background: url(../images/sub-arya.png) center center; }
 
 .sub-logo5 {
-  background: url(../images/sub-shade.png) center center; }
+  background: url(../images/sub-bakhtar.png) center center; }
 
 .sub-logo6 {
-  background: url(../images/sub-club.png) center center; }
-
-.sub-logo7 {
   background: url(../images/sub-zigorat.png) center center; }
 
+.sub-logo7 {
+  background: url(../images/sub-shade.png) center center; }
+
 .sub-logo8 {
-  background: url(../images/sub-kimiya.png) center center; }
+  background: url(../images/sub-karad.png) center center; }
 
 .sub-logo9 {
   background: url(../images/sub-it.png) center center; }
 
 .sub-logo10 {
-  background: url(../images/sub-varna.png) center center; }
+  background: url(../images/sub-milad-zigorat.png) center center; }
 
 .sub-logo11 {
-  background: url(../images/sub-ofogh.png) center center; }
+  background: url(../images/sub-kimiya.png) center center; }
 
 .sub-logo12 {
-  background: url(../images/sub-negin.png) center center; }
+  background: url(../images/sub-club.png) center center; }
 
 .sub-logo13 {
-  background: url(../images/sub-bank.png) center center; }
-
-.sub-logo14 {
-  background: url(../images/sub-negin-ofogh.png) center center;
-  background-size: contain;
-  background-repeat: no-repeat; }
-
-.sub-logo15 {
-  background: url(../images/sub-mehr.png) center center;
-  background-size: contain;
-  background-repeat: no-repeat; }
+  background: url(../images/sub-mehr.png) center center; }
 
 .round-logo {
   width: 150px;
@@ -2942,54 +2922,6 @@ div {
 
   .board-box2 .flower-img, .board-box4 .flower-img, .board-box6 .flower-img {
     display: none; } }
-.board-box1 {
-  order: 0; }
-
-.board-box2 {
-  order: 2; }
-
-.board-box3 {
-  order: 4; }
-
-.board-box4 {
-  order: 6; }
-
-.board-box5 {
-  order: 8; }
-
-.board-box6 {
-  order: 10; }
-
-.board-box7 {
-  order: 12; }
-
-.board-box8 {
-  order: 14; }
-
-#board-holder1 {
-  order: 1; }
-
-#board-holder2 {
-  order: 3; }
-
-#board-holder3 {
-  order: 5; }
-
-#board-holder4 {
-  order: 7; }
-
-#board-holder5 {
-  order: 9; }
-
-#board-holder6 {
-  order: 11; }
-
-#board-holder7 {
-  order: 13; }
-
-#board-holder8 {
-  order: 15; }
-
 .investment-project {
   width: 100%;
   margin: auto;

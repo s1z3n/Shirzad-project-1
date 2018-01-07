@@ -917,8 +917,10 @@
       font-size: 20px
       position: relative
       bottom: -40px
+      margin: auto
       margin-top: 3px
       padding: 0 20px
+
 
 
 
@@ -931,6 +933,7 @@
     .s2-col-1
       width: 400px
       height: 320px
+      margin-bottom: 40px
       .border-line
         height: 460px
         margin-top: -360px
@@ -1078,10 +1081,12 @@
 @media (max-width: 520px)
   .section3-wrapper
     .text-holder
-      right: 20px
+      right: 0px
+      width: 95%
       .text-container
         padding: 50px 20px
         margin-top: 50px
+
 
 
 
@@ -1098,30 +1103,14 @@
     justify-content: center
     align-items: center
     width: 100%
-    .arrow
-      width: 100px
-      height: 100px
-      position: absolute
 
-      background: url(../images/arrow2.png) center center
-      background-size: contain
-      background-color: rgba(0, 0, 0, 0.15)
-      opacity: .90
-    .arrow-right
-      right: 0
-      transform: rotate(180deg)
-      transform-origin: center
-
-    .arrow-left
-      left: 0
     .logo-wrapper
-      width: 100%
+      width: 90%
       padding: 0px 60px
       height: 200px
       display: flex
       align-items: center
       margin-top: -64px
-      // overflow: scroll
       .c-logo
         min-width: 150px
         height: 170px
@@ -1533,11 +1522,13 @@
 
 
 
-//
+
 // .slick-next
 //   right: 25px !important
+//   position: absolute !important
 // .slick-prev
 //   left: 25px !important
+//   position: absolute !important
 
 
 .download-link
@@ -1592,3 +1583,9 @@
 #return-to-top:hover i
   color: #fff
   top: 5px
+
+
+.slick-dots
+  li
+    button
+      font-size: 10px !important
