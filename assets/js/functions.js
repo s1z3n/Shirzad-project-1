@@ -17,7 +17,7 @@ $(document).ready(function() {
         }
     }
 
-
+    
 
     $(window).scroll(function (event) {
       var scroll = $(window).scrollTop();
@@ -51,7 +51,9 @@ $(document).ready(function() {
 
 
 
-// pollen london
+        // ===================== Pollen London =====================
+
+
         var active = function(e){
             e.preventDefault()
             if( e.target.nodeName == 'DIV'){
@@ -72,12 +74,10 @@ $(document).ready(function() {
          $('.pollen-img').mouseenter(active)
          $('.pollen-img').mouseleave(inactive)
 
-
     });
-
-
 });
 
+    // ===================== dropdown subsidieries =====================
 
   $('.link-list').on('click', function(e){
       e.preventDefault()
@@ -104,6 +104,8 @@ $(document).ready(function() {
       }
   })
 
+
+    // ===================== dropdown board memers =====================
   $('.board-list').on('click', function(e){
 
           wrapperName = e.currentTarget.className
@@ -128,6 +130,9 @@ $(document).ready(function() {
 
           }
       })
+
+      // ===================== dropdown projects =====================
+
     $('.project-list').on('click', function(e){
 
             wrapperName = e.currentTarget.className
@@ -152,6 +157,8 @@ $(document).ready(function() {
 
             }
         })
+
+        // ===================== dropdown don projects =====================
 
         $('.done-project-list').on('click', function(e){
 
@@ -178,7 +185,7 @@ $(document).ready(function() {
                 }
             })
 
-
+// =====================  =====================
 
   $(document).ready(function () {
       $(document).on("scroll", onScroll);
@@ -190,21 +197,41 @@ $(document).ready(function() {
 
           $('a').each(function () {
               $(this).removeClass('active');
+              console.log('4')
           })
           $(this).addClass('active');
-
+          console.log('3')
           var target = this.hash,
               menu = target;
           $target = $(target);
           $('html, body').stop().animate({
               'scrollTop': $target.offset().top+2
-          }, 500, 'swing', function () {
+          }, 500, 'swing', function () {              
               window.location.hash = target;
               $(document).on("scroll", onScroll);
           });
       });
   });
 
+
+    // ===================== Submenu Movement  =====================
+    // Center the sub menu
+    // function isOnScreen(element) {
+            
+    //     var curPos = element.offsetLeft;    
+    //     var screenHeight = $(window).width();
+
+    //     return (curPos > screenHeight) ? false : true;
+    // }
+
+    // submenuItems = document.querySelectorAll('section.secondary-menu.about-menu.secondary-fixed > div > a')
+
+    // for( i in submenuItems.length) {
+    //     var elem = document.querySelector(`section.secondary-menu.about-menu.secondary-fixed > div > a:nth-child(${i})`)
+    //     if(isOnScreen(elem)){
+    //         elem.offsetLeft = 15
+    //     }
+    // }
   function onScroll(event){
       var scrollPos = $(document).scrollTop();
       $('.menu-center a').each(function () {
@@ -212,13 +239,25 @@ $(document).ready(function() {
           var refElement = $(currLink.attr("href"));
           if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
               $('.menu-center a').removeClass("active");
-              currLink.addClass("active");
+              if(currLink.offset().left < 0 && $(window).width() > 900){                                                 
+                $('.secondary-wrapper-submenu').css('left', `+=${-currLink.offset().left}` )
+                currLink.addClass("active");              
+              }              
+              if(currLink.offset().left > 1400 && $(window).width() > 900){                                                 
+                $('.secondary-wrapper-submenu').css('left', 0 )
+                currLink.addClass("active");              
+              }              
+              currLink.addClass("active");              
           }
           else{
-              currLink.removeClass("active");
+              currLink.removeClass("active");                            
           }
       });
   }
+
+
+  // ===================== Slicks starts =====================
+
   $('.main-carousel').slick({
     // centerMode: true,
     // centerPadding: '40px',
@@ -392,18 +431,27 @@ $('.slider-company').slick({
 
     });
 
+    // =====================   End of Slick =====================
+
 
 
     // ===== Scroll to Top ====
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+
+
+
+
+
+

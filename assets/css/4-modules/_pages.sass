@@ -235,10 +235,12 @@
   height: 600px
   margin: 0px auto
   padding: 40px 10px
+  
 
 @media (max-width: 940px)
   .org-chart
     height: 450px
+    
 
 @media (max-width: 600px)
   .org-chart
@@ -546,7 +548,7 @@
 
 
 .strategy-table1
-  background: url(../images/strategy-table1.jpg) center center
+  background: url(../images/strategy-table1.png) center center
   margin: 40px 0px
   width: 100%
   height: 340px
@@ -762,7 +764,7 @@
 .strategy-s6
   background-color: $bg-color-light
   .strategy-table3
-    background: url(../images/strategy-table3.jpg) top center
+    background: url(../images/strategy-table3.png) top center
     margin: 40px 0px
     width: 100%
     height: 550px
@@ -1589,3 +1591,15 @@
   li
     button
       font-size: 10px !important
+
+
+.secondary-wrapper-submenu
+  position: relative
+  left: 0
+
+.slick-next:before, .slick-prev:before
+  font-size: 50px
+
+@media(max-width : 900px)
+  .slick-next:before, .slick-prev:before
+    font-size: 20px  

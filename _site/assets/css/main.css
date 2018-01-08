@@ -583,8 +583,9 @@ section.home-page {
 .page-title {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 16px 32px;
-  margin-top: -50px; }
+  padding: 19px 32px;
+  margin-top: -50px;
+  border-radius: 100px; }
 
 @media (max-width: 1240px) {
   .header, .header-home {
@@ -974,7 +975,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: transparent; }
+        background-color: rgba(0, 0, 0, 0); }
       .invetment-hero2 .side-heading .row-4 .container input {
         position: absolute;
         opacity: 0; }
@@ -1169,7 +1170,7 @@ section.home-page {
     margin-bottom: 30px; }
 
 .strategy-table1 {
-  background: url(../images/strategy-table1.jpg) center center;
+  background: url(../images/strategy-table1.png) center center;
   margin: 40px 0px;
   width: 100%;
   height: 340px;
@@ -1363,7 +1364,7 @@ section.home-page {
 .strategy-s6 {
   background-color: #F2EFEA; }
   .strategy-s6 .strategy-table3 {
-    background: url(../images/strategy-table3.jpg) top center;
+    background: url(../images/strategy-table3.png) top center;
     margin: 40px 0px;
     width: 100%;
     height: 550px;
@@ -1762,7 +1763,7 @@ section.home-page {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        background-color: transparent; }
+        background-color: rgba(0, 0, 0, 0); }
       .hero2 .side-heading .row-3 .container input {
         position: absolute;
         opacity: 0; }
@@ -2058,6 +2059,16 @@ section.home-page {
 .slick-dots li button {
   font-size: 10px !important; }
 
+.secondary-wrapper-submenu {
+  position: relative;
+  left: 0; }
+
+.slick-next:before, .slick-prev:before {
+  font-size: 50px; }
+
+@media(max-width : 900px) {
+  .slick-next:before, .slick-prev:before {
+    font-size: 20px; } }
 ::-webkit-scrollbar {
   width: 1px;
   height: 1px; }
