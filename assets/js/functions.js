@@ -232,28 +232,28 @@ $(document).ready(function() {
     //         elem.offsetLeft = 15
     //     }
     // }
-  function onScroll(event){
-      var scrollPos = $(document).scrollTop();
-      $('.menu-center a').each(function () {
-          var currLink = $(this);
-          var refElement = $(currLink.attr("href"));
-          if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-              $('.menu-center a').removeClass("active");
-              if(currLink.offset().left < 0 && $(window).width() > 900){                                                 
-                $('.secondary-wrapper-submenu').css('left', `+=${-currLink.offset().left}` )
-                currLink.addClass("active");              
-              }              
-              if(currLink.offset().left > 1400 && $(window).width() > 900){                                                 
-                $('.secondary-wrapper-submenu').css('left', 0 )
-                currLink.addClass("active");              
-              }              
-              currLink.addClass("active");              
-          }
-          else{
-              currLink.removeClass("active");                            
-          }
-      });
-  }
+//   function onScroll(event){
+//       var scrollPos = $(document).scrollTop();
+//       $('.menu-center a').each(function () {
+//           var currLink = $(this);
+//           var refElement = $(currLink.attr("href"));
+//           if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+//               $('.menu-center a').removeClass("active");
+//               if(currLink.offset().left < 0 && $(window).width() > 900){                                                 
+//                 $('.secondary-wrapper-submenu').css('left', `+=${-currLink.offset().left}` )
+//                 currLink.addClass("active");              
+//               }              
+//               if(currLink.offset().left > 1400 && $(window).width() > 900){                                                 
+//                 $('.secondary-wrapper-submenu').css('left', 0 )
+//                 currLink.addClass("active");              
+//               }              
+//               currLink.addClass("active");              
+//           }
+//           else{
+//               currLink.removeClass("active");                            
+//           }
+//       });
+//   }
 
 
   // ===================== Slicks starts =====================
@@ -451,7 +451,42 @@ $('.slider-company').slick({
     });
 
 
+// =====================   Scroll Func =====================
 
 
 
 
+    var currentSelected = "";
+
+    var lastScroll = 0;
+    var down = false;
+    $(window).on("scroll", function() {
+      var scroll = $(this).scrollTop();
+      down = scroll > lastScroll;
+      lastScroll = scroll;
+    });
+    
+    function onScroll(event) {
+      var scrollPos = $(document).scrollTop();
+      $(".menu-center a").each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (
+          refElement.position().top <= scrollPos &&
+          refElement.position().top + refElement.height() > scrollPos
+        ) {
+          $(".menu-center a").removeClass("active");
+          currLink.addClass("active");
+          if (currentSelected !== "" && !currentSelected.is(refElement)) {
+            if (down) {
+              $(".menu-center").scrollLeft($(".menu-center").scrollLeft() - 232);
+            } else {
+              $(".menu-center").scrollLeft($(".menu-center").scrollLeft() + 232);
+            }
+          }
+          currentSelected = refElement;
+        } else {
+          currLink.removeClass("active");
+        }
+      });
+    }
