@@ -352,7 +352,15 @@ $('.slider-company').slick({
     });
 
 
+    
+    var childNum = document.querySelectorAll('.slick-car')
+    childNum = Array.from(childNum)
+    
+    childNum.map((i) => {
+        
+    if (i.childElementCount > 4) {
 
+    console.log(1)
     $('.slick-car').slick({
       centerPadding: '0',
       slidesToShow: 4,
@@ -391,8 +399,8 @@ $('.slider-company').slick({
 
 
     });
-
-
+}
+    })
 
     $('.slick-cert').slick({
       slidesToShow: 3,
